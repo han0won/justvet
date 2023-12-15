@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: SUITE-Regular;
+    font-size: 14px;
+    color: #222;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.wrap {
+    width: 375px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+/* -----헤더----- */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    /* background-color: aliceblue; */
+} 
+
+#gnb .depth1 {
+    display: none;
+}
+
+#gnb .depth2 {
+    display: none;
+}
+
+/* -----컨텐츠----- */
+
+#container {
+    /* background-color: lavenderblush; */
+}
+
+.visual-area {
+    padding: 76px 25px 0px;
+}
+
+.visual-area h1 {
+    margin-bottom: 20px;
+    font-family: SOYOMapleBoldTTF;
+    font-size: 24px;
+    text-align: center;
+}
+.visual-area h2 {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.main-cont {
+    padding: 40px 25px;
+}
+
+.main-cont h1 {
+    font-size: 15px;
+}
+.main-cont h2 {
+    margin-top: 12px;
+    font-size: 28px;
+}
+
+.int-image {
+    margin-bottom: 24px;
+}
+
+.int-inner ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.int-inner p {
+    margin-top: 12px;
+}
+
+.trt-inner ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.trt-inner li {
+    width: calc(50% - 12px);
+}
+
+.care-inner p {
+    margin-top: 20px;
+}
+
+.counsel-typo .tit {
+    font-family: SOYOMapleBoldTTF;
+    font-size: 20px;
+}
+
+/* -----푸터----- */
+
+#footer {
+    /* background-color: lavender; */
+}
+
+.f-top {
+    padding: 40px 25px;
+}
+
+.f-bottom {
+    padding: 40px 25px;
+    border-top: 1px solid #8D8D8D;
+}
+
+#footer .txt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 66px
+}
+
+#footer dd{
+    margin-inline-start: 40px
+}
