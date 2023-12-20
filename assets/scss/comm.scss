@@ -1,0 +1,97 @@
+@import 'variables', 'mixins', 'fonts', 'reset';
+
+
+
+
+// layout
+.wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $hdH;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 0 25px;
+
+    h1, .logo a {
+        display: block;
+    }
+}
+
+#main {
+    flex-grow: 1;
+}
+
+#footer {
+    height: $ftH;
+    background-color: $txtDefult;
+
+    span, p {
+        color: $white;
+    }
+
+    .f-top {
+        padding: 40px 25px;
+        color: $white;
+
+        .phone-counsel {
+            display: flex;
+            align-items: center;
+            gap: 66px;
+        }
+
+        p {
+            font-size: 24px;
+            color: $secondary;
+        }
+          
+        .clinic-hours {
+            display: flex;
+            align-items: flex-start;
+            gap: 66px;
+            margin-top: 40px;
+        }
+
+        .txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        
+        dd {
+            padding-left: 40px;
+        }
+    }
+      
+    .f-bottom {
+       p {
+        font-style: normal;
+        color: $gray-200;
+        padding: 40px 25px 0;
+        }
+
+        .hospital {
+            border-top: 1px solid $gray-200;
+        }
+
+        .copyright {
+            padding: 10px 25px 40px;
+            font-size: 11px;
+        }
+    }
+
+}
+
+@import 'main'
