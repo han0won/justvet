@@ -9,65 +9,81 @@
 </head>
 
 <body>
+    <div id="u-skip">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#main">본문 바로가기</a>
+    </div>
     <div class="wrap">
         <!-- 헤더 -->
         <header id="header">
-            <h1 class="logo">
-                <a href="#">로고</a>
-            </h1>
-            <div class="ham-nav">
-                메뉴
-                <!-- <nav id="gnb">
-                    <ul class="depth1">
-                        <li><a href="#">병원소개</a>
-                            <ul class="depth2">
-                                <li><a href="#">병원소개</a></li>
-                                <li><a href="#">케어 서비스 안내</a></li>
-                                <li><a href="#">의료 장비 안내</a></li>
-                                <li><a href="#">오시는 길</a></li>
+            <div class="h-inner">
+                <h1 id="logo" class="logo">
+                    <a href="#">logo</a>
+                </h1>
+                <div class="col-right">
+                    <div class="gnb-wrap">
+                        <input type="checkbox" name="gnbnav" id="gnbnav" class="inp-burger">
+                        <label for="gnbnav" class="label-burger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <div class="blind">전체 메뉴 보기</div>
+                        </label>
+                        <nav id="gnb">
+                            <ul class="depth1">
+                                <li><a href="#">병원소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">병원소개</a></li>
+                                        <li><a href="#">케어 서비스 안내</a></li>
+                                        <li><a href="#">의료 장비 안내</a></li>
+                                        <li><a href="#">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">진료안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">내과진료</a></li>
+                                        <li><a href="#">외과진료</a></li>
+                                        <li><a href="#">치과진료</a></li>
+                                        <li><a href="#">영상진료</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">동물지식</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">반려견에 대한 상식</a></li>
+                                        <li><a href="#">반려묘에 대한 상식</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">질병상식</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">질병상식</a></li>
+                                        <li><a href="#">중성화수술</a></li>
+                                        <li><a href="#">슬개골탈구</a></li>
+                                        <li><a href="#">치아관리</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">커뮤니티</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">병원소식</a></li>
+                                        <li><a href="#">문의하기</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                        <li><a href="#">진료안내</a>
-                            <ul class="depth2">
-                                <li><a href="#">내과진료</a></li>
-                                <li><a href="#">외과진료</a></li>
-                                <li><a href="#">치과진료</a></li>
-                                <li><a href="#">영상진료</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">동물지식</a>
-                            <ul class="depth2">
-                                <li><a href="#">반려견에 대한 상식</a></li>
-                                <li><a href="#">반려묘에 대한 상식</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">질병상식</a>
-                            <ul class="depth2">
-                                <li><a href="#">질병상식</a></li>
-                                <li><a href="#">중성화수술</a></li>
-                                <li><a href="#">슬개골탈구</a></li>
-                                <li><a href="#">치아관리</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">커뮤니티</a>
-                            <ul class="depth2">
-                                <li><a href="#">병원소식</a></li>
-                                <li><a href="#">문의하기</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav> -->
+                        </nav>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- 컨텐츠 -->
         <div id="container">
             <div id="main-contents">
                 <div class="visual-area">
-                    <strong>
-                        반려동물의 입장에서 공감하고
-                        <br>
-                        보호자의 시선으로 치료합니다.
-                    </strong>
+                    <div class="vis-box">
+                        <strong>
+                            반려동물의 입장에서 공감하고
+                            <br>
+                            보호자의 시선으로 치료합니다.
+                        </strong>
+                    </div>  
                     <p>
                         저스트벳은 좋은 의료 서비스를
                         <br>
@@ -85,33 +101,34 @@
                                 최선의 치료를 제공합니다.
                             </h2>
                         </div>
-                        <div class="int-inner">
-                            <ul>
-                                <li>
-                                    <div class="int-image">
-                                        <img src="./images/main/모바일-입원공간.png" alt="입원공간 사진">
-                                    </div>
-                                    <strong>입원공간</strong>
-                                    <p>집중치료실, 격리입원실, 일반입원실과 임상 병리실,
-                                        <br> 
-                                        방사선검사실, 수술실, 반려동물 관리실
-                                        <br>
-                                        그리고 그루밍실, 호텔까지 갖추고 있습니다.</p>
-                                </li>
-                                <li>
-                                    <div class="int-image">
-                                        <img src="./images/main/모바일-검사장비.png" alt="검사장비 사진">
-                                    </div>
-                                    <strong>검사장비</strong>
-                                    <p>최신 초음파 장비, CR X-ray, 혈청화학검사기,
-                                        <br>
-                                        혈구분석기, 치과유닛, 치과 X-ray, 고압멸균기,
-                                        <br>
-                                        마취 모니터기까지 다양한 장비가 준비되어 있습니다.</p>
-                                </li>
-                            </ul>
+                            <div class="int-inner">
+                                <ul>
+                                    <li>
+                                        <div class="int-image">
+                                            <img src="./images/main/모바일-입원공간.png" alt="입원공간 사진">
+                                        </div>
+                                        <strong>입원공간</strong>
+                                        <p>집중치료실, 격리입원실, 일반입원실과 임상 병리실,
+                                            <br> 
+                                            방사선검사실, 수술실, 반려동물 관리실
+                                            <br>
+                                            그리고 그루밍실, 호텔까지 갖추고 있습니다.</p>
+                                    </li>
+                                    <li>
+                                        <div class="int-image">
+                                            <img src="./images/main/모바일-검사장비.png" alt="검사장비 사진">
+                                        </div>
+                                        <strong>검사장비</strong>
+                                        <p>최신 초음파 장비, CR X-ray, 혈청화학검사기,
+                                            <br>
+                                            혈구분석기, 치과유닛, 치과 X-ray, 고압멸균기,
+                                            <br>
+                                            마취 모니터기까지 다양한 장비가 준비되어 있습니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="int-box"></div>
                         </div>
-                        <div class="int-box"></div>
                 </section>
                 <section class="main-cont treat">
                         <div class="trt-typo">
@@ -160,9 +177,7 @@
                         <h2>미용 케어 서비스</h2>
                     </div>
                     <div class="care-inner">
-                        <div class="care-image">
-                            <img src="./images/main/모바일-미용케어.png" alt="미용케어 사진">
-                        </div>
+                        <div class="care-image"></div>
                         <strong>
                             다양한 디자인컷이 가능한 미용관리실
                         </strong>
@@ -232,11 +247,11 @@
                     <form>
                         <div class="inp-box">
                             <label for="name">이름</label>
-                            <input id="name" type="text" placeholder="이름을 입력해주세요.">
+                            <input id="name" type="text" placeholder="이름을 입력해주세요." required>
                         </div>
                         <div class="inp-box">
                             <label for="number">연락처</label>
-                            <input type="text" placeholder="연락처를 입력해주세요">
+                            <input type="text" placeholder="연락처를 입력해주세요" required>
                         </div>
                         <div class="inp-box">
                             <label for="text">상담내용</label>
