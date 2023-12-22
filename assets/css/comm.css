@@ -689,4 +689,30 @@ form .counsel-btn {
 .inp-box a {
   border: 1px solid #fff;
   border-radius: 5px;
+}
+
+.sub-banner {
+  padding: 160px 25px 0;
+  color: #fff;
+  background-image: url(../../images/sub/모바일-상단배너.png);
+}
+.sub-banner h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.sub-banner p {
+  font-size: 11px;
+  padding-bottom: 25px;
+}
+
+.gnb-sub {
+  display: flex;
+  justify-content: space-around;
+}
+.gnb-sub .gnb-box {
+  width: 75px;
+  height: 35px;
+}
+.gnb-sub .digestive {
+  color: #00AEAA;
 }/*# sourceMappingURL=comm.css.map */

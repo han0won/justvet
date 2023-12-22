@@ -1,0 +1,30 @@
+.sub-banner {
+    padding: 160px 25px 0;
+    color: $white;
+    background-image: url(../../images/sub/모바일-상단배너.png);
+    
+    h1{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 11px;
+        padding-bottom: 25px;
+    }
+}
+
+.gnb-sub {
+    display: flex;
+    justify-content: space-around;
+
+    .gnb-box {
+        width: 75px;
+        height: 35px;
+        border-bottom: 1px solid $gray-200;
+    }
+
+    .digestive {
+        color: $primary;
+        border-bottom: 1px solid $gray-400;
+    }
+}
