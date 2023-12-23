@@ -245,4 +245,37 @@
 
 }
 
-@import 'main', 'sub2'
+.sub-banner {
+    padding: 150px 25px 0;
+    text-align: left;
+    color: $white;
+    background-image: url(../../images/sub/모바일-상단배너.png);
+    
+    strong{
+        font-size: 32px;
+    }
+    p {
+        font-size: 11px;
+        padding: 10px 0 25px;
+        text-align: left;
+    }
+}
+
+.gnb-sub {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    .gnb-box {
+        width: 75px;
+        height: 35px;
+        border-bottom: 1px solid $gray-200;
+    }
+
+    .digestive {
+        color: $primary;
+        border-bottom: 1px solid $primary;
+    }
+}
+
+@import 'main','sub1','sub2'

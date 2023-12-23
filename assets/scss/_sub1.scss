@@ -1,0 +1,112 @@
+* {
+    text-align: center;
+}
+
+h2 {
+    font-family: "SOYOMapleBoldTTF";
+    font-size: 32px;
+}
+
+.cont-inner {
+    padding: 80px 25px;
+}
+
+.hospital-intro {
+    padding: 22px 0 80px;
+    .intro-image {
+        width: 100%;
+        height: 172px;
+        margin-bottom: 24px;
+        background-image: url(../../images/sub/1-상단배너.png);
+        background-size : cover;
+    }
+    span {
+        font-size: 16px;
+        color: $secondary;
+    }
+    h2 {
+        margin-top: 16px;
+    }
+    p {
+        font-size: 14px;
+        color: $gray-300;
+        margin-top: 24px;
+    }
+}
+
+.hospital-reason {
+    .reason-box {
+        position: absolute;
+        z-index: -1000;
+        top: 846px;
+        left: 0;
+        width: 100%;
+        bottom: -133px;
+        height: 322px;
+        background-color: $primary;
+    }
+    h2 {
+        margin-bottom: 72px;
+        color: $white;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 60px;
+        width: 100%;
+        height: 403px;
+        border-top: 5px solid $primary;
+        background-color: $white;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        margin-top: 30px;
+        text-align: left;
+        font-size: 18px;
+        color: $gray-300;
+    }
+}
+
+.hospital-special {
+    li {
+        font-size: 28px;
+    }
+    .special-image{
+        width: 100%;
+        height: 242px;
+    }
+    point-1 {
+        background-image: url(../../images/sub/1-point1.png);
+    }
+    point-2 {
+        background-image: url(../../images/sub/1-point2.png);
+    }
+    point-3 {
+        background-image: url(../../images/sub/1-point3.png);
+    }
+    special-txt {
+        text-align: left;
+        padding: 26px 0 40px;
+
+    }
+    span {
+        color: $secondary;
+    }
+    p {
+        margin-top: 16px;
+        font-size: 14px;
+        color: $gray-300;
+    }
+}
+
+hospital-value {
+    background-color: $gray-100;
+}
