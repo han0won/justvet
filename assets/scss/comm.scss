@@ -185,6 +185,18 @@
     }
 }
 
+.customer {
+    height: 67px;
+    background-color: $secondary;
+
+    p {
+        padding: 20px 0;
+        font-size: 18px;
+        text-align: center;
+        color: $white;
+    }
+}
+
 #footer {
     background-color: $txtDefult;
 
@@ -263,7 +275,7 @@
 
 .gnb-sub {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 40px;
 
     .gnb-box {
