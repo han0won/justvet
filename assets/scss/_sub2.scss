@@ -1,0 +1,133 @@
+h2 {
+    font-size: 28px;
+}
+
+.digestive-intro {
+    padding-top: 22px;
+    text-align: left;
+
+    .int-image {
+        height: 150px;
+        background-image: url(../../images/sub/2-banner.png);
+        background-size : cover;
+    }
+    .int-typo {
+        padding: 0 25px;
+    }
+    h2 {
+        margin-top: 22px;
+    }
+    .dig-tit {
+        margin-top: 16px;
+        font-size: 14px;
+        color: $gray-300;
+    }
+}
+
+.digestive-symptom {
+    background-color: $gray-100;
+
+    p {
+        padding-top: 16px;
+        padding-bottom: 22px;
+        color: $gray-300;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        width: 235px;
+        height: 50px;
+        margin-top: 14px;
+        border-radius: 235px;
+        background-color: $white;
+
+        p {
+            padding: 14px 0;
+        }
+    }
+}
+
+.digestive-checkup {
+    p {
+        padding-top: 16px;
+        padding-bottom: 36px;
+        color: $gray-300;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 188px;
+        border: 1px solid $gray-200;
+    }
+    .number {
+        width: 36px;
+        height: 20px;
+        font-size: 12px;
+        color: $white;
+        border-radius: 36px;
+        background-color: $primary;
+    }
+    .name {
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.digestive-food {
+    background-color: $gray-100;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    ul {
+        display: flex;
+        overflow: hidden;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+    }
+    span {
+        padding: 15px 0 10px 26px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    p {
+        padding: 13px 0 16px 26px;
+        font-size: 12px;
+    }
+    .food-image {
+        width: 249px;
+        height: 183px;
+    }
+    .onion {
+        background-image: url(../../images/sub/2-onion.png);
+    }
+    .grape {
+        background-image: url(../../images/sub/2-grape.png);
+    }
+    .milk {
+        background-image: url();
+    }
+    .coffee {
+        background-image: url();
+    }
+    .nut {
+        background-image: url();
+    }
+    .dried {
+        background-image: url();
+    }
+}

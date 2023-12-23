@@ -1,8 +1,4 @@
-#container-sub {
-    text-align: center;
-}
-
-h2 {
+.sub-intro {
     font-family: "SOYOMapleBoldTTF";
     font-size: 32px;
 }
@@ -63,6 +59,7 @@ h2 {
         height: 403px;
         border-top: 5px solid $primary;
         background-color: $white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
     h3 {
         font-size: 30px;
@@ -73,9 +70,19 @@ h2 {
         font-size: 18px;
         color: $gray-300;
     }
+    .reason-1 p {
+        padding-left: 59px;
+    }
+    .reason-2 p {
+        padding-left: 54px;
+    }
+    .reason-3 p {
+        padding-left: 42px;
+    }
 }
 
 .hospital-special {
+    padding-bottom: 40px;
     h2 {
         margin-bottom: 40px;
     }
@@ -114,12 +121,16 @@ h2 {
     background-color: $gray-100;
 
     ul {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 60px;
     }
     li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 265px;
         height: 265px;
         color: $white;
@@ -127,7 +138,13 @@ h2 {
         border-radius: 265px;
     }
     .value-2 {
+        // position: absolute;
+        // z-index: 1000;
         background-color: $primary;
+    }
+    .value-3 {
+        // position: absolute;
+        // z-index: 1100;
     }
     .v1 {
         font-size: 28px;
