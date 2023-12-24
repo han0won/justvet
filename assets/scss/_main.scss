@@ -21,7 +21,7 @@
 }
 
 .main-cont {
-    padding: 80px 25px 40px;
+    padding: 80px 25px 80px;
 
     em {
       font-size: 15px;
@@ -35,14 +35,14 @@
     }
 }
   
-  
-.int-inner {
-    overflow: hidden;
-
+.intro {
+    .int-inner {
+        overflow: hidden;
+    }
     ul {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 36px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 36px;
     }
     li {
         margin-right: 24px;
@@ -54,34 +54,33 @@
     }
     strong {
         font-size: 20px;
-        color: $white;
+            color: $white;
     }
     p {
-      margin-top: 12px;
-      font-size: 14px;
-      color: $white;
+        margin-top: 12px;
+        font-size: 14px;
+        color: $white;
+    }   
+    .int-box {
+        position: absolute;
+        z-index: -1000;
+        top: auto;
+        left: 0;
+        width: 100%;
+        bottom: -133px;
+        height: 200px;
+        background-color: $primary;
     }
 }
 
-.int-box {
-    position: absolute;
-    z-index: -1000;
-    top: auto;
-    left: 0;
-    width: 100%;
-    bottom: -133px;
-    height: 200px;
-    background-color: $primary;
-}
-    
-.trt-inner {
+.treat {
     ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 36px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 36px;
     }
-  
+      
     li {
         display: flex;
         flex-direction: column;
@@ -97,7 +96,7 @@
         flex-direction: column;
         align-items: center;
         color: $white;
-      }
+        }
     button {
         width: 25px;
         height: 25px;
@@ -105,23 +104,24 @@
         color: $white;
         background-color: $secondary;
     }
+    .trt-internal,
+    .trt-surgery {
+        margin-bottom: 25px;
+    }
 }
 
-.trt-internal,
-.trt-surgery {
-    margin-bottom: 25px;
-}
 
-.care-image {
-    height: 180px;
-    margin-top: 36px;
-    margin-bottom: 20px;
-    line-height: 0;
-    background-image: url(../../images/main/모바일-미용케어.png);
-    background-size : cover;
-}
-  
-.care-inner {
+.care {
+    background-color: $gray-100;
+
+    .care-image {
+        height: 180px;
+        margin-top: 36px;
+        margin-bottom: 20px;
+        line-height: 0;
+        background-image: url(../../images/main/모바일-미용케어.png);
+        background-size : cover;
+    }
     strong {
         font-size: 20px;
         color: $secondary;
@@ -132,40 +132,39 @@
     }
 }
   
-.main-cont .address {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-}
-  
-.map-wrapper {
-    margin-top: 36px;
-}
-  
-.map-inner .map-btn {
-    background-color: $primary;
-    border-radius: 5px;
-  
+.map {
+    .address {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+    }
+    .map-wrapper {
+        margin-top: 36px;
+    }
+    .map-btn {
+        background-color: $primary;
+        border-radius: 5px;
+    }
     a {
-      color: $white;
-      text-align: center;
+        color: $white;
+        text-align: center;
     }
 }
   
 .counsel {
     background-color: $secondary;
-}
-  
-.counsel-typo {
-    margin-bottom: 36px;
-  
+
+    .counsel-typo {
+        margin-bottom: 36px;
+    }
     .tit {
       font-family: SOYOMapleBoldTTF;
       font-size: 20px;
       color: $white;
-    }
+        }
 }
   
+
 form { 
     label {
         position: absolute;
@@ -178,6 +177,13 @@ form {
     input[type=text] {
         border-radius: 5px;
     }
+    input {
+        height: 47px;
+    }
+    textarea {
+        height: 150px;
+        padding-top: 15px;
+    }
     input,
     textarea {
         width: 100%;
@@ -187,32 +193,22 @@ form {
         border: 0;
         border-radius: 5px;
         font-family: $font-family;
+        color: rgba(255, 255, 255,0.7);
     }
-    input {
-        height: 47px;
-    }
-    textarea {
-        height: 150px;
-        padding-top: 15px;
+    .privacy {
+        margin: 12px 0 40px;
     }
     span {
         color: $white;
         font-size: 14px;
     }
-    button {
-        color: white;
-    }
     .counsel-btn {
-        width: 100%;
-        height: 47px;
-        background-color: $txtDefult;
-        border-radius: 5px;
-        border: 0;
-        color: $white;
+    width: 100%;
+    height: 47px;
+    background-color: $txtDefult;
+    border-radius: 5px;
+    border: 0;
+    color: $white;
     }
 }
 
-.inp-box a {
-    border: 1px solid #fff;
-    border-radius: 5px;
-}

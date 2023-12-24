@@ -949,7 +949,7 @@ h2 {
   width: 25px;
   height: 25px;
   font-size: 12px;
-  text-align: center;
+  line-height: 25px;
   color: #fff;
   border-radius: 25px;
   background-color: #00AEAA;
