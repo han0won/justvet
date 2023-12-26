@@ -279,10 +279,16 @@ legend {
 .wrap {
   display: flex;
   flex-direction: column;
+  max-width: 420px;
   min-height: 100vh;
-  margin: auto;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 1280px) {
+  .wrap {
+    max-width: none;
+  }
+}
 #header {
   height: 60px;
 }
@@ -395,6 +401,9 @@ legend {
   max-height: 300px;
   padding: 20px 0;
 }
+#gnb .depth2 li:hover a {
+  color: #79C3B8;
+}
 #gnb ul {
   display: flex;
   flex-direction: column;
@@ -469,7 +478,7 @@ legend {
   gap: 66px;
 }
 #footer .f-top p {
-  font-size: 24px;
+  font-size: 28px;
   color: #79C3B8;
 }
 #footer .f-top .clinic-hours {
@@ -483,6 +492,17 @@ legend {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+#footer .f-top .txt span {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8d8d8d;
+}
+#footer .f-top dl {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: auto 1fr;
+  row-gap: 10px;
 }
 #footer .f-top dd {
   padding-left: 40px;
@@ -612,9 +632,23 @@ legend {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(50% - 12px);
+  width: calc(50% - 10px);
   height: 148px;
+}
+.treat .trt-internal {
   background-image: url(../../images/main/모바일-내과.png);
+  background-size: cover;
+}
+.treat .trt-surgery {
+  background-image: url(../../images/main/모바일-외과.png);
+  background-size: cover;
+}
+.treat .trt-dental {
+  background-image: url(../../images/main/모바일-치과.png);
+  background-size: cover;
+}
+.treat .trt-picture {
+  background-image: url(../../images/main/모바일-영상.png);
   background-size: cover;
 }
 .treat a {
@@ -622,6 +656,9 @@ legend {
   flex-direction: column;
   align-items: center;
   color: #fff;
+}
+.treat p {
+  margin: 12px 0;
 }
 .treat button {
   width: 25px;
@@ -632,13 +669,13 @@ legend {
 }
 .treat .trt-internal,
 .treat .trt-surgery {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.care {
+.care-service {
   background-color: #f0f3f5;
 }
-.care .care-image {
+.care-service .care-image {
   height: 180px;
   margin-top: 36px;
   margin-bottom: 20px;
@@ -646,30 +683,93 @@ legend {
   background-image: url(../../images/main/모바일-미용케어.png);
   background-size: cover;
 }
-.care strong {
+.care-service strong {
   font-size: 20px;
   color: #79C3B8;
 }
-.care p {
+.care-service p {
   margin-top: 20px;
   font-size: 14px;
 }
 
-.map .address {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
-}
 .map .map-wrapper {
   margin-top: 36px;
 }
+.map .address {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  grid-template-rows: 20px 1fr;
+  gap: 12px;
+  margin-top: 40px;
+}
+.map .address p {
+  font-weight: bold;
+}
+.map .map-btn-wrap {
+  display: flex;
+  grid-column: 2;
+  gap: 6px;
+}
 .map .map-btn {
+  height: 30px;
   background-color: #00AEAA;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .map a {
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.map .map-subway,
+.map .map-bus {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.map dt {
   color: #fff;
   text-align: center;
+  border-radius: 15px;
+  padding: 3px 12px;
+}
+.map .line-1 {
+  background: #3356B4;
+}
+.map .general {
+  background: #00AEAB;
+}
+.map .town {
+  background: #5FB73C;
+}
+.map .seat {
+  background: #339CF0;
+}
+.map .direct {
+  background: #F86E55;
+}
+.map .map-subway dl {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.map .map-bus dl {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+.map .map-bus dl dt {
+  grid-column: 1;
+}
+.map .map-bus dl dd {
+  grid-column: 2;
 }
 
 .counsel {
@@ -694,13 +794,22 @@ form label {
 }
 form input[type=text] {
   border-radius: 5px;
-}
-form input {
   height: 47px;
+}
+form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+form textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 form textarea {
   height: 150px;
-  padding-top: 15px;
 }
 form input,
 form textarea {
@@ -711,7 +820,6 @@ form textarea {
   border: 0;
   border-radius: 5px;
   font-family: "SUITE-Regular";
-  color: rgba(255, 255, 255, 0.7);
 }
 form .privacy {
   margin: 12px 0 40px;
@@ -949,7 +1057,7 @@ h2 {
   width: 25px;
   height: 25px;
   font-size: 12px;
-  text-align: center;
+  line-height: 25px;
   color: #fff;
   border-radius: 25px;
   background-color: #00AEAA;

@@ -80,15 +80,28 @@
         justify-content: space-between;
         margin-top: 36px;
     }
-      
     li {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: calc(50% - 12px);
+        width: calc(50% - 10px);
         height: 148px;
+    }
+    .trt-internal {
         background-image: url(../../images/main/모바일-내과.png);
+        background-size : cover;
+    }
+    .trt-surgery {
+        background-image: url(../../images/main/모바일-외과.png);
+        background-size : cover;
+    }
+    .trt-dental {
+        background-image: url(../../images/main/모바일-치과.png);
+        background-size : cover;
+    }
+    .trt-picture {
+        background-image: url(../../images/main/모바일-영상.png);
         background-size : cover;
     }
     a {
@@ -97,6 +110,9 @@
         align-items: center;
         color: $white;
         }
+    p {
+        margin: 12px 0;
+    }
     button {
         width: 25px;
         height: 25px;
@@ -106,12 +122,12 @@
     }
     .trt-internal,
     .trt-surgery {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 }
 
 
-.care {
+.care-service {
     background-color: $gray-100;
 
     .care-image {
@@ -133,21 +149,84 @@
 }
   
 .map {
-    .address {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto 1fr;
-    }
     .map-wrapper {
         margin-top: 36px;
     }
+    .address {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        grid-template-rows: 20px 1fr;
+        gap: 12px;
+        margin-top: 40px;
+
+        p {
+            font-weight: bold;
+        }
+    }
+    .map-btn-wrap {
+        display: flex;
+        grid-column: 2;
+        gap: 6px;
+    }
     .map-btn {
+        height: 30px;
         background-color: $primary;
-        border-radius: 5px;
+        border-radius: 10px;
     }
     a {
+        padding: 8px 10px;
+        color: $white;
+        font-size: 12px;
+        text-align: center;
+    }
+    .map-subway,
+    .map-bus {
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: start;
+        column-gap: 12px;
+    } 
+    dt {
         color: $white;
         text-align: center;
+        border-radius: 15px;
+        padding: 3px 12px;
+    }
+    .line-1 {
+        background: #3356B4;
+    }
+    .general {
+        background: #00AEAB;
+    }
+    .town {
+        background: #5FB73C;
+    }
+    .seat {
+        background: #339CF0;
+    }
+    .direct {
+       background: #F86E55;
+    }
+    .map-subway dl {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        align-items: center;
+        column-gap: 12px;
+    }
+    .map-bus dl {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 60px 1fr;
+        align-items: center;
+        gap: 12px;
+
+        dt {
+            grid-column: 1;
+        }
+        dd {
+            grid-column: 2;
+        }
     }
 }
   
@@ -161,7 +240,7 @@
       font-family: SOYOMapleBoldTTF;
       font-size: 20px;
       color: $white;
-        }
+    }
 }
   
 
@@ -176,13 +255,16 @@ form {
     }
     input[type=text] {
         border-radius: 5px;
-    }
-    input {
         height: 47px;
+    }
+    input::placeholder {
+        color: rgba(255, 255, 255,0.7);
+    }
+    textarea::placeholder {
+        color: rgba(255, 255, 255,0.7);
     }
     textarea {
         height: 150px;
-        padding-top: 15px;
     }
     input,
     textarea {
@@ -193,7 +275,6 @@ form {
         border: 0;
         border-radius: 5px;
         font-family: $font-family;
-        color: rgba(255, 255, 255,0.7);
     }
     .privacy {
         margin: 12px 0 40px;

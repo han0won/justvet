@@ -6,6 +6,7 @@
     <title>저스트벳 동물병원</title>
     <link rel="stylesheet" href="./assets/css/comm.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/af95449672.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <header id="header">
             <div class="h-inner">
                 <h1 id="logo" class="logo">
-                    <a href="#">logo</a>
+                    <a href="http://127.0.0.1:5502/index.html#">logo</a>
                 </h1>
                 <div class="col-right">
                     <div class="gnb-wrap">
@@ -33,7 +34,7 @@
                             <ul class="depth1">
                                 <li><a href="#">병원소개</a>
                                     <ul class="depth2">
-                                        <li><a href="#">병원소개</a></li>
+                                        <li><a href="http://127.0.0.1:5502/sub1.html">병원소개</a></li>
                                         <li><a href="#">케어 서비스 안내</a></li>
                                         <li><a href="#">의료 장비 안내</a></li>
                                         <li><a href="#">오시는 길</a></li>
@@ -41,7 +42,7 @@
                                 </li>
                                 <li><a href="#">진료안내</a>
                                     <ul class="depth2">
-                                        <li><a href="#">내과진료</a></li>
+                                        <li><a href="http://127.0.0.1:5502/sub2.html">내과진료</a></li>
                                         <li><a href="#">외과진료</a></li>
                                         <li><a href="#">치과진료</a></li>
                                         <li><a href="#">영상진료</a></li>
@@ -143,33 +144,33 @@
                             <ul>
                                 <li class="trt-internal">
                                         <a href="#">
-                                            <strong>내과</strong>
+                                            <p>내과</p>
                                             <button>+</button>
                                         </a>
                                     
                                 </li>
                                 <li class="trt-surgery">
                                         <a href="#">
-                                            <strong>외과</strong>
+                                            <p>외과</p>
                                             <button>+</button>
                                         </a>
                                 </li>
                                 <li class="trt-dental">
                                         <a href="#">
-                                            <strong>치과</strong>
+                                            <p>치과</p>
                                             <button>+</button>
                                         </a>
                                 </li>
                                 <li class="trt-picture">
                                         <a href="#">
-                                            <strong>영상</strong>
+                                            <p>영상</p>
                                             <button>+</button>
                                         </a>
                                 </li>
                             </ul>
                         </div>
                 </section>
-                <section class="main-cont care">
+                <section class="main-cont care-service">
                     <div class="care-typo">
                         <em>Beauty Care Service</em>
                         <h2>미용 케어 서비스</h2>
@@ -209,30 +210,34 @@
                     </div>
                     <div class="map-inner">
                         <div class="address">
-                            
+                            <p>맵</p>
                             <p>경기 오산시 원동로 6 파크스퀘어 105</p>
-                            <div class="map-btn">
-                                <a href="#">NAVER MAP</a>
-                            </div>
-                            <div class="map-btn">
-                                <a href="#">KAKAO MAP</a>
+                            <div class="map-btn-wrap">
+                                <div class="map-btn">
+                                    <a href="#">NAVER MAP</a>
+                                </div>
+                                <div class="map-btn">
+                                    <a href="#">KAKAO MAP</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="subway">
+                        <div class="map-subway">
+                            <p>맵</p>
                             <dl>
-                                <dt>1호선</dt>
+                                <dt class="line-1">1호선</dt>
                                 <dd>오산역 1번 출구</dd>
                             </dl>
                         </div>
-                        <div class="bus">
+                        <div class="map-bus">
+                            <p>맵</p>
                             <dl>
-                                <dt>일반</dt>
+                                <dt class="general">일반</dt>
                                 <dd>7-5, 116-1, 116-2, 116-5</dd>
-                                <dt>마을</dt>
+                                <dt class="town">마을</dt>
                                 <dd>10, 11, 11-6, 53, 88</dd>
-                                <dt>좌석</dt>
+                                <dt class="seat">좌석</dt>
                                 <dd>300</dd>
-                                <dt>직행</dt>
+                                <dt class="direct">직행</dt>
                                 <dd>5300, 5300-1</dd>
                             </dl>
                         </div>
@@ -258,7 +263,7 @@
                         <div class="privacy">
                             <span>개인정보수집 및 이용 동의</span>
                         </div>
-                        <input type="submit"  class="counsel-btn" value="신청하기">
+                        <input type="submit" class="counsel-btn" value="신청하기">
                     </form>
                 </section>
         </div>
@@ -266,11 +271,17 @@
         <footer id="footer">
             <div class="f-top">
                 <div class="phone-counsel">
-                    <span>전화상담</span>
+                    <div class="phont-txt">
+                        <a href="#">맵</a>
+                        <span>전화상담</span>
+                    </div>
                     <p>031. 378. 1514</p>
                 </div>
                 <div class="clinic-hours">
+                    <div class="hours-txt">
+                        <a href="#">맵</a>
                         <span>진료시간</span>
+                    </div>
                         <div class="txt">
                             <dl>
                                 <dt>평일</dt>
