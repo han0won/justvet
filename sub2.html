@@ -167,7 +167,85 @@
                     <br>
                     안 되는 음식들
                 </h2>
-                <ul>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="food-image onion"></div>
+                        <span>양파</span>
+                        <div class="food-txt">
+                            <p>독성 성분이 산소 운반을 방해하고
+                                <br>
+                                혈구를 파괴하여 빈혈이 일어나고
+                                <br>
+                                심할 경우 사망할 위험이 있습니다.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="food-image grape"></div>
+                        <span>포도</span>
+                        <div class="food-txt">
+                            <p>개가 먹으면 안 되는 대표적인
+                                <br>
+                                과일입니다. 포도, 건포도 섭취 시 
+                                <br>
+                                급성신부전을 유발할 수 있습니다.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="food-image milk"></div>
+                        <span>우유</span>
+                        <div class="food-txt">
+                            <p>대부분의 고양이는 우유의 젖당을
+                                <br>
+                                분해할 수 없기 때문에 우유 섭취는
+                                <br>
+                                설사나 알레르기 위험이 있습니다.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="food-image coffee"></div>
+                        <span>커피</span>
+                        <div class="food-txt">
+                            <p></p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="food-image nut"></div>
+                        <span>견과류</span>
+                        <div class="food-txt">
+                            <p>견과류는 지방 함량이 높아 섭취 시
+                                <br>
+                                소화기계 문제가 발생할 가능성이
+                                <br>
+                                있습니다.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="food-image dried"></div>
+                        <span>건어물</span>
+                        <div class="food-txt">
+                            <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+              
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    });
+                </script>
+                <!-- <ul>
                     <li>
                         <div class="food-image onion"></div>
                         <span>양파</span>
@@ -226,7 +304,7 @@
                             <p></p>
                         </div>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
 

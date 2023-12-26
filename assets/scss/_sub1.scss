@@ -1,3 +1,10 @@
+.gnb-sub {
+    .hospital {
+        color: $primary;
+        border-color: $gray-200;
+    }
+}
+
 .sub-intro {
     font-family: "SOYOMapleBoldTTF";
     font-size: 32px;
@@ -133,24 +140,20 @@
         justify-content: center;
         width: 265px;
         height: 265px;
+        margin-bottom: 15px;
         color: $white;
         background-color: $secondary;
         border-radius: 265px;
     }
     .value-2 {
-        // position: absolute;
-        // z-index: 1000;
+
         background-color: $primary;
-    }
-    .value-3 {
-        // position: absolute;
-        // z-index: 1100;
     }
     .v1 {
         font-size: 28px;
     }
     .v2 {
-        margin: 36px 0;
+        margin: 21px 0 36px;
         font-size: 14px;
         color: $gray-200;
     }

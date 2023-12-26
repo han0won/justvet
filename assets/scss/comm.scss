@@ -292,14 +292,11 @@
     margin-top: 40px;
 
     .gnb-box {
+        padding-top: 7px;
         width: 75px;
         height: 35px;
-        border-bottom: 1px solid $gray-200;
-    }
-
-    .digestive {
-        color: $primary;
-        border-bottom: 1px solid $primary;
+        font-size: 14px;
+        border-bottom: 1px solid $gray-100;
     }
 }
 

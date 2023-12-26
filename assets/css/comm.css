@@ -541,13 +541,11 @@ legend {
   margin-top: 40px;
 }
 .gnb-sub .gnb-box {
+  padding-top: 7px;
   width: 75px;
   height: 35px;
-  border-bottom: 1px solid #8d8d8d;
-}
-.gnb-sub .digestive {
-  color: #00AEAA;
-  border-bottom: 1px solid #00AEAA;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f3f5;
 }
 
 .visual-area {
@@ -837,6 +835,11 @@ form .counsel-btn {
   color: #fff;
 }
 
+.gnb-sub .hospital {
+  color: #00AEAA;
+  border-color: #8d8d8d;
+}
+
 .sub-intro {
   font-family: "SOYOMapleBoldTTF";
   font-size: 32px;
@@ -970,6 +973,7 @@ form .counsel-btn {
   justify-content: center;
   width: 265px;
   height: 265px;
+  margin-bottom: 15px;
   color: #fff;
   background-color: #79C3B8;
   border-radius: 265px;
@@ -981,9 +985,14 @@ form .counsel-btn {
   font-size: 28px;
 }
 .hospital-value .v2 {
-  margin: 36px 0;
+  margin: 21px 0 36px;
   font-size: 14px;
   color: #8d8d8d;
+}
+
+.gnb-sub .digestive {
+  color: #00AEAA;
+  border-color: #8d8d8d;
 }
 
 h2 {
@@ -1043,13 +1052,15 @@ h2 {
 .digestive-checkup ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .digestive-checkup li {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  margin-bottom: 8px;
+  width: 49%;
   height: 188px;
   border: 1px solid #8d8d8d;
 }
@@ -1075,13 +1086,25 @@ h2 {
   text-align: center;
   margin-bottom: 40px;
 }
-.digestive-food ul {
-  display: flex;
-  overflow: hidden;
+.digestive-food .swiper {
+  width: 100%;
+  height: 100%;
 }
-.digestive-food li {
+.digestive-food .swiper-slide {
+  width: 249px;
+  font-size: 18px;
+  background: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.digestive-food .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .digestive-food span {
   padding: 15px 0 10px 26px;
@@ -1090,7 +1113,7 @@ h2 {
 }
 .digestive-food p {
   padding: 13px 0 16px 26px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .digestive-food .food-image {
   width: 249px;
