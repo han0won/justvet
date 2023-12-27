@@ -475,7 +475,7 @@ legend {
 #footer .f-top .phone-counsel {
   display: flex;
   align-items: center;
-  gap: 66px;
+  gap: 58px;
 }
 #footer .f-top p {
   font-size: 28px;
@@ -484,7 +484,7 @@ legend {
 #footer .f-top .clinic-hours {
   display: flex;
   align-items: flex-start;
-  gap: 66px;
+  gap: 58px;
   margin-top: 40px;
 }
 #footer .f-top .txt {
@@ -506,6 +506,10 @@ legend {
 }
 #footer .f-top dd {
   padding-left: 40px;
+}
+#footer .f-top i {
+  padding-right: 10px;
+  color: #fff;
 }
 #footer .f-bottom p {
   font-style: normal;
@@ -583,21 +587,24 @@ legend {
   line-height: 36px;
 }
 
-.intro .int-inner {
-  overflow: hidden;
+.intro {
+  padding-bottom: 0;
 }
-.intro ul {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 36px;
+.intro .swiper-slide {
+  width: 79%;
 }
-.intro li {
-  margin-right: 24px;
+.intro .int-slide-wrap {
+  width: 100%;
 }
 .intro .int-image {
+  margin-top: 36px;
   margin-bottom: 24px;
   line-height: 0;
   background-size: cover;
+}
+.intro img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .intro strong {
   font-size: 20px;
@@ -605,16 +612,16 @@ legend {
 }
 .intro p {
   margin-top: 12px;
+  padding-bottom: 80px;
   font-size: 14px;
   color: #fff;
 }
 .intro .int-box {
   position: absolute;
   z-index: -1000;
-  top: auto;
-  left: 0;
   width: 100%;
-  bottom: -133px;
+  left: 1px;
+  bottom: -164px;
   height: 200px;
   background-color: #00AEAA;
 }
@@ -632,6 +639,10 @@ legend {
   align-items: center;
   width: calc(50% - 10px);
   height: 148px;
+  opacity: 0.7;
+}
+.treat li:hover {
+  opacity: 1;
 }
 .treat .trt-internal {
   background-image: url(../../images/main/모바일-내과.png);
@@ -695,6 +706,7 @@ legend {
 }
 .map .address {
   display: grid;
+  align-items: center;
   grid-template-columns: 20px 1fr;
   grid-template-rows: 20px 1fr;
   gap: 12px;
@@ -719,12 +731,23 @@ legend {
   font-size: 12px;
   text-align: center;
 }
+.map i {
+  color: #383838;
+}
+.map .map-subway {
+  align-items: center;
+}
+.map .map-bus {
+  align-items: start;
+}
+.map .map-bus i {
+  padding-top: 7px;
+}
 .map .map-subway,
 .map .map-bus {
   margin-top: 36px;
   display: grid;
   grid-template-columns: auto 1fr;
-  align-items: start;
   -moz-column-gap: 12px;
        column-gap: 12px;
 }
@@ -780,6 +803,14 @@ legend {
   font-family: SOYOMapleBoldTTF;
   font-size: 20px;
   color: #fff;
+}
+.counsel .privacy {
+  display: flex;
+  align-items: center;
+}
+.counsel i {
+  color: #fff;
+  padding-right: 5px;
 }
 
 form label {
@@ -881,6 +912,8 @@ form .counsel-btn {
   bottom: -133px;
   height: 322px;
   background-color: #00AEAA;
+  background-image: url(../../images/sub/1-reason.png);
+  background-size: cover;
 }
 .hospital-reason h2 {
   margin-bottom: 72px;
@@ -971,6 +1004,7 @@ form .counsel-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 265px;
   height: 265px;
   margin-bottom: 15px;
@@ -988,6 +1022,29 @@ form .counsel-btn {
   margin: 21px 0 36px;
   font-size: 14px;
   color: #8d8d8d;
+}
+.hospital-value .value-img1,
+.hospital-value .value-img2,
+.hospital-value .value-img3 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.hospital-value .value-img1 {
+  background-image: url(../../images/sub/value1.png);
+  background-size: cover;
+}
+.hospital-value .value-img2 {
+  background-image: url(../../images/sub/value2.png);
+  background-size: cover;
+}
+.hospital-value .value-img3 {
+  background-image: url(../../images/sub/value3.png);
+  background-size: cover;
+}
+
+:root {
+  --swiper-theme-color: #79C3B8 !important;
 }
 
 .gnb-sub .digestive {
@@ -1026,7 +1083,6 @@ h2 {
 .digestive-symptom p {
   padding-top: 16px;
   padding-bottom: 22px;
-  color: #676767;
 }
 .digestive-symptom ul {
   display: flex;
@@ -1034,11 +1090,20 @@ h2 {
   align-items: center;
 }
 .digestive-symptom li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   width: 235px;
   height: 50px;
   margin-top: 14px;
   border-radius: 235px;
   background-color: #fff;
+}
+.digestive-symptom li i {
+  margin-left: 70px;
+  margin-right: 12px;
+  color: #00AEAA;
 }
 .digestive-symptom li p {
   padding: 14px 0;
@@ -1089,6 +1154,7 @@ h2 {
 .digestive-food .swiper {
   width: 100%;
   height: 100%;
+  padding: 0 0 60px;
 }
 .digestive-food .swiper-slide {
   width: 249px;
@@ -1126,14 +1192,18 @@ h2 {
   background-image: url(../../images/sub/2-grape.png);
 }
 .digestive-food .milk {
-  background-image: url();
+  background-image: url(../../images/sub/2-milk.png);
 }
 .digestive-food .coffee {
-  background-image: url();
+  background-image: url(../../images/sub/2-coffee.png);
 }
 .digestive-food .nut {
-  background-image: url();
+  background-image: url(../../images/sub/2-nut.png);
 }
 .digestive-food .dried {
-  background-image: url();
+  background-image: url(../../images/sub/2-dried.png);
+}
+.digestive-food .swiper-horizontal > .swiper-pagination-bullets, .digestive-food .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: auto;
+  bottom: 0;
 }/*# sourceMappingURL=comm.css.map */

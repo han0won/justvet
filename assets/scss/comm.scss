@@ -216,7 +216,7 @@
         .phone-counsel {
             display: flex;
             align-items: center;
-            gap: 66px;
+            gap: 58px;
         }
         p {
             font-size: 28px;
@@ -225,7 +225,7 @@
         .clinic-hours {
             display: flex;
             align-items: flex-start;
-            gap: 66px;
+            gap: 58px;
             margin-top: 40px;
         }
         .txt {
@@ -249,6 +249,10 @@
         dd {
             padding-left: 40px;
         }
+        i {
+            padding-right: 10px;
+            color: $white;
+        }
     }
       
     .f-bottom {
@@ -258,7 +262,6 @@
         padding: 40px 25px 0;
         font-size: 12px;
         }
-
         .hospital {
             border-top: 1px solid $gray-200;
         }

@@ -36,38 +36,39 @@
 }
   
 .intro {
-    .int-inner {
-        overflow: hidden;
+    padding-bottom: 0;
+
+    .swiper-slide {
+        width: 79%;
     }
-    ul {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 36px;
-    }
-    li {
-        margin-right: 24px;
+    .int-slide-wrap {
+        width: 100%;
     }
     .int-image {
+        margin-top: 36px;
         margin-bottom: 24px;
         line-height: 0;
         background-size : cover;
     }
+    img {
+        object-fit: cover;
+    }
     strong {
         font-size: 20px;
-            color: $white;
+        color: $white;
     }
     p {
         margin-top: 12px;
+        padding-bottom: 80px;
         font-size: 14px;
         color: $white;
     }   
     .int-box {
         position: absolute;
         z-index: -1000;
-        top: auto;
-        left: 0;
         width: 100%;
-        bottom: -133px;
+        left: 1px;
+        bottom: -164px;
         height: 200px;
         background-color: $primary;
     }
@@ -87,6 +88,10 @@
         align-items: center;
         width: calc(50% - 10px);
         height: 148px;
+        opacity: 0.7;
+    }
+    li:hover {
+        opacity: 1;
     }
     .trt-internal {
         background-image: url(../../images/main/모바일-내과.png);
@@ -154,6 +159,7 @@
     }
     .address {
         display: grid;
+        align-items: center;
         grid-template-columns: 20px 1fr;
         grid-template-rows: 20px 1fr;
         gap: 12px;
@@ -179,12 +185,23 @@
         font-size: 12px;
         text-align: center;
     }
+    i {
+        color: $txtDefult;
+    }
+    .map-subway {
+        align-items: center;
+    }
+    .map-bus {
+        align-items: start;
+        i {
+            padding-top: 7px;
+        }
+    }
     .map-subway,
     .map-bus {
         margin-top: 36px;
         display: grid;
         grid-template-columns: auto 1fr;
-        align-items: start;
         column-gap: 12px;
     } 
     dt {
@@ -240,6 +257,14 @@
       font-family: SOYOMapleBoldTTF;
       font-size: 20px;
       color: $white;
+    }
+    .privacy {
+        display: flex;
+        align-items: center
+    }
+    i {
+        color: $white;
+        padding-right: 5px;
     }
 }
   

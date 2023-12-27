@@ -102,30 +102,44 @@
                             </h2>
                     </div>
                         <div class="int-inner">
-                                <ul>
-                                    <li>
-                                        <div class="int-image">
-                                            <img src="./images/main/모바일-입원공간.png" alt="입원공간 사진">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="int-slide-wrap">
+                                            <div class="int-image">
+                                                <img src="./images/main/모바일-입원공간.png" alt="입원공간 사진">
+                                            </div>
+                                            <strong>입원공간</strong>
+                                            <p>집중치료실, 격리입원실, 일반입원실과 임상 병리실,
+                                                <br> 
+                                                방사선검사실, 수술실, 반려동물 관리실
+                                                <br>
+                                                그리고 그루밍실, 호텔까지 갖추고 있습니다.</p>
                                         </div>
-                                        <strong>입원공간</strong>
-                                        <p>집중치료실, 격리입원실, 일반입원실과 임상 병리실,
-                                            <br> 
-                                            방사선검사실, 수술실, 반려동물 관리실
-                                            <br>
-                                            그리고 그루밍실, 호텔까지 갖추고 있습니다.</p>
-                                    </li>
-                                    <li>
-                                        <div class="int-image">
-                                            <img src="./images/main/모바일-검사장비.png" alt="검사장비 사진">
+                                    </div>
+                                        <div class="swiper-slide">
+                                            <div class="int-image">
+                                                <img src="./images/main/모바일-검사장비.png" alt="검사장비 사진">
+                                            </div>
+                                            <strong>검사장비</strong>
+                                            <p>최신 초음파 장비, CR X-ray, 혈청화학검사기,
+                                                <br>
+                                                혈구분석기, 치과유닛, 치과 X-ray, 고압멸균기,
+                                                <br>
+                                                마취 모니터기까지 다양한 장비가 준비되어 있습니다.</p>
                                         </div>
-                                        <strong>검사장비</strong>
-                                        <p>최신 초음파 장비, CR X-ray, 혈청화학검사기,
-                                            <br>
-                                            혈구분석기, 치과유닛, 치과 X-ray, 고압멸균기,
-                                            <br>
-                                            마취 모니터기까지 다양한 장비가 준비되어 있습니다.</p>
-                                    </li>
-                                </ul>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                            <script>
+                                var swiper = new Swiper(".mySwiper", {
+                                  scrollbar: {
+                                    el: ".swiper-scrollbar",
+                                    hide: true,
+                                  },
+                                });
+                            </script>
                         </div>
                         <div class="int-box"></div>
                 </section>
@@ -147,7 +161,6 @@
                                             <p>내과</p>
                                             <button>+</button>
                                         </a>
-                                    
                                 </li>
                                 <li class="trt-surgery">
                                         <a href="#">
@@ -210,7 +223,7 @@
                     </div>
                     <div class="map-inner">
                         <div class="address">
-                            <p>맵</p>
+                            <i class="fa-solid fa-location-dot"></i>
                             <p>경기 오산시 원동로 6 파크스퀘어 105</p>
                             <div class="map-btn-wrap">
                                 <div class="map-btn">
@@ -222,14 +235,14 @@
                             </div>
                         </div>
                         <div class="map-subway">
-                            <p>맵</p>
+                            <i class="fa-solid fa-train-subway"></i>
                             <dl>
                                 <dt class="line-1">1호선</dt>
                                 <dd>오산역 1번 출구</dd>
                             </dl>
                         </div>
                         <div class="map-bus">
-                            <p>맵</p>
+                            <i class="fa-solid fa-bus-simple"></i>
                             <dl>
                                 <dt class="general">일반</dt>
                                 <dd>7-5, 116-1, 116-2, 116-5</dd>
@@ -261,6 +274,7 @@
                             <textarea name="question" id="question" placeholder="상담내용을 입력해주세요."></textarea>
                         </div>
                         <div class="privacy">
+                            <i class="fa-regular fa-circle-check"></i>
                             <span>개인정보수집 및 이용 동의</span>
                         </div>
                         <input type="submit" class="counsel-btn" value="신청하기">
@@ -272,14 +286,14 @@
             <div class="f-top">
                 <div class="phone-counsel">
                     <div class="phont-txt">
-                        <a href="#">맵</a>
+                        <i class="fa-solid fa-phone-volume"></i>
                         <span>전화상담</span>
                     </div>
                     <p>031. 378. 1514</p>
                 </div>
                 <div class="clinic-hours">
                     <div class="hours-txt">
-                        <a href="#">맵</a>
+                        <i class="fa-solid fa-clock"></i>
                         <span>진료시간</span>
                     </div>
                         <div class="txt">
