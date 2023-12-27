@@ -422,9 +422,10 @@ legend {
 #gnb .depth1 > li > a {
   display: flex;
   justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
-  padding: 0 50px;
+  padding: 0 30px 0 40px;
   white-space: nowrap;
   font-size: 18px;
   color: #fff;
@@ -638,11 +639,29 @@ legend {
   justify-content: center;
   align-items: center;
   width: calc(50% - 10px);
-  height: 148px;
+  height: 150px;
   opacity: 0.7;
 }
 .treat li:hover {
   opacity: 1;
+}
+.treat .trt-icon {
+  width: 42px;
+  height: 42px;
+  background-size: contain;
+}
+.treat .internal {
+  background-image: url(../../images/sub/internal.png);
+  background-repeat: no-repeat;
+}
+.treat .surgery {
+  background-image: url(../../images/sub/surgery.png);
+}
+.treat .dental {
+  background-image: url(../../images/sub/dental.png);
+}
+.treat .picture {
+  background-image: url(../../images/sub/picture.png);
 }
 .treat .trt-internal {
   background-image: url(../../images/main/모바일-내과.png);
@@ -1129,6 +1148,28 @@ h2 {
   height: 188px;
   border: 1px solid #8d8d8d;
 }
+.digestive-checkup .checkup-img {
+  width: 64px;
+  height: 64px;
+}
+.digestive-checkup .blood-img {
+  background-image: url(../../images/sub/blood.png);
+}
+.digestive-checkup .radiation-img {
+  background-image: url(../../images/sub/radiation.png);
+}
+.digestive-checkup .ultrasonic-img {
+  background-image: url(../../images/sub/ultrasonic.png);
+}
+.digestive-checkup .stool-img {
+  background-image: url(../../images/sub/stool.png);
+}
+.digestive-checkup .urine-img {
+  background-image: url(../../images/sub/urine.png);
+}
+.digestive-checkup .kit-img {
+  background-image: url(../../images/sub/kit.png);
+}
 .digestive-checkup .number {
   width: 25px;
   height: 25px;
@@ -1139,7 +1180,7 @@ h2 {
   background-color: #00AEAA;
 }
 .digestive-checkup .name {
-  margin-top: 15px;
+  margin: 10px 0 12px;
   font-size: 20px;
   font-weight: bold;
 }

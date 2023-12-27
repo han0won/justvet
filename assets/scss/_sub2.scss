@@ -91,6 +91,28 @@ h2 {
         height: 188px;
         border: 1px solid $gray-200;
     }
+    .checkup-img {
+        width: 64px;
+        height: 64px;
+    }
+    .blood-img {
+        background-image: url(../../images/sub/blood.png);
+    }
+    .radiation-img {
+        background-image: url(../../images/sub/radiation.png);
+    }
+    .ultrasonic-img {
+        background-image: url(../../images/sub/ultrasonic.png);
+    }
+    .stool-img {
+        background-image: url(../../images/sub/stool.png);
+    }
+    .urine-img {
+        background-image: url(../../images/sub/urine.png);
+    }
+    .kit-img {
+        background-image: url(../../images/sub/kit.png);
+    }
     .number {
         width: 25px;
         height: 25px;
@@ -101,7 +123,7 @@ h2 {
         background-color: $primary;
     }
     .name {
-        margin-top: 15px;
+        margin: 10px 0 12px;
         font-size: 20px;
         font-weight: bold;
     }

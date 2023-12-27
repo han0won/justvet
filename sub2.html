@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./assets/css/comm.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/af95449672.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -25,14 +27,17 @@
                     <div class="gnb-wrap">
                         <input type="checkbox" name="gnbnav" id="gnbnav" class="inp-burger">
                         <label for="gnbnav" class="label-burger">
+                            <!-- <span class="bar"></span>
                             <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
+                            <span class="bar"></span> -->
+                            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                             <div class="blind">전체 메뉴 보기</div>
                         </label>
                         <nav id="gnb">
                             <ul class="depth1">
-                                <li><a href="#">병원소개</a>
+                                <li><a href="#">병원소개
+                                    <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                                </a>
                                     <ul class="depth2">
                                         <li><a href="http://127.0.0.1:5502/sub1.html">병원소개</a></li>
                                         <li><a href="#">케어 서비스 안내</a></li>
@@ -40,7 +45,9 @@
                                         <li><a href="#">오시는 길</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">진료안내</a>
+                                <li><a href="#">진료안내
+                                    <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                                </a>
                                     <ul class="depth2">
                                         <li><a href="http://127.0.0.1:5502/sub2.html">내과진료</a></li>
                                         <li><a href="#">외과진료</a></li>
@@ -48,13 +55,17 @@
                                         <li><a href="#">영상진료</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">동물지식</a>
+                                <li><a href="#">동물지식
+                                    <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                                </a>
                                     <ul class="depth2">
                                         <li><a href="#">반려견에 대한 상식</a></li>
                                         <li><a href="#">반려묘에 대한 상식</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">질병상식</a>
+                                <li><a href="#">질병상식
+                                    <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                                </a>
                                     <ul class="depth2">
                                         <li><a href="#">질병상식</a></li>
                                         <li><a href="#">중성화수술</a></li>
@@ -62,7 +73,9 @@
                                         <li><a href="#">치아관리</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">커뮤니티</a>
+                                <li><a href="#">커뮤니티
+                                    <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                                </a>
                                     <ul class="depth2">
                                         <li><a href="#">병원소식</a></li>
                                         <li><a href="#">문의하기</a></li>
@@ -157,26 +170,32 @@
                     <li>
                         <div class="number">01</div>
                         <div class="name">혈액검사</div>
+                        <div class="checkup-img blood-img"></div>
                     </li>
                     <li>
                         <div class="number">02</div>
                         <div class="name">방사선검사</div>
+                        <div class="checkup-img radiation-img"></div>
                     </li>
                     <li>
                         <div class="number">03</div>
                         <div class="name">초음파검사</div>
+                        <div class="checkup-img ultrasonic-img"></div>
                     </li>
                     <li>
                         <div class="number">04</div>
                         <div class="name">분변검사</div>
+                        <div class="checkup-img stool-img"></div>
                     </li>
                     <li>
                         <div class="number">05</div>
                         <div class="name">소변검사</div>
+                        <div class="checkup-img urine-img"></div>
                     </li>
                     <li>
                         <div class="number">06</div>
                         <div class="name">KIT검사</div>
+                        <div class="checkup-img kit-img"></div>
                     </div>
                 </ul>
             </div>
@@ -225,7 +244,11 @@
                         <div class="food-image coffee"></div>
                         <span>커피</span>
                         <div class="food-txt">
-                            <p></p>
+                            <p>
+                                커피에는 카페인이 포함되어 있습니다. 
+                                <br>카페인은 개의 건강을 해칠 뿐만 아니라 
+                                <br>생명에 지장을 줄 수도 있습니다. 
+                            </p>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -242,17 +265,19 @@
                       <div class="swiper-slide">
                         <div class="food-image dried"></div>
                         <span>건어물</span>
+                        <hr />
                         <div class="food-txt">
-                            <p></p>
+                            <p>
+                                건어물에는 각종 조미료들이 첨가되고
+                                <br>염분 또한 높은 편이기 때문에 급여에
+                                <br>주의할 필요가 있습니다.
+                            </p>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-              
                 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-                <!-- Initialize Swiper -->
                 <script>
                     var swiper = new Swiper(".mySwiper", {
                     slidesPerView: "auto",
