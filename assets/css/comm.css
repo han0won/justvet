@@ -289,8 +289,18 @@ legend {
     max-width: none;
   }
 }
+@media screen and (min-width: 421px) {
+  .wrap {
+    max-width: 1280px;
+  }
+}
 #header {
   height: 60px;
+}
+@media screen and (min-width: 421px) {
+  #header {
+    height: 100px;
+  }
 }
 
 #main {
@@ -313,7 +323,6 @@ legend {
 #header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
   padding: 0 25px;
@@ -375,6 +384,21 @@ legend {
   background-color: #fff;
   border-radius: 30px;
   transition: all 0.3;
+}
+@media screen and (min-width: 480px) {
+  #header {
+    max-width: 1280px;
+    padding: 0 80px;
+  }
+  #header .h-inner {
+    margin-top: 0;
+    padding: 33px 0;
+  }
+  #header .logo {
+    width: 219px;
+    height: 35px;
+    background-size: contain;
+  }
 }
 
 #gnb {
@@ -565,6 +589,12 @@ legend {
   border-bottom: 1px solid #f0f3f5;
 }
 
+@media screen and (min-width: 421px) {
+  #container {
+    max-width: 1280px;
+  }
+}
+
 .visual-area {
   padding: 130px 25px 0px;
   background-image: url(../../images/main/모바일-상단배너.png);
@@ -581,12 +611,23 @@ legend {
 }
 .visual-area p {
   text-align: center;
-  padding-bottom: 80px;
-  margin-top: 20px;
+  padding: 20px 0 80px;
   color: #fff;
 }
 @media screen and (max-width: 370px) {
   .visual-area strong {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .visual-area {
+    padding: 256px 0 0 0;
+  }
+  .visual-area strong {
+    font-size: 36px;
+  }
+  .visual-area p {
+    padding: 35px 0 164px;
     font-size: 20px;
   }
 }
@@ -604,6 +645,11 @@ legend {
   font-size: 28px;
   line-height: 36px;
 }
+@media screen and (min-width: 421px) {
+  .main-cont {
+    padding: 0 80px;
+  }
+}
 
 .int-box-wrap {
   position: relative;
@@ -613,7 +659,7 @@ legend {
   padding-bottom: 0;
 }
 .intro .swiper-slide {
-  width: 323px !important;
+  width: 310px !important;
 }
 .intro .int-slide-wrap {
   width: 100%;

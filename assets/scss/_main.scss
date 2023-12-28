@@ -1,3 +1,8 @@
+#container {
+    @media screen and (min-width: 421px) {
+        max-width: 1280px;
+    }
+}
 
 .visual-area {
     padding: 130px 25px 0px;
@@ -15,8 +20,7 @@
     }
     p {
       text-align: center;
-      padding-bottom: 80px;
-      margin-top: 20px;
+      padding: 20px 0 80px;
       color: $white;
     }
     @media screen and (max-width:370px) {
@@ -24,7 +28,16 @@
             font-size: 20px;
         }       
     }
-    
+    @media screen and (min-width: 480px) {
+        padding: 256px 0 0 0;
+        strong {
+            font-size: 36px;
+        }
+        p {
+            padding: 35px 0 164px;
+            font-size: 20px;
+        }
+    }
 }
 
 .main-cont {
@@ -40,6 +53,9 @@
       font-size: 28px;
       line-height: 36px;
     }
+    @media screen and (min-width: 421px) {
+        padding: 0 80px;
+    }
 }
 
 .int-box-wrap {
@@ -50,7 +66,7 @@
     padding-bottom: 0;
 
     .swiper-slide {
-        width: 323px !important;
+        width: 310px !important;
     }
     .int-slide-wrap {
         width: 100%;
