@@ -1,3 +1,4 @@
+
 .visual-area {
     padding: 130px 25px 0px;
     background-image: url(../../images/main/모바일-상단배너.png);
@@ -18,6 +19,12 @@
       margin-top: 20px;
       color: $white;
     }
+    @media screen and (max-width:370px) {
+        strong {
+            font-size: 20px;
+        }       
+    }
+    
 }
 
 .main-cont {
@@ -34,12 +41,16 @@
       line-height: 36px;
     }
 }
-  
+
+.int-box-wrap {
+    position: relative;
+}
+
 .intro {
     padding-bottom: 0;
 
     .swiper-slide {
-        width: 79%;
+        width: 323px !important;
     }
     .int-slide-wrap {
         width: 100%;
@@ -63,15 +74,14 @@
         font-size: 14px;
         color: $white;
     }   
-    .int-box {
-        position: absolute;
-        z-index: -1000;
-        width: 100%;
-        left: 1px;
-        bottom: -164px;
-        height: 200px;
-        background-color: $primary;
-    }
+}
+.int-box {
+    position: absolute;
+    z-index: -1000;
+    width: 100%;
+    top: 427px;
+    height: 250px;
+    background-color: $primary;
 }
 
 .treat {
@@ -168,6 +178,14 @@
     p {
         margin-top: 20px;
         font-size: 14px;
+    }
+    @media screen and (max-width:370px) {
+        strong {
+            font-size: 18px;
+        }
+        p {
+            font-size: 12px;
+        }
     }
 }
   
@@ -335,4 +353,11 @@ form {
     color: $white;
     }
 }
+
+@media screen and (max-width:370px) {  
+    .main-cont h2 {
+        font-size: 24px;
+    } 
+}
+
 

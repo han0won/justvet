@@ -254,6 +254,23 @@
             padding-right: 10px;
             color: $white;
         }
+        @media screen and (max-width:370px) {
+            dt,
+            dd,
+            span {
+                font-size: 12px;
+            }
+            .phone-counsel,
+            .clinic-hours {
+                gap: 25px;
+            }
+            i {
+                padding-right: 5px;
+            }
+            dd {
+                padding-left: 20px;
+            }
+        }
     }
       
     .f-bottom {

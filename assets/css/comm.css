@@ -512,6 +512,23 @@ legend {
   padding-right: 10px;
   color: #fff;
 }
+@media screen and (max-width: 370px) {
+  #footer .f-top dt,
+  #footer .f-top dd,
+  #footer .f-top span {
+    font-size: 12px;
+  }
+  #footer .f-top .phone-counsel,
+  #footer .f-top .clinic-hours {
+    gap: 25px;
+  }
+  #footer .f-top i {
+    padding-right: 5px;
+  }
+  #footer .f-top dd {
+    padding-left: 20px;
+  }
+}
 #footer .f-bottom p {
   font-style: normal;
   color: #8d8d8d;
@@ -573,6 +590,11 @@ legend {
   margin-top: 20px;
   color: #fff;
 }
+@media screen and (max-width: 370px) {
+  .visual-area strong {
+    font-size: 20px;
+  }
+}
 
 .main-cont {
   padding: 80px 25px 80px;
@@ -588,11 +610,15 @@ legend {
   line-height: 36px;
 }
 
+.int-box-wrap {
+  position: relative;
+}
+
 .intro {
   padding-bottom: 0;
 }
 .intro .swiper-slide {
-  width: 79%;
+  width: 323px !important;
 }
 .intro .int-slide-wrap {
   width: 100%;
@@ -617,13 +643,13 @@ legend {
   font-size: 14px;
   color: #fff;
 }
-.intro .int-box {
+
+.int-box {
   position: absolute;
   z-index: -1000;
   width: 100%;
-  left: 1px;
-  bottom: -164px;
-  height: 200px;
+  top: 427px;
+  height: 250px;
   background-color: #00AEAA;
 }
 
@@ -718,6 +744,14 @@ legend {
 .care-service p {
   margin-top: 20px;
   font-size: 14px;
+}
+@media screen and (max-width: 370px) {
+  .care-service strong {
+    font-size: 18px;
+  }
+  .care-service p {
+    font-size: 12px;
+  }
 }
 
 .map .map-wrapper {
@@ -885,6 +919,11 @@ form .counsel-btn {
   color: #fff;
 }
 
+@media screen and (max-width: 370px) {
+  .main-cont h2 {
+    font-size: 24px;
+  }
+}
 .gnb-sub .hospital {
   color: #00AEAA;
   border-color: #8d8d8d;
@@ -922,17 +961,24 @@ form .counsel-btn {
   margin-top: 24px;
 }
 
-.hospital-reason .reason-box {
+.reason-box-wrap {
+  position: relative;
+}
+
+.reason-box {
   position: absolute;
   z-index: -1000;
-  top: 846px;
+  top: 0;
   left: 0;
   width: 100%;
-  bottom: -133px;
   height: 322px;
   background-color: #00AEAA;
   background-image: url(../../images/sub/1-reason.png);
   background-size: cover;
+}
+
+.hospital-reason {
+  padding-bottom: 20px;
 }
 .hospital-reason h2 {
   margin-bottom: 72px;
@@ -946,19 +992,31 @@ form .counsel-btn {
 .hospital-reason li {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 60px;
+  padding-top: 85px;
   width: 325px;
   height: 403px;
   border-top: 5px solid #00AEAA;
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.hospital-reason .reason-1,
+.hospital-reason .reason-2,
+.hospital-reason .reason-3 {
+  position: relative;
+}
+.hospital-reason i {
+  position: absolute;
+  top: 45px;
+  left: 147px;
+  color: #00AEAA;
+}
 .hospital-reason h3 {
   font-size: 30px;
 }
 .hospital-reason p {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: left;
   font-size: 18px;
   color: #676767;
