@@ -35,6 +35,11 @@
         color: $gray-300;
         margin-top: 24px;
     }
+    @media screen and (max-width:370px) {
+        p {
+            font-size: 13px;
+        }
+    }
 }
 
 .reason-box-wrap {

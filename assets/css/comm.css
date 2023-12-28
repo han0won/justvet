@@ -314,7 +314,7 @@ legend {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   z-index: 1000;
   padding: 0 25px;
 }
@@ -328,15 +328,10 @@ legend {
 }
 #header .h-inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
   margin-top: 20px;
-}
-#header .col-right {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
 }
 #header .logo a {
   display: flex;
@@ -890,9 +885,6 @@ form textarea::-moz-placeholder {
 form textarea::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-form textarea {
-  height: 150px;
-}
 form input,
 form textarea {
   width: 100%;
@@ -902,6 +894,10 @@ form textarea {
   border: 0;
   border-radius: 5px;
   font-family: "SUITE-Regular";
+}
+form textarea {
+  height: 150px;
+  padding-top: 15px;
 }
 form .privacy {
   margin: 12px 0 40px;
@@ -959,6 +955,11 @@ form .counsel-btn {
   font-size: 14px;
   color: #676767;
   margin-top: 24px;
+}
+@media screen and (max-width: 370px) {
+  .hospital-intro p {
+    font-size: 13px;
+  }
 }
 
 .reason-box-wrap {
@@ -1153,6 +1154,14 @@ h2 {
   font-size: 14px;
   color: #676767;
 }
+@media screen and (max-width: 370px) {
+  .digestive-intro h2 {
+    font-size: 26px;
+  }
+  .digestive-intro .dig-tit {
+    font-size: 12px;
+  }
+}
 
 .digestive-symptom {
   background-color: #f0f3f5;
@@ -1276,9 +1285,13 @@ h2 {
   font-size: 28px;
   font-weight: bold;
 }
+.digestive-food .food-txt {
+  border-top: 1px solid #f0f3f5;
+}
 .digestive-food p {
-  padding: 13px 0 16px 26px;
+  padding: 13px 0 16px 25px;
   font-size: 14px;
+  text-align: left;
 }
 .digestive-food .food-image {
   width: 249px;

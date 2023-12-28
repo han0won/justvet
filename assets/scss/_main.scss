@@ -324,9 +324,6 @@ form {
     textarea::placeholder {
         color: rgba(255, 255, 255,0.7);
     }
-    textarea {
-        height: 150px;
-    }
     input,
     textarea {
         width: 100%;
@@ -336,6 +333,10 @@ form {
         border: 0;
         border-radius: 5px;
         font-family: $font-family;
+    }
+    textarea {
+        height: 150px;
+        padding-top: 15px;
     }
     .privacy {
         margin: 12px 0 40px;

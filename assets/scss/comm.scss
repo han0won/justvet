@@ -46,7 +46,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     z-index: 1000;
     padding: 0 25px;
     
@@ -59,13 +59,11 @@
         background-size: 128px 20px;
     }
     .h-inner {
-        @include flex($justify:space-between);
-        margin-top: 20px;
-    }
-    .col-right {
         display: flex;
-        flex-direction: row-reverse;
-        align-items: center
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
     }
     .logo a {
         display: flex;

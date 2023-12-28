@@ -34,6 +34,14 @@ h2 {
         font-size: 14px;
         color: $gray-300;
     }
+    @media screen and (max-width:370px) {
+        h2 {
+            font-size: 26px;
+        }
+        .dig-tit {
+            font-size: 12px;
+        }
+    }
 }
 
 .digestive-symptom {
@@ -161,9 +169,13 @@ h2 {
         font-size: 28px;
         font-weight: bold;
     }
+    .food-txt {
+        border-top: 1px solid $gray-100;
+    }
     p {
-        padding: 13px 0 16px 26px;
+        padding: 13px 0 16px 25px;
         font-size: 14px;
+        text-align: left;
     }
     .food-image {
         width: 249px;
