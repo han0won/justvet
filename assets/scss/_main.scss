@@ -23,6 +23,9 @@
       padding: 20px 0 80px;
       color: $white;
     }
+    .vis-p-w {
+        display: none;
+    }
     @media screen and (max-width:370px) {
         strong {
             font-size: 20px;
@@ -36,6 +39,14 @@
         p {
             padding: 35px 0 164px;
             font-size: 20px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .vis-p-m {
+            display: none;
+        }
+        .vis-p-w {
+            display: block;
         }
     }
 }
@@ -114,7 +125,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        padding: 80px 80px 0;
+        padding: 80px 80px 140px;
 
         em,
         h2 {
@@ -140,7 +151,6 @@
 .int-box-wrap {
     position: relative;
 }
-
 .intro {
     padding-bottom: 0;
 
@@ -276,16 +286,19 @@
         transition: all 0.2s linear;
     }
     li:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
+    }
+    .trt-w {
+        display: none;
     }
     .trt-img {
         width: 42px;
         height: 42px;
         background-size : contain;
+        background-repeat: no-repeat;
     }
     .internal {
         background-image: url(../../images/sub/internal.png);
-        background-repeat: no-repeat;
     }
     .surgery {
         background-image: url(../../images/sub/surgery.png);
@@ -326,29 +339,84 @@
         height: 25px;
         border-radius: 100px;
         color: $white;
-        background-color: $secondary;
+        background-color: $primary;
     }
     .trt-internal,
     .trt-surgery {
         margin-bottom: 20px;
     }
     @media screen and (min-width: 654px) {
+        p {
+            margin-right: 10px;
+            font-size: 42px;
+        }
         .trt-inner ul {
             flex-wrap: nowrap;
+        }
+        .trt-m {
+            display: none;
+        }
+        .trt-w {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+        .trt-img {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .trt-btn-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 14px;
 
-            li {
-                width: calc(25% - 6px);
-                height: 557px;
-                margin-bottom: 0;
+            p {
+                display: inline-block;
+                text-align: center;
+                margin:  0 5px 5px 0;
+                padding: 5px 10px;
+                font-size: 12px;
+                border: 1px solid $white;
+                border-radius: 20px;
             }
         }
+        li {
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: calc(25% - 6px);
+            height: 557px;
+            margin-bottom: 0;
+            padding-top: 200px;
+        }
+        button {
+            width: 40px;
+            height: 40px;
+            font-size: 36px;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        li {
+            padding-top: 270px;
+        }        
+    }
+    @media screen and (min-width: 1240px) {
+        li {
+            padding-top: 290px;
+            width: calc(25% - 20px);
+        }        
     }
 }
-
 
 .care-service {
     background-color: $gray-100;
 
+    .care-wrap-w {
+        display: none;
+    }
     .care-image {
         height: 180px;
         margin-top: 36px;
@@ -371,6 +439,44 @@
         }
         p {
             font-size: 12px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .care-wrap-m {
+            display: none;
+        }
+        .care-wrap-w {
+            display: flex;
+            justify-content: space-between;
+        
+            .care-image,
+            .care-inner {
+                width: 50%;
+            }
+            .care-image {
+                margin: 0;
+                height: 391px;
+            }
+            .care-inner {
+                padding-left: 70px;
+            }
+            em,
+            h2 {
+                text-align: left;
+            }
+        }
+    }
+    @media screen and (max-width: 905px) {
+        .care-wrap-w{ 
+
+            .care-image {
+                width: 45%;
+                height: 206px;
+            }
+            .care-inner {
+                width: 55%;
+                padding-left: 30px;
+            }
         }
     }
 }
@@ -489,7 +595,6 @@
         padding-right: 5px;
     }
 }
-  
 
 form { 
     label {
@@ -546,5 +651,3 @@ form {
         font-size: 24px;
     } 
 }
-
-
