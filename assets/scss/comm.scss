@@ -319,7 +319,12 @@
             strong {
                 display: block;
             }
+            img {
+                width: 200px;
+                filter: grayscale(100%);
+            }
             strong {
+                margin-right: 20px;
                 color: $white;
             }
             .hospital {
@@ -336,6 +341,9 @@
             }
             p {
                 padding: 0;
+            }
+            .f-hospital {
+                padding: 20px 0;
             }
             .copyright {
                 padding: 0;

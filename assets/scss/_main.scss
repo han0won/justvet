@@ -706,23 +706,43 @@
             justify-content: space-between;
         }
         .counsel {
+            padding: 80px;
             width: 50%;
-        }
-        form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
 
-            .counsel-btn {
-                width: 50%;
+            h3 {
+                font-size: 36px;
             }
-        }
-        .form-wrap {
-            width: 50%;
-            padding-right: 36px;
-        }
-        .txtarea-box {
-            width: 50%;
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .form-wrap {
+                    width: 50%;
+                    padding-right: 36px;
+                }
+                label {
+                    position: static;
+                    visibility: visible;
+                    font-size: 14px;
+                    color: $white;
+                }
+                #name {
+                    margin-bottom: 22px;
+                }
+                .txtarea-box {
+                    width: 50%;
+                    padding-bottom: 20px;
+                }
+                .privacy {
+                    align-items: flex-start;
+                    margin: 0;
+                }
+                .counsel-btn {
+                    width: 50%;
+                    margin: 0;
+                }
+            }
         }
         .f-top {
             width: 50%;

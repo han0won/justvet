@@ -571,7 +571,12 @@ legend {
   #footer .f-bottom strong {
     display: block;
   }
+  #footer .f-bottom img {
+    width: 200px;
+    filter: grayscale(100%);
+  }
   #footer .f-bottom strong {
+    margin-right: 20px;
     color: #fff;
   }
   #footer .f-bottom .hospital {
@@ -588,6 +593,9 @@ legend {
   }
   #footer .f-bottom p {
     padding: 0;
+  }
+  #footer .f-bottom .f-hospital {
+    padding: 20px 0;
   }
   #footer .f-bottom .copyright {
     padding: 0;
@@ -1323,22 +1331,41 @@ legend {
     justify-content: space-between;
   }
   #footer .counsel {
+    padding: 80px;
     width: 50%;
   }
-  #footer form {
+  #footer .counsel h3 {
+    font-size: 36px;
+  }
+  #footer .counsel form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #footer form .counsel-btn {
-    width: 50%;
-  }
-  #footer .form-wrap {
+  #footer .counsel form .form-wrap {
     width: 50%;
     padding-right: 36px;
   }
-  #footer .txtarea-box {
+  #footer .counsel form label {
+    position: static;
+    visibility: visible;
+    font-size: 14px;
+    color: #fff;
+  }
+  #footer .counsel form #name {
+    margin-bottom: 22px;
+  }
+  #footer .counsel form .txtarea-box {
     width: 50%;
+    padding-bottom: 20px;
+  }
+  #footer .counsel form .privacy {
+    align-items: flex-start;
+    margin: 0;
+  }
+  #footer .counsel form .counsel-btn {
+    width: 50%;
+    margin: 0;
   }
   #footer .f-top {
     width: 50%;
