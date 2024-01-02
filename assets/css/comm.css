@@ -1318,10 +1318,6 @@ legend {
   }
 }
 @media screen and (min-width: 1024px) {
-  #footer f-botton .f-logo-w,
-  #footer f-botton strong {
-    display: block;
-  }
   #footer .f-wrap {
     display: flex;
     justify-content: space-between;
