@@ -312,7 +312,7 @@ legend {
 }
 
 #footer {
-  height: 503px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1280px) {
@@ -507,7 +507,7 @@ legend {
   display: flex;
   align-items: flex-start;
   gap: 58px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 #footer .f-top .txt {
   display: flex;
@@ -524,7 +524,7 @@ legend {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: auto 1fr;
-  row-gap: 10px;
+  row-gap: 5px;
 }
 #footer .f-top dd {
   padding-left: 40px;
@@ -550,6 +550,10 @@ legend {
     padding-left: 20px;
   }
 }
+#footer .f-bottom .f-logo-w,
+#footer .f-bottom strong {
+  display: none;
+}
 #footer .f-bottom p {
   font-style: normal;
   color: #8d8d8d;
@@ -561,6 +565,33 @@ legend {
 }
 #footer .f-bottom .copyright {
   padding: 10px 25px 40px;
+}
+@media screen and (min-width: 1024px) {
+  #footer .f-bottom .f-logo-w,
+  #footer .f-bottom strong {
+    display: block;
+  }
+  #footer .f-bottom strong {
+    color: #fff;
+  }
+  #footer .f-bottom .hospital {
+    display: flex;
+    padding: 70px 80px 80px;
+  }
+  #footer .f-bottom .strong-wrap {
+    display: flex;
+  }
+  #footer .f-bottom .f-bottom-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+  }
+  #footer .f-bottom p {
+    padding: 0;
+  }
+  #footer .f-bottom .copyright {
+    padding: 0;
+  }
 }
 
 .sub-banner {
@@ -746,6 +777,7 @@ legend {
 
 .intro {
   padding-bottom: 0;
+  overflow: hidden;
 }
 .intro .swiper-slide {
   width: 310px !important;
@@ -836,6 +868,10 @@ legend {
   }
 }
 
+.mySwiper {
+  overflow: visible;
+}
+
 .int-box {
   position: absolute;
   z-index: -1000;
@@ -887,7 +923,7 @@ legend {
 .treat li:hover {
   transform: scale(1.1);
 }
-.treat .trt-w {
+.treat .trt-btn-wrap {
   display: none;
 }
 .treat .trt-img {
@@ -952,10 +988,7 @@ legend {
   .treat .trt-inner ul {
     flex-wrap: nowrap;
   }
-  .treat .trt-m {
-    display: none;
-  }
-  .treat .trt-w {
+  .treat .trt-wrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1015,12 +1048,16 @@ legend {
   display: none;
 }
 .care-service .care-image {
-  height: 180px;
-  margin-top: 36px;
-  margin-bottom: 20px;
   line-height: 0;
   background-image: url(../../images/main/모바일-미용케어.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.care-service .care-image::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0;
 }
 .care-service strong {
   font-size: 20px;
@@ -1052,7 +1089,6 @@ legend {
   }
   .care-service .care-wrap-w .care-image {
     margin: 0;
-    height: 391px;
   }
   .care-service .care-wrap-w .care-inner {
     padding-left: 70px;
@@ -1065,22 +1101,30 @@ legend {
 @media screen and (max-width: 905px) {
   .care-service .care-wrap-w .care-image {
     width: 45%;
-    height: 206px;
   }
   .care-service .care-wrap-w .care-inner {
     width: 55%;
     padding-left: 30px;
   }
 }
+@media screen and (min-width: 1170px) {
+  .care-service strong {
+    font-size: 24px;
+  }
+  .care-service p {
+    font-size: 20px;
+  }
+}
 
 .map .map-wrapper {
   margin-top: 36px;
+  height: 240px;
 }
 .map .address {
   display: grid;
   align-items: center;
   grid-template-columns: 20px 1fr;
-  grid-template-rows: 20px 1fr;
+  grid-template-rows: 28px;
   gap: 12px;
   margin-top: 40px;
 }
@@ -1164,28 +1208,58 @@ legend {
 .map .map-bus dl dd {
   grid-column: 2;
 }
+.map .map-wrapper .wrap_map {
+  height: 100%;
+}
+@media screen and (min-width: 773px) {
+  .map h2 {
+    margin-bottom: 0;
+  }
+  .map .map-wrap {
+    display: flex;
+    padding-top: 70px;
+  }
+  .map .map-wrap .map-wrapper {
+    width: 50%;
+    height: auto;
+  }
+  .map .map-wrap .map-inner {
+    width: 50%;
+    padding-left: 40px;
+  }
+  .map .map-wrap .map-wrapper,
+  .map .map-wrap .address {
+    margin-top: 0;
+  }
+  .map .map-wrap p {
+    font-size: 28px;
+  }
+  .map .map-wrap dl {
+    font-size: 17px;
+  }
+}
 
-.counsel {
+#footer .counsel {
+  padding: 80px 25px 80px;
   background-color: #79C3B8;
 }
-.counsel .counsel-typo {
+#footer .counsel .counsel-typo {
   margin-bottom: 36px;
 }
-.counsel h3 {
+#footer .counsel h3 {
   font-family: SOYOMapleBoldTTF;
   font-size: 20px;
   color: #fff;
 }
-.counsel .privacy {
+#footer .counsel .privacy {
   display: flex;
   align-items: center;
 }
-.counsel i {
+#footer .counsel i {
   color: #fff;
   padding-right: 5px;
 }
-
-form label {
+#footer form label {
   position: absolute;
   width: 0;
   height: 0;
@@ -1193,24 +1267,24 @@ form label {
   line-height: 0;
   visibility: hidden;
 }
-form input[type=text] {
+#footer form input[type=text] {
   border-radius: 5px;
   height: 47px;
 }
-form input::-moz-placeholder {
+#footer form input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-form input::placeholder {
+#footer form input::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-form textarea::-moz-placeholder {
+#footer form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-form textarea::placeholder {
+#footer form textarea::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-form input,
-form textarea {
+#footer form input,
+#footer form textarea {
   width: 100%;
   padding: 0 24px;
   margin-top: 10px;
@@ -1219,18 +1293,18 @@ form textarea {
   border-radius: 5px;
   font-family: "SUITE-Regular";
 }
-form textarea {
+#footer form textarea {
   height: 150px;
   padding-top: 15px;
 }
-form .privacy {
+#footer form .privacy {
   margin: 12px 0 40px;
 }
-form span {
+#footer form span {
   color: #fff;
   font-size: 14px;
 }
-form .counsel-btn {
+#footer form .counsel-btn {
   width: 100%;
   height: 47px;
   background-color: #383838;
@@ -1238,12 +1312,43 @@ form .counsel-btn {
   border: 0;
   color: #fff;
 }
-
 @media screen and (max-width: 370px) {
-  .main-cont h2 {
+  #footer .main-cont h2 {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 1024px) {
+  #footer f-botton .f-logo-w,
+  #footer f-botton strong {
+    display: block;
+  }
+  #footer .f-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  #footer .counsel {
+    width: 50%;
+  }
+  #footer form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #footer form .counsel-btn {
+    width: 50%;
+  }
+  #footer .form-wrap {
+    width: 50%;
+    padding-right: 36px;
+  }
+  #footer .txtarea-box {
+    width: 50%;
+  }
+  #footer .f-top {
+    width: 50%;
+  }
+}
+
 .gnb-sub .hospital {
   color: #00AEAA;
   border-color: #8d8d8d;

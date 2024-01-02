@@ -151,8 +151,10 @@
 .int-box-wrap {
     position: relative;
 }
+
 .intro {
     padding-bottom: 0;
+    overflow: hidden;
 
     .swiper-slide {
         width: 310px !important;
@@ -242,6 +244,9 @@
         }
     }
 }
+.mySwiper {
+    overflow: visible;
+}
 .int-box {
     position: absolute;
     z-index: -1000;
@@ -288,7 +293,7 @@
     li:hover {
         transform: scale(1.1);
     }
-    .trt-w {
+    .trt-btn-wrap {
         display: none;
     }
     .trt-img {
@@ -353,10 +358,7 @@
         .trt-inner ul {
             flex-wrap: nowrap;
         }
-        .trt-m {
-            display: none;
-        }
-        .trt-w {
+        .trt-wrap {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -418,13 +420,17 @@
         display: none;
     }
     .care-image {
-        height: 180px;
-        margin-top: 36px;
-        margin-bottom: 20px;
         line-height: 0;
         background-image: url(../../images/main/모바일-미용케어.png);
-        background-size : cover;
-    }
+        background-size : contain;
+        background-repeat: no-repeat;
+        &::before {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 0;
+            }
+        }
     strong {
         font-size: 20px;
         color: $secondary;
@@ -455,7 +461,6 @@
             }
             .care-image {
                 margin: 0;
-                height: 391px;
             }
             .care-inner {
                 padding-left: 70px;
@@ -471,7 +476,6 @@
 
             .care-image {
                 width: 45%;
-                height: 206px;
             }
             .care-inner {
                 width: 55%;
@@ -479,17 +483,26 @@
             }
         }
     }
+    @media screen and (min-width: 1170px) {
+        strong {
+            font-size: 24px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
 }
   
 .map {
     .map-wrapper {
         margin-top: 36px;
+        height: 240px;
     }
     .address {
         display: grid;
         align-items: center;
         grid-template-columns: 20px 1fr;
-        grid-template-rows: 20px 1fr;
+        grid-template-rows: 28px;
         gap: 12px;
         margin-top: 40px;
 
@@ -573,81 +586,146 @@
             grid-column: 2;
         }
     }
-}
-  
-.counsel {
-    background-color: $secondary;
+    .map-wrapper .wrap_map {
+        height: 100%;
+    }
+    @media screen and (min-width: 773px) {
+        h2 {
+            margin-bottom: 0;
+        }
+        .map-wrap {
+            display: flex;
+            padding-top: 70px;
 
-    .counsel-typo {
-        margin-bottom: 36px;
+            .map-wrapper {
+                width: 50%;
+                height: auto;
+            }
+            .map-inner {
+                width: 50%;
+                padding-left: 40px;
+            }
+            .map-wrapper,
+            .address {
+                margin-top: 0;
+            }
+            p {
+                font-size: 28px;
+            }
+            dl {
+                font-size: 17px;
+            }
+        }
+        
     }
-    h3 {
-      font-family: SOYOMapleBoldTTF;
-      font-size: 20px;
-      color: $white;
-    }
-    .privacy {
-        display: flex;
-        align-items: center
-    }
-    i {
+}
+
+
+#footer {
+    .counsel {
+        padding: 80px 25px 80px;
+        background-color: $secondary;
+
+        .counsel-typo {
+            margin-bottom: 36px;
+        }
+        h3 {
+        font-family: SOYOMapleBoldTTF;
+        font-size: 20px;
         color: $white;
-        padding-right: 5px;
+        }
+        .privacy {
+            display: flex;
+            align-items: center
+        }
+        i {
+            color: $white;
+            padding-right: 5px;
+        }
     }
-}
 
-form { 
-    label {
-        position: absolute;
-        width: 0; 
-        height: 0;
-        font-size: 0;
-        line-height: 0;
-        visibility: hidden;
-    }
-    input[type=text] {
-        border-radius: 5px;
-        height: 47px;
-    }
-    input::placeholder {
-        color: rgba(255, 255, 255,0.7);
-    }
-    textarea::placeholder {
-        color: rgba(255, 255, 255,0.7);
-    }
-    input,
-    textarea {
+    form { 
+        label {
+            position: absolute;
+            width: 0; 
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+            visibility: hidden;
+        }
+        input[type=text] {
+            border-radius: 5px;
+            height: 47px;
+        }
+        input::placeholder {
+            color: rgba(255, 255, 255,0.7);
+        }
+        textarea::placeholder {
+            color: rgba(255, 255, 255,0.7);
+        }
+        input,
+        textarea {
+            width: 100%;
+            padding: 0 24px;
+            margin-top: 10px;
+            background-color: $primary;
+            border: 0;
+            border-radius: 5px;
+            font-family: $font-family;
+        }
+        textarea {
+            height: 150px;
+            padding-top: 15px;
+        }
+        .privacy {
+            margin: 12px 0 40px;
+        }
+        span {
+            color: $white;
+            font-size: 14px;
+        }
+        .counsel-btn {
         width: 100%;
-        padding: 0 24px;
-        margin-top: 10px;
-        background-color: $primary;
-        border: 0;
+        height: 47px;
+        background-color: $txtDefult;
         border-radius: 5px;
-        font-family: $font-family;
-    }
-    textarea {
-        height: 150px;
-        padding-top: 15px;
-    }
-    .privacy {
-        margin: 12px 0 40px;
-    }
-    span {
+        border: 0;
         color: $white;
-        font-size: 14px;
+        }
     }
-    .counsel-btn {
-    width: 100%;
-    height: 47px;
-    background-color: $txtDefult;
-    border-radius: 5px;
-    border: 0;
-    color: $white;
-    }
-}
 
-@media screen and (max-width:370px) {  
-    .main-cont h2 {
-        font-size: 24px;
-    } 
+    @media screen and (max-width:370px) {  
+        .main-cont h2 {
+            font-size: 24px;
+        } 
+    }
+
+    @media screen and (min-width:1024px) {
+        .f-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        .counsel {
+            width: 50%;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .counsel-btn {
+                width: 50%;
+            }
+        }
+        .form-wrap {
+            width: 50%;
+            padding-right: 36px;
+        }
+        .txtarea-box {
+            width: 50%;
+        }
+        .f-top {
+            width: 50%;
+        }
+    }
 }

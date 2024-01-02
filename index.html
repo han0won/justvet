@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>저스트벳 동물병원</title>
-    <link rel="stylesheet" href="./assets/css/comm.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/comm.css">
     <script src="https://kit.fontawesome.com/af95449672.js" crossorigin="anonymous"></script>
 </head>
 
@@ -251,12 +251,7 @@
                         <div class="trt-inner">
                             <ul>
                                 <li class="trt-internal">
-                                        <a href="#" class="trt-m">
-                                            <div class="trt-img internal"></div>
-                                            <p>내과</p>
-                                            <button>+</button>
-                                        </a>
-                                        <a href="#" class="trt-w">
+                                        <a href="#" class="trt-wrap">
                                             <div class="trt-img internal"></div>
                                             <p>내과</p>
                                             <button>+</button>
@@ -268,12 +263,7 @@
                                         </a>
                                 </li>
                                 <li class="trt-surgery">
-                                        <a href="#" class="trt-m">
-                                            <div class="trt-img surgery"></div>
-                                            <p>외과</p>
-                                            <button>+</button>
-                                        </a>
-                                        <a href="#" class="trt-w">
+                                        <a href="#" class="trt-wrap">
                                             <div class="trt-img surgery"></div>
                                             <p>외과</p>
                                             <button>+</button>
@@ -285,12 +275,7 @@
                                         </a>
                                 </li>
                                 <li class="trt-dental">
-                                        <a href="#" class="trt-m">
-                                            <div class="trt-img dental"></div>
-                                            <p>치과</p>
-                                            <button>+</button>
-                                        </a>
-                                        <a href="#" class="trt-w">
+                                        <a href="#" class="trt-wrap">
                                             <div class="trt-img dental"></div>
                                             <p>치과</p>
                                             <button>+</button>
@@ -301,12 +286,7 @@
                                         </a>
                                 </li>
                                 <li class="trt-picture">
-                                        <a href="#" class="trt-m">
-                                            <div class="trt-img picture"></div>
-                                            <p>영상</p>
-                                            <button>+</button>
-                                        </a>
-                                        <a href="#" class="trt-w">
+                                        <a href="#" class="trt-wrap">
                                             <div class="trt-img picture"></div>
                                             <p>영상</p>
                                             <button>+</button>
@@ -368,118 +348,134 @@
                         <em>Location</em>
                         <h2>오시는 길</h2>
                     </div>
-                    <div class="map-wrapper">
-                        <div id="daumRoughmapContainer1702972745283" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
-                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-                        <script charset="UTF-8">
-                            new daum.roughmap.Lander({
-                                "timestamp" : "1702972745283",
-                                "key" : "2h9u8",
-                                // "mapWidth" : "640",
-                                "mapHeight" : "240"
-                            }).render();
-                        </script>
-                    </div>
-                    <div class="map-inner">
-                        <div class="address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>경기 오산시 원동로 6 파크스퀘어 105</p>
-                            <div class="map-btn-wrap">
-                                <div class="map-btn">
-                                    <a href="https://naver.me/xevFISZw" target="_blank">NAVER MAP</a>
-                                </div>
-                                <div class="map-btn">
-                                    <a href="https://kko.to/O5OR8jZmAX" target="_blank">KAKAO MAP</a>
+                    <div class="map-wrap">
+                        <div class="map-wrapper">
+                            <div id="daumRoughmapContainer1702972745283" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%; height: 100%;"></div>
+                            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp" : "1702972745283",
+                                    "key" : "2h9u8",
+                                    // "mapWidth" : "640",
+                                }).render();
+                            </script>
+                        </div>
+                        <div class="map-inner">
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>경기 오산시 원동로 6 파크스퀘어 105</p>
+                                <div class="map-btn-wrap">
+                                    <div class="map-btn">
+                                        <a href="https://naver.me/xevFISZw" target="_blank">NAVER MAP</a>
+                                    </div>
+                                    <div class="map-btn">
+                                        <a href="https://kko.to/O5OR8jZmAX" target="_blank">KAKAO MAP</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="map-subway">
-                            <i class="fa-solid fa-train-subway"></i>
-                            <dl>
-                                <dt class="line-1">1호선</dt>
-                                <dd>오산역 1번 출구</dd>
-                            </dl>
-                        </div>
-                        <div class="map-bus">
-                            <i class="fa-solid fa-bus-simple"></i>
-                            <dl>
-                                <dt class="general">일반</dt>
-                                <dd>7-5, 116-1, 116-2, 116-5</dd>
-                                <dt class="town">마을</dt>
-                                <dd>10, 11, 11-6, 53, 88</dd>
-                                <dt class="seat">좌석</dt>
-                                <dd>300</dd>
-                                <dt class="direct">직행</dt>
-                                <dd>5300, 5300-1</dd>
-                            </dl>
+                            <div class="map-subway">
+                                <i class="fa-solid fa-train-subway"></i>
+                                <dl>
+                                    <dt class="line-1">1호선</dt>
+                                    <dd>오산역 1번 출구</dd>
+                                </dl>
+                            </div>
+                            <div class="map-bus">
+                                <i class="fa-solid fa-bus-simple"></i>
+                                <dl>
+                                    <dt class="general">일반</dt>
+                                    <dd>7-5, 116-1, 116-2, 116-5</dd>
+                                    <dt class="town">마을</dt>
+                                    <dd>10, 11, 11-6, 53, 88</dd>
+                                    <dt class="seat">좌석</dt>
+                                    <dd>300</dd>
+                                    <dt class="direct">직행</dt>
+                                    <dd>5300, 5300-1</dd>
+                                </dl>
+                            </div>
                         </div>
                     </div>
-            </section>
-            <section class="main-cont counsel">
-                    <div class="counsel-typo">
-                        <h3>빠른 상담 문의</h3>
-                    </div>
-                    <form>
-                        <div class="inp-box">
-                            <label for="name">이름</label>
-                            <input id="name" type="text" placeholder="이름을 입력해주세요." required>
-                        </div>
-                        <div class="inp-box">
-                            <label for="number">연락처</label>
-                            <input type="text" placeholder="연락처를 입력해주세요" required>
-                        </div>
-                        <div class="inp-box">
-                            <label for="text">상담내용</label>
-                            <textarea name="question" id="question" placeholder="상담내용을 입력해주세요."></textarea>
-                        </div>
-                        <div class="privacy">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>개인정보수집 및 이용 동의</span>
-                        </div>
-                        <input type="submit" class="counsel-btn" value="신청하기">
-                    </form>
             </section>
         </div>
         <!-- 푸터 -->
         <footer id="footer">
-            <div class="f-top">
-                <div class="phone-counsel">
-                    <div class="phont-txt">
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <span>전화상담</span>
-                    </div>
-                    <p>031. 378. 1514</p>
-                </div>
-                <div class="clinic-hours">
-                    <div class="hours-txt">
-                        <i class="fa-solid fa-clock"></i>
-                        <span>진료시간</span>
-                    </div>
-                        <div class="txt">
-                            <dl>
-                                <dt>평일</dt>
-                                <dd>10:00 - 19:00</dd>
-                                <dt>토요일</dt>
-                                    <dd>10:00 - 18:00</dd>
-                                    <dt>공휴일</dt>
-                                    <dd>10:00 - 18:00</dd>
-                            </dl>
-                            <span>일요일은 휴무입니다.</span>
+            <div class="f-wrap">
+                <section class="counsel">
+                        <div class="counsel-typo">
+                            <h3>빠른 상담 문의</h3>
                         </div>
+                        <form>
+                            <div class="form-wrap">
+                                <div class="inp-box">
+                                    <label for="name">이름</label>
+                                    <input id="name" type="text" placeholder="이름을 입력해주세요." required>
+                                </div>
+                                <div class="inp-box">
+                                    <label for="number">연락처</label>
+                                    <input type="text" placeholder="연락처를 입력해주세요" required>
+                                </div>
+                            </div>
+                            <div class="inp-box txtarea-box">
+                                <label for="text">상담내용</label>
+                                <textarea name="question" id="question" placeholder="상담내용을 입력해주세요."></textarea>
+                            </div>
+                            <div class="privacy">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>개인정보수집 및 이용 동의</span>
+                            </div>
+                            <input type="submit" class="counsel-btn" value="신청하기">
+                        </form>
+                </section>
+                <div class="f-top">
+                    <div class="phone-counsel">
+                        <div class="phont-txt">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>전화상담</span>
+                        </div>
+                        <p>031. 378. 1514</p>
+                    </div>
+                    <div class="clinic-hours">
+                        <div class="hours-txt">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>진료시간</span>
+                        </div>
+                            <div class="txt">
+                                <dl>
+                                    <dt>평일</dt>
+                                    <dd>10:00 - 19:00</dd>
+                                    <dt>토요일</dt>
+                                        <dd>10:00 - 18:00</dd>
+                                        <dt>공휴일</dt>
+                                        <dd>10:00 - 18:00</dd>
+                                </dl>
+                                <span>일요일은 휴무입니다.</span>
+                            </div>
+                    </div>
                 </div>
             </div>
             <address class="f-bottom">
-                <p class="hospital">오산저스트벳동물병원
-                    <br>
-                    대표이사: 배재한 전화 031. 378. 1514
-                    <br>
-                    이메일:  justvetah@naver.com
-                    <br>
-                    주소: 경기도 오산시 원동로 6 105
-                    <br>
-                    사업자등록번호: 135-31-70446
-                </p>
-                <p class="copyright">COPYRIGHTⓒ 저스트벳동물병원 ALL RIGHT RESERVED.</p>
+                <div class="hospital">
+                    <div class="f-logo-w">
+                        <img src="./images/comm/병원 로고(청록).png" alt="저스트원동물병원">
+                    </div>
+                    <div class="f-bottom-right">
+                        <div class="strong-wrap">
+                            <strong>개인정보취급방침</strong>
+                            <strong>이용약관</strong>
+                        </div>
+                        <p>오산저스트벳동물병원
+                        <br>
+                        대표이사: 배재한 전화 031. 378. 1514
+                        <br>
+                        이메일:  justvetah@naver.com
+                        <br>
+                        주소: 경기도 오산시 원동로 6 105
+                        <br>
+                        사업자등록번호: 135-31-70446
+                        </p>
+                        <p class="copyright">COPYRIGHTⓒ 저스트벳동물병원 ALL RIGHT RESERVED.</p>
+                    </div>
+                </div>
             </address>
         </footer>
     </div>

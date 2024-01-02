@@ -39,7 +39,8 @@
 }
 
 #footer {
-    height: $ftH;
+    width: 100%;
+    // height: $ftH;
 }
 
 @media screen and (min-width: 1280px) {
@@ -233,6 +234,7 @@
     }
 
     .f-top {
+        
         padding: 40px 25px;
         color: $white;
 
@@ -249,7 +251,7 @@
             display: flex;
             align-items: flex-start;
             gap: 58px;
-            margin-top: 40px;
+            margin-top: 20px;
         }
         .txt {
             display: flex;
@@ -267,7 +269,7 @@
             display: grid;
             grid-template-rows: repeat(3, 1fr);
             grid-template-columns: auto 1fr;
-            row-gap: 10px;
+            row-gap: 5px;
         }
         dd {
             padding-left: 40px;
@@ -296,21 +298,50 @@
     }
       
     .f-bottom {
-       p {
-        font-style: normal;
-        color: $gray-200;
-        padding: 40px 25px 0;
-        font-size: 12px;
+        .f-logo-w,
+        strong {
+            display: none;
+        }
+        p {
+            font-style: normal;
+            color: $gray-200;
+            padding: 40px 25px 0;
+            font-size: 12px;
         }
         .hospital {
             border-top: 1px solid $gray-200;
         }
-
         .copyright {
             padding: 10px 25px 40px;
         }
+        @media screen and (min-width:1024px) {
+            .f-logo-w,
+            strong {
+                display: block;
+            }
+            strong {
+                color: $white;
+            }
+            .hospital {
+                display: flex;
+                padding: 70px 80px 80px;
+            }
+            .strong-wrap {
+                display: flex;
+            }
+            .f-bottom-right {
+                display: flex;
+                flex-direction: column;
+                padding-left: 70px;
+            }
+            p {
+                padding: 0;
+            }
+            .copyright {
+                padding: 0;
+            }
+        }
     }
-
 }
 
 .sub-banner {
