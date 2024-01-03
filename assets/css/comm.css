@@ -582,7 +582,7 @@ legend {
     justify-content: space-between;
   }
   #footer .f-top .clinic-hours {
-    margin-top: 66px;
+    margin-top: 50px;
   }
   #footer .f-top span {
     font-size: 28px;
@@ -596,7 +596,7 @@ legend {
   }
   #footer .f-top .txt > span {
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 56px;
   }
   #footer .f-top .f-btn-wrap {
     display: flex;
@@ -1179,10 +1179,13 @@ legend {
   align-items: center;
   grid-template-columns: 20px 1fr;
   grid-template-rows: 28px;
-  gap: 12px;
+  row-gap: 12px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
   margin-top: 40px;
 }
 .map .address p {
+  font-size: 18px;
   font-weight: bold;
 }
 .map .map-btn-wrap {
@@ -1284,6 +1287,14 @@ legend {
   .map .map-wrap .map-wrapper,
   .map .map-wrap .address {
     margin-top: 0;
+  }
+  .map .map-wrap .address {
+    row-gap: 20px;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  .map .map-wrap .map-subway {
+    margin-top: 50px;
   }
   .map .map-wrap p {
     font-size: 28px;
@@ -1398,7 +1409,7 @@ legend {
   #footer .counsel form label {
     position: static;
     visibility: visible;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
   }
   #footer .counsel form #name {
