@@ -561,7 +561,17 @@ legend {
   font-size: 12px;
 }
 #footer .f-bottom .hospital {
-  border-top: 1px solid #8d8d8d;
+  border-top: 1px solid #676767;
+}
+#footer .f-bottom .f-h-w {
+  display: none;
+}
+#footer .f-bottom .line {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 3px;
+  background-color: #676767;
 }
 #footer .f-bottom .copyright {
   padding: 10px 25px 40px;
@@ -596,6 +606,12 @@ legend {
   }
   #footer .f-bottom .f-hospital {
     padding: 20px 0;
+  }
+  #footer .f-bottom .f-h-m {
+    display: none;
+  }
+  #footer .f-bottom .f-h-w {
+    display: block;
   }
   #footer .f-bottom .copyright {
     padding: 0;
@@ -640,6 +656,7 @@ legend {
   padding: 130px 25px 0px;
   background-image: url(../../images/main/모바일-상단배너.png);
   background-size: cover;
+  background-position: center;
 }
 .visual-area .vis-box {
   display: flex;
@@ -789,6 +806,7 @@ legend {
 }
 .intro .swiper-slide {
   width: 310px !important;
+  margin-right: 25px;
 }
 .intro .int-slide-wrap {
   width: 100%;
@@ -800,6 +818,7 @@ legend {
   background-size: cover;
 }
 .intro img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -859,8 +878,12 @@ legend {
     border: 1px solid #79C3B8;
   }
   .intro .int-typo-w p {
+    margin-top: 0;
     text-align: center;
     color: #8d8d8d;
+  }
+  .intro .int-image {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -884,31 +907,26 @@ legend {
   position: absolute;
   z-index: -1000;
   width: 100%;
-  top: 427px;
+  top: 422px;
   height: 250px;
   background-color: #00AEAA;
 }
 @media screen and (min-width: 768px) {
   .int-box {
-    top: 610px;
+    top: 487px;
     height: 280px;
   }
 }
 @media screen and (min-width: 1024px) {
   .int-box {
-    top: 800px;
+    top: 717px;
     height: 300px;
   }
 }
 @media screen and (min-width: 1210px) {
   .int-box {
-    top: 831px;
+    top: 812px;
     height: 365px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .int-box {
-    top: 898px;
   }
 }
 
@@ -989,6 +1007,10 @@ legend {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 654px) {
+  .treat .trt-internal,
+  .treat .trt-surgery {
+    margin-bottom: 0;
+  }
   .treat p {
     margin-right: 10px;
     font-size: 42px;
@@ -1052,20 +1074,13 @@ legend {
 .care-service {
   background-color: #f0f3f5;
 }
-.care-service .care-wrap-w {
-  display: none;
-}
 .care-service .care-image {
   line-height: 0;
-  background-image: url(../../images/main/모바일-미용케어.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 100%;
+  margin: 36px 0 20px;
 }
-.care-service .care-image::before {
-  content: "";
-  display: block;
-  width: 50%;
-  height: 0;
+.care-service img {
+  width: 100%;
 }
 .care-service strong {
   font-size: 20px;
@@ -1083,41 +1098,29 @@ legend {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 768px) {
-  .care-service .care-wrap-m {
-    display: none;
+@media screen and (min-width: 654px) {
+  .care-service .care-wrap {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 66px;
+         column-gap: 66px;
   }
-  .care-service .care-wrap-w {
-    display: flex;
-    justify-content: space-between;
-  }
-  .care-service .care-wrap-w .care-image,
-  .care-service .care-wrap-w .care-inner {
-    width: 50%;
-  }
-  .care-service .care-wrap-w .care-image {
+  .care-service .care-wrap .care-image {
+    grid-row: 1/3;
     margin: 0;
   }
-  .care-service .care-wrap-w .care-inner {
-    padding-left: 70px;
-  }
-  .care-service .care-wrap-w em,
-  .care-service .care-wrap-w h2 {
+  .care-service .care-wrap em,
+  .care-service .care-wrap h2 {
     text-align: left;
   }
 }
-@media screen and (max-width: 905px) {
-  .care-service .care-wrap-w .care-image {
-    width: 45%;
-  }
-  .care-service .care-wrap-w .care-inner {
-    width: 55%;
-    padding-left: 30px;
-  }
-}
 @media screen and (min-width: 1170px) {
+  .care-service h2 {
+    margin-bottom: 44px;
+  }
   .care-service strong {
-    font-size: 24px;
+    font-size: 28px;
   }
   .care-service p {
     font-size: 20px;

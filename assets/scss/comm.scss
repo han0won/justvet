@@ -309,7 +309,17 @@
             font-size: 12px;
         }
         .hospital {
-            border-top: 1px solid $gray-200;
+            border-top: 1px solid $gray-300;
+        }
+        .f-h-w {
+            display: none;
+        }
+        .line {
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 0 3px;
+            background-color: $gray-300;    
         }
         .copyright {
             padding: 10px 25px 40px;
@@ -344,6 +354,12 @@
             }
             .f-hospital {
                 padding: 20px 0;
+            }
+            .f-h-m {
+                display: none;
+            }
+            .f-h-w {
+                display: block;
             }
             .copyright {
                 padding: 0;

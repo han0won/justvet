@@ -8,6 +8,7 @@
     padding: 130px 25px 0px;
     background-image: url(../../images/main/모바일-상단배너.png);
     background-size : cover;
+    background-position: center;
 
     .vis-box {
         display: flex;
@@ -158,6 +159,7 @@
 
     .swiper-slide {
         width: 310px !important;
+        margin-right: 25px;
     }
     .int-slide-wrap {
         width: 100%;
@@ -169,6 +171,7 @@
         background-size : cover;
     }
     img {
+        width: 100%;
         object-fit: cover;
     }
     strong {
@@ -227,9 +230,13 @@
                 border: 1px solid $secondary;
             }
             p {
+                margin-top: 0;
                 text-align: center;
                 color: $gray-200;
             }
+        }
+        .int-image {
+            margin-top: 0;
         }
     }
     @media screen and (min-width: 1024px) {
@@ -251,25 +258,25 @@
     position: absolute;
     z-index: -1000;
     width: 100%;
-    top: 427px;
+    top: 422px;
     height: 250px;
     background-color: $primary;
 
     @media screen and (min-width: 768px) {
-        top: 610px;
+        top: 487px;
         height: 280px;
     }
     @media screen and (min-width: 1024px) {
-        top: 800px;
+        top: 717px;
         height: 300px;
     }
     @media screen and (min-width: 1210px) {
-        top: 831px;
+        top: 812px;
         height: 365px;
     }
-    @media screen and (min-width: 1440px) {
-        top: 898px;
-    }
+    // @media screen and (min-width: 1440px) {
+    //     top: 865px;
+    // }
 }
 
 .treat {
@@ -278,7 +285,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 36px;
-        
     }
     li {
         display: flex;
@@ -351,6 +357,10 @@
         margin-bottom: 20px;
     }
     @media screen and (min-width: 654px) {
+        .trt-internal,
+        .trt-surgery {
+            margin-bottom: 0;
+        }
         p {
             margin-right: 10px;
             font-size: 42px;
@@ -416,21 +426,14 @@
 .care-service {
     background-color: $gray-100;
 
-    .care-wrap-w {
-        display: none;
-    }
     .care-image {
         line-height: 0;
-        background-image: url(../../images/main/모바일-미용케어.png);
-        background-size : contain;
-        background-repeat: no-repeat;
-        &::before {
-            content: '';
-            display: block;
-            width: 50%;
-            height: 0;
-            }
-        }
+        width: 100%;
+        margin: 36px 0 20px;
+    }
+    img {
+        width: 100%;
+    }
     strong {
         font-size: 20px;
         color: $secondary;
@@ -447,23 +450,16 @@
             font-size: 12px;
         }
     }
-    @media screen and (min-width: 768px) {
-        .care-wrap-m {
-            display: none;
-        }
-        .care-wrap-w {
-            display: flex;
-            justify-content: space-between;
-        
-            .care-image,
-            .care-inner {
-                width: 50%;
-            }
+    @media screen and (min-width: 654px) {
+        .care-wrap {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 66px;
+
             .care-image {
+                grid-row: 1 / 3;
                 margin: 0;
-            }
-            .care-inner {
-                padding-left: 70px;
             }
             em,
             h2 {
@@ -471,28 +467,19 @@
             }
         }
     }
-    @media screen and (max-width: 905px) {
-        .care-wrap-w{ 
-
-            .care-image {
-                width: 45%;
-            }
-            .care-inner {
-                width: 55%;
-                padding-left: 30px;
-            }
-        }
-    }
     @media screen and (min-width: 1170px) {
+        h2 {
+            margin-bottom: 44px;
+        }
         strong {
-            font-size: 24px;
+            font-size: 28px;
         }
         p {
             font-size: 20px;
         }
     }
 }
-  
+
 .map {
     .map-wrapper {
         margin-top: 36px;
@@ -749,3 +736,5 @@
         }
     }
 }
+
+
