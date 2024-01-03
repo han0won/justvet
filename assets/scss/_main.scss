@@ -274,9 +274,6 @@
         top: 812px;
         height: 365px;
     }
-    // @media screen and (min-width: 1440px) {
-    //     top: 865px;
-    // }
 }
 
 .treat {
@@ -320,21 +317,24 @@
     .picture {
         background-image: url(../../images/sub/picture.png);
     }
+    .trt-internal,
+    .trt-surgery,
+    .trt-dental,
+    .trt-picture {
+        background-size : cover;
+        background-position: center;
+    }
     .trt-internal {
         background-image: url(../../images/main/모바일-내과.png);
-        background-size : cover;
     }
     .trt-surgery {
         background-image: url(../../images/main/모바일-외과.png);
-        background-size : cover;
     }
     .trt-dental {
         background-image: url(../../images/main/모바일-치과.png);
-        background-size : cover;
     }
     .trt-picture {
         background-image: url(../../images/main/모바일-영상.png);
-        background-size : cover;
     }
     a {
         display: flex;
@@ -439,7 +439,7 @@
         color: $secondary;
     }
     p {
-        margin-top: 20px;
+        margin-top: 15px;
         font-size: 14px;
     }
     @media screen and (max-width:370px) {
@@ -469,7 +469,7 @@
     }
     @media screen and (min-width: 1170px) {
         h2 {
-            margin-bottom: 44px;
+            margin-bottom: 49px;
         }
         strong {
             font-size: 28px;
@@ -696,6 +696,9 @@
             padding: 80px;
             width: 50%;
 
+            .counsel-typo {
+                margin-bottom: 60px;
+            }
             h3 {
                 font-size: 36px;
             }
@@ -727,6 +730,7 @@
                 }
                 .counsel-btn {
                     width: 50%;
+                    height: 60px;
                     margin: 0;
                 }
             }
