@@ -12,7 +12,7 @@
 <body>
     <div id="u-skip">
         <a href="#gnb">주메뉴 바로가기</a>
-        <a href="#main">본문 바로가기</a>
+        <a href="#container">본문 바로가기</a>
     </div>
     <div class="wrap">
         <!-- 헤더 -->
@@ -299,31 +299,34 @@
                             </ul>
                         </div>
             </section>
-            <section class="main-cont care-service">
-                <div class="care-wrap">
-                    <div class="care-typo">
-                        <em>Beauty Care Service</em>
-                        <h2>미용 케어 서비스</h2>
+            <div class="care-box-wrap">
+                <section class="main-cont care-service">
+                    <div class="care-wrap">
+                        <div class="care-typo">
+                            <em>Beauty Care Service</em>
+                            <h2>미용 케어 서비스</h2>
+                        </div>
+                        <div class="care-image">
+                            <img src="./images/main/모바일-미용케어.png" alt="미용케어서비스">
+                        </div>
+                        <div class="care-inner">
+                            <strong>
+                                다양한 디자인컷이 가능한 미용관리실
+                            </strong>
+                            <p>
+                                미용 케어 서비스는 예약제로 운영됩니다.
+                                <br>
+                                사전예약을 하지 않을 경우 미용이 불가능 할 수 있습니다.
+                                <br>
+                                반려동물의 체중과 스타일에 따라 요금을 책정합니다.
+                                <br>
+                                털의 엉킴, 모량의 양에 따라 가격이 달라질 수 있습니다.
+                            </p>
+                        </div>
                     </div>
-                    <div class="care-image">
-                        <img src="./images/main/모바일-미용케어.png" alt="미용케어서비스">
-                    </div>
-                    <div class="care-inner">
-                        <strong>
-                            다양한 디자인컷이 가능한 미용관리실
-                        </strong>
-                        <p>
-                            미용 케어 서비스는 예약제로 운영됩니다.
-                            <br>
-                            사전예약을 하지 않을 경우 미용이 불가능 할 수 있습니다.
-                            <br>
-                            반려동물의 체중과 스타일에 따라 요금을 책정합니다.
-                            <br>
-                            털의 엉킴, 모량의 양에 따라 가격이 달라질 수 있습니다.
-                        </p>
-                    </div>
-                </div>
-            </section>
+                </section>
+                <div class="care-box"></div>
+            </div>
             <section class="main-cont map">
                     <div class="map-typo">
                         <em>Location</em>
@@ -377,11 +380,9 @@
                         </div>
                     </div>
             </section>
-        </div>
-        <!-- 푸터 -->
-        <footer id="footer">
-            <div class="f-wrap">
-                <section class="counsel">
+            <section class="counsel">
+                <div class="counsel-inner">
+                    <div class="counsel-box1">
                         <div class="counsel-typo">
                             <h3>빠른 상담 문의</h3>
                         </div>
@@ -406,82 +407,85 @@
                             </div>
                             <input type="submit" class="counsel-btn" value="신청하기">
                         </form>
-                </section>
-                <div class="f-top">
-                    <div class="phone-counsel">
-                        <div class="phont-txt">
-                            <i class="fa-solid fa-phone-volume"></i>
-                            <span>전화상담</span>
-                        </div>
-                        <p>031. 378. 1514</p>
                     </div>
-                    <div class="clinic-hours">
-                        <div class="hours-txt">
-                            <i class="fa-solid fa-clock"></i>
-                            <span>진료시간</span>
-                        </div>
-                            <div class="txt">
-                                <dl>
-                                    <dt>평일</dt>
-                                    <dd>10:00 - 19:00</dd>
-                                    <dt>토요일</dt>
-                                        <dd>10:00 - 18:00</dd>
-                                        <dt>공휴일</dt>
-                                        <dd>10:00 - 18:00</dd>
-                                </dl>
-                                <span>일요일은 휴무입니다.</span>
+                    <div class="counsel-box2">
+                        <div class="phone-counsel">
+                            <div class="phone-txt">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>전화상담</span>
                             </div>
-                    </div>
-                    <div class="f-btn-wrap">
-                        <div class="btn-counsel">
-                            <p>상담게시판 바로가기</p>
+                            <p>031. 378. 1514</p>
                         </div>
-                        <div class="btn-blog">
-                            <p>블로그 바로가기</p>
+                        <div class="clinic-hours">
+                            <div class="hours-txt">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>진료시간</span>
+                            </div>
+                                <div class="txt">
+                                    <dl>
+                                        <dt>평일</dt>
+                                        <dd>10:00 - 19:00</dd>
+                                        <dt>토요일</dt>
+                                            <dd>10:00 - 18:00</dd>
+                                            <dt>공휴일</dt>
+                                            <dd>10:00 - 18:00</dd>
+                                    </dl>
+                                    <span>일요일은 휴무입니다.</span>
+                                </div>
+                        </div>
+                        <div class="f-btn-wrap">
+                            <div class="btn-counsel">
+                                <i class="fa-solid fa-list-check" style="color: #ffffff;"></i>
+                                <p>상담게시판 바로가기</p>
+                            </div>
+                            <div class="btn-blog">
+                                <i class="fa-brands fa-microblog" style="color: #ffffff;"></i>
+                                <p>블로그 바로가기</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+        </div>
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="f-wrap">
+                <div class="f-logo-w">
+                    <img src="./images/comm/병원 로고(청록).png" alt="저스트원동물병원">
+                </div>
+                <div class="f-inner">
+                    <div class="strong-wrap">
+                    <strong>개인정보취급방침</strong>
+                    <strong>이용약관</strong>
+                    </div>
+                    <p class="f-hospital f-h-m">
+                        오산저스트벳동물병원
+                        <br>
+                        대표이사: 배재한
+                        <span class="line"></span>
+                        전화 031. 378. 1514
+                        <br>
+                        이메일:  justvetah@naver.com
+                        <br>
+                        주소: 경기도 오산시 원동로 6 105
+                        <br>
+                        사업자등록번호: 135-31-70446
+                    </p>
+                    <p class="f-hospital f-h-w">
+                        오산저스트벳동물병원
+                        <span class="line"></span>
+                        대표이사: 배재한
+                        <span class="line"></span>
+                        전화 031. 378. 1514
+                        <span class="line"></span>
+                        이메일:  justvetah@naver.com
+                        <br>
+                        주소: 경기도 오산시 원동로 6 105
+                        <span class="line"></span>
+                        사업자등록번호: 135-31-70446
+                    </p>
+                    <p class="copyright">COPYRIGHTⓒ 저스트벳동물병원 ALL RIGHT RESERVED.</p>
             </div>
-            <address class="f-bottom">
-                <div class="hospital">
-                    <div class="f-logo-w">
-                        <img src="./images/comm/병원 로고(청록).png" alt="저스트원동물병원">
-                    </div>
-                    <div class="f-bottom-right">
-                        <div class="strong-wrap">
-                            <strong>개인정보취급방침</strong>
-                            <strong>이용약관</strong>
-                        </div>
-                        <p class="f-hospital f-h-m">
-                            오산저스트벳동물병원
-                            <br>
-                            대표이사: 배재한
-                            <span class="line"></span>
-                            전화 031. 378. 1514
-                            <br>
-                            이메일:  justvetah@naver.com
-                            <br>
-                            주소: 경기도 오산시 원동로 6 105
-                            <br>
-                            사업자등록번호: 135-31-70446
-                        </p>
-                        <p class="f-hospital f-h-w">
-                            오산저스트벳동물병원
-                            <span class="line"></span>
-                            대표이사: 배재한
-                            <span class="line"></span>
-                            전화 031. 378. 1514
-                            <span class="line"></span>
-                            이메일:  justvetah@naver.com
-                            <br>
-                            주소: 경기도 오산시 원동로 6 105
-                            <span class="line"></span>
-                            사업자등록번호: 135-31-70446
-                        </p>
-                        <p class="copyright">COPYRIGHTⓒ 저스트벳동물병원 ALL RIGHT RESERVED.</p>
-                    </div>
-                </div>
-            </address>
         </footer>
     </div>
 </body>

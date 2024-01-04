@@ -2,5 +2,6 @@
 {
     "format": "expanded",
     "extensionName": ".css",
-    "savePath": "~/../css/"
+    "savePath": "~/../css/",
+    "liveServer.settings.port": 5501
 }
