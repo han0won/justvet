@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>병원소개</title>
-    <link rel="stylesheet" href="./assets/css/comm.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/comm.css">
     <script src="https://kit.fontawesome.com/af95449672.js" crossorigin="anonymous"></script>
 </head>
 
@@ -89,8 +90,10 @@
         <!-- 컨텐츠 -->
         <div id="container-sub">
             <div class="sub-banner">
-                <strong>병원소개</strong>
-                <p>병원소개 > 병원소개</p>
+                <div class="sub-banner-wrap">
+                    <strong>병원소개</strong>
+                    <p>병원소개 > 병원소개</p>
+                </div>
             </div>
             <div class="gnb-sub">
                 <div class="gnb-box hospital">병원소개</div>
@@ -101,29 +104,53 @@
             <div class="cont-inner hospital-intro">
                 <div class="intro-image"></div>
                 <span>Just Vet Animal Hospital</span>
-                <h2 class="sub-intro">
-                    반려동물이 건강하고
-                    <br>
-                    행복한 병원
-                </h2>
-                <p>
-                    저스트벳 동물병원에서는 첨단 장비를 통한 정확한 진단과
-                    <br>
-                    본원의 노하우를 통해 언제나 진심을 담은 진료로
-                    <br>
-                    반려동물의 마음에 귀를 기울여 최선을 다해 치료하겠습니다.
-                </p>
+                <div class="sub-intro-m">
+                    <h2 class="sub-intro">
+                        반려동물이 건강하고
+                        <br>
+                        행복한 병원
+                    </h2>
+                    <hr>
+                    <p>
+                        저스트벳 동물병원에서는 첨단 장비를 통한 정확한 진단과
+                        <br>
+                        본원의 노하우를 통해 언제나 진심을 담은 진료로
+                        <br>
+                        반려동물의 마음에 귀를 기울여 최선을 다해 치료하겠습니다.
+                    </p>
+                </div>
+                <div class="sub-intro-w">
+                    <h2 class="sub-intro">
+                        반려동물이 건강하고 행복한 병원
+                    </h2>
+                    <hr>
+                    <p>
+                        저스트벳 동물병원에서는 첨단 장비를 통한 정확한 진단과
+                        <br>
+                        본원의 노하우를 통해 언제나 진심을 담은 진료로
+                        <br>
+                        반려동물의 마음에 귀를 기울여 최선을 다해 치료하겠습니다.
+                    </p>
+                </div>
             </div>
             <div class="reason-box-wrap">
                 <div class="reason-box"></div>
                 <div class="cont-inner hospital-reason">
-                    <h2 class="sub-intro">
+                    <h2 class="sub-intro sub-reason-m">
                         저스트벳을
                         <br>
                         선택하는 이유
                     </h2>
+                    <div class="sub-reason-w">
+                        <h2 class="sub-intro">
+                            저스트벳동물병원을 선택하는 이유
+                        </h2>
+                        <p>
+                            저스트벳동물병원은 반려동물의 건강과 보호자의 행복을 위해 최선을 다합니다.
+                        </p>
+                    </div>
                     <ul>
-                        <li class="reason-1">
+                        <li class="reason-1" data-aos="fade-down" data-aos-duration="2000">
                             <i class="fa-solid fa-circle-check fa-2xl reason-icon-1"></i>
                             <h3>전문 의료진</h3>
                                 <p>
@@ -137,7 +164,7 @@
                                     <br>한국수의외과학회 정회원
                                 </p>
                         </li>
-                        <li class="reason-2">
+                        <li class="reason-2" data-aos="fade-down" data-aos-duration="2000">
                             <i class="fa-solid fa-circle-check fa-2xl reason-icon-2"></i>
                             <h3>통합 서비스</h3>
                             <p>
@@ -150,7 +177,7 @@
                                 <br>저스트벳에서 해결 가능합니다.
                             </p>
                         </li>
-                        <li class="reason-3">
+                        <li class="reason-3" data-aos="fade-down" data-aos-duration="2000">
                             <i class="fa-solid fa-circle-check fa-2xl reason-icon-3"></i>
                             <h3>합리적 가격</h3>
                             <p>
@@ -168,7 +195,7 @@
             <div class="cont-inner hospital-special">
                 <h2 class="sub-intro">저스트벳만의 특별함</h2>
                 <ul>
-                    <li>
+                    <li data-aos="fade-right" data-aos-duration="2000">
                         <div class="special-image point-1"></div>
                         <div class="special-txt">
                             <strong>Special point</strong>
@@ -181,7 +208,7 @@
                             </p>
                         </div>
                     </li>
-                    <li>
+                    <li class="flex-reverse" data-aos="fade-left" data-aos-duration="2000">
                         <div class="special-image point-2"></div>
                         <div class="special-txt">
                             <strong>Special point</strong>
@@ -193,7 +220,7 @@
                             </p>
                         </div>
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-duration="2000">
                         <div class="special-image point-3"></div>
                         <div class="special-txt">
                             <strong>Special point</strong>
@@ -210,17 +237,17 @@
                 <h2 class="sub-intro">저스트벳이
                     <br>추구하는 가치</h2>
                 <ul>
-                    <li class="value-1">
+                    <li class="value-1" data-aos="fade-down" data-aos-duration="1600">
                         <div class="value-img1"></div>
                         <p class="v1">우수한 실력</p>
                         <p>Abilty</p>
                     </li>
-                    <li class="value-2">
+                    <li class="value-2" data-aos="fade-down" data-aos-duration="2000">
                         <div class="value-img2"></div>
                         <p class="v1">올바른 치료</p>
                         <p>Correct Treatment</p>
                     </li>
-                    <li class="value-3">
+                    <li class="value-3" data-aos="fade-down" data-aos-duration="2400">
                         <div class="value-img3"></div>
                         <p class="v1">책임감</p>
                         <p>Responsibility</p>
@@ -280,6 +307,10 @@
             </address>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
     </body>
 
 

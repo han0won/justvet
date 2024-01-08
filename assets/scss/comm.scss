@@ -22,9 +22,6 @@ body {
 
 #header {
     height: $hdH;
-    @media screen and (min-width: 426px) {
-        height: 100px;
-    }
 }
 
 #main {
@@ -165,7 +162,7 @@ body {
             justify-content: space-between;
             align-items: center;
             height: 100px;
-            padding: 0 40px;
+            padding: 0 30px;
             white-space: nowrap;
             font-size: 18px;
             color: $white;
@@ -193,17 +190,24 @@ body {
         }
     }
     @media screen and (min-width:768px) {
+        height: 100px;
 
         .h-inner {
             max-width: 1440px;
             height: 100%;
-            padding: 32px 80px;
+            padding: 0 80px;
             margin: 0 auto;
 
             .logo {
                 width: 187px;
                 height: 30px;
                 background-size: contain;
+            }
+            #gnb .depth1 > li {
+                border: none;
+                a {
+                    padding: 0 0 0 55px;
+                }
             }
         }
     }    
@@ -236,6 +240,7 @@ body {
             }
             .depth1 {
                 flex-direction: row;
+                padding: 0;
                 li{
                     overflow: hidden;
                 }
@@ -257,6 +262,7 @@ body {
     color: $white;
     background-image: url(../../images/sub/모바일-상단배너.png);
     
+
     strong{
         font-size: 32px;
     }
@@ -264,6 +270,34 @@ body {
         font-size: 11px;
         padding: 10px 0 25px;
         text-align: left;
+    }
+    @media screen and (min-width: 768px) {
+        text-align: center;
+        p {
+            text-align: center;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        height: 300px;
+        padding: 0;
+        background-position: center;
+        background-size : cover;
+
+        .sub-banner-wrap {
+            position: relative;
+            top: 400px;
+            left: auto;
+            text-align: center;
+            color: $txtDefult;
+        }
+        strong {
+            font-size: 42px;
+        }
+        p {
+            font-size: 14px;
+            text-align: center;
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -279,9 +313,19 @@ body {
         font-size: 14px;
         border-bottom: 1px solid $gray-100;
     }
+    @media screen and (min-width: 1024px) {
+        max-width: 1440px;
+        margin: 287px auto 70px;
+        padding: 0 80px;
+
+        .gnb-box {
+            padding: 24px 0;
+            width: 25%;
+            height: auto;
+            font-size: 20px;
+        }
+    }
 }
-
-
 
 .counsel {
     color: $white;background-color: $secondary;
@@ -380,6 +424,7 @@ body {
         .counsel-box2 {
             width: 50%;
             padding: 80px 80px 80px 40px;
+            border-left: 1px solid $gray-200;
         
             .phone-counsel,
             .clinic-hours {

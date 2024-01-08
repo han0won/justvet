@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>저스트벳 동물병원</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/comm.css">
     <script src="https://kit.fontawesome.com/af95449672.js" crossorigin="anonymous"></script>
 </head>
@@ -250,7 +251,7 @@
                         </div>
                         <div class="trt-inner">
                             <ul>
-                                <li class="trt-internal">
+                                <li class="trt-internal" data-aos="fade-down" data-aos-duration="1600">
                                         <a href="#" class="trt-wrap">
                                             <div class="trt-img internal"></div>
                                             <p>내과</p>
@@ -262,7 +263,7 @@
                                             </div>
                                         </a>
                                 </li>
-                                <li class="trt-surgery">
+                                <li class="trt-surgery" data-aos="fade-down" data-aos-duration="2000">
                                         <a href="#" class="trt-wrap">
                                             <div class="trt-img surgery"></div>
                                             <p>외과</p>
@@ -274,7 +275,7 @@
                                             </div>
                                         </a>
                                 </li>
-                                <li class="trt-dental">
+                                <li class="trt-dental" data-aos="fade-down" data-aos-duration="2400">
                                         <a href="#" class="trt-wrap">
                                             <div class="trt-img dental"></div>
                                             <p>치과</p>
@@ -285,7 +286,7 @@
                                             </div>
                                         </a>
                                 </li>
-                                <li class="trt-picture">
+                                <li class="trt-picture" data-aos="fade-down" data-aos-duration="2800">
                                         <a href="#" class="trt-wrap">
                                             <div class="trt-img picture"></div>
                                             <p>영상</p>
@@ -301,7 +302,7 @@
             </section>
             <div class="care-box-wrap">
                 <section class="main-cont care-service">
-                    <div class="care-wrap">
+                    <div class="care-wrap" data-aos="fade-right" data-aos-duration="1600">
                         <div class="care-typo">
                             <em>Beauty Care Service</em>
                             <h2>미용 케어 서비스</h2>
@@ -488,6 +489,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 
 
