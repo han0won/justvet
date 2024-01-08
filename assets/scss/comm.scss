@@ -328,11 +328,10 @@ body {
 }
 
 .counsel {
-    color: $white;background-color: $secondary;
+    color: $white;
 
     .counsel-box1 {
         padding: 80px 25px;
-        background-color: $secondary;
         p {
             padding: 20px 0;
             font-size: 18px;
@@ -342,7 +341,6 @@ body {
     }
     .counsel-box2 {
         padding: 40px 25px;
-        background-color: $txtDefult;
 
         .phone-txt,
         .hours-txt {

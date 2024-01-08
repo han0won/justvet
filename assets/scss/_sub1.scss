@@ -269,7 +269,11 @@
 
 .hospital-value {
     background-color: $gray-100;
+    max-width: none;
 
+    .value-w {
+        display: none;
+    }
     ul {
         position: relative;
         display: flex;
@@ -300,6 +304,9 @@
         font-size: 14px;
         color: $gray-200;
     }
+    .v3-w {
+        display: none;
+    }
     .value-img1,
     .value-img2,
     .value-img3 {
@@ -320,6 +327,12 @@
         background-size: cover;
     }
     @media screen and (min-width: 1024px) {
+        .value-m {
+            display: none;
+        }
+        .value-w {
+            display: block;
+        }
         ul {
             flex-direction: row;
             justify-content: center;
@@ -332,8 +345,16 @@
             margin: 70px 0 40px;
             font-size: 20px;
         }
-        .v3 {
+        .v3-m {
+            display: none;
+        }
+        .v3-w {
+            display: block;
             font-size: 28px;
         }
     }
+}
+
+.counsel {
+    background-color: $txtDefult;
 }

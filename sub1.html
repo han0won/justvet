@@ -86,7 +86,6 @@
                 </div>
             </div>
         </header>
-
         <!-- 컨텐츠 -->
         <div id="container-sub">
             <div class="sub-banner">
@@ -234,8 +233,13 @@
                 </ul>
             </div>
             <div class="cont-inner hospital-value">
-                <h2 class="sub-intro">저스트벳이
-                    <br>추구하는 가치</h2>
+                <h2 class="sub-intro value-m">
+                    저스트벳이
+                    <br>추구하는 가치
+                </h2>
+                <h2 class="sub-intro value-w">
+                    저스트벳이 추구하는 가치
+                </h2>
                 <ul>
                     <li class="value-1" data-aos="fade-down" data-aos-duration="1600">
                         <div class="value-img1"></div>
@@ -253,59 +257,124 @@
                         <p>Responsibility</p>
                     </li>
                 </ul>
-                <p class="v2">사람과 반려동물의 건강하고 행복한 공존을 추구합니다. </p>
-                <p class="v3">
+                <p class="v2" data-aos="fade-down" data-aos-duration="2500">사람과 반려동물의 건강하고 행복한 공존을 추구합니다. </p>
+                <p class="v3-m" data-aos="fade-down" data-aos-duration="2500">
                     저스트벳 동물병원은 정확한 진단과
                     <br>자세한 설명으로 반려동물의 아픈 몸과
                     <br>보호자분의 불안한 마음까지 치료하겠습니다.</p>
+                <p class="v3-w" data-aos="fade-down" data-aos-duration="2500">
+                    저스트벳 동물병원은 정확한 진단과 자세한 설명으로
+                    <br>반려동물의 아픈 몸과 보호자분의 불안한 마음까지 치료하겠습니다.</p>
             </div>
-        </div>
-
-        <!-- 푸터 -->
-        <section class="customer">
-            <p>고객문의 바로가기</p>
-        </section>
-        <footer id="footer">
-            <div class="f-top">
-                <div class="phone-counsel">
-                    <div class="phont-txt">
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <span>전화상담</span>
-                    </div>
-                    <p>031. 378. 1514</p>
-                </div>
-                <div class="clinic-hours">
-                    <div class="hours-txt">
-                        <i class="fa-solid fa-clock"></i>
-                        <span>진료시간</span>
-                    </div>
-                        <div class="txt">
-                            <dl>
-                                <dt>평일</dt>
-                                <dd>10:00 - 19:00</dd>
-                                <dt>토요일</dt>
-                                    <dd>10:00 - 18:00</dd>
-                                    <dt>공휴일</dt>
-                                    <dd>10:00 - 18:00</dd>
-                            </dl>
-                            <span>일요일은 휴무입니다.</span>
+            <section class="counsel">
+                <div class="counsel-inner">
+                    <div class="counsel-box1">
+                        <div class="counsel-typo">
+                            <h3>빠른 상담 문의</h3>
                         </div>
+                        <form>
+                            <div class="form-wrap">
+                                <div class="inp-box">
+                                    <label for="name">이름</label>
+                                    <input id="name" type="text" placeholder="이름을 입력해주세요." required>
+                                </div>
+                                <div class="inp-box">
+                                    <label for="number">연락처</label>
+                                    <input type="text" placeholder="연락처를 입력해주세요" required>
+                                </div>
+                            </div>
+                            <div class="inp-box txtarea-box">
+                                <label for="text">상담내용</label>
+                                <textarea name="question" id="question" placeholder="상담내용을 입력해주세요."></textarea>
+                            </div>
+                            <div class="privacy">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>개인정보수집 및 이용 동의</span>
+                            </div>
+                            <input type="submit" class="counsel-btn" value="신청하기">
+                        </form>
+                    </div>
+                    <div class="counsel-box2">
+                        <div class="phone-counsel">
+                            <div class="phone-txt">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>전화상담</span>
+                            </div>
+                            <p>031. 378. 1514</p>
+                        </div>
+                        <div class="clinic-hours">
+                            <div class="hours-txt">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>진료시간</span>
+                            </div>
+                                <div class="txt">
+                                    <dl>
+                                        <dt>평일</dt>
+                                        <dd>10:00 - 19:00</dd>
+                                        <dt>토요일</dt>
+                                            <dd>10:00 - 18:00</dd>
+                                            <dt>공휴일</dt>
+                                            <dd>10:00 - 18:00</dd>
+                                    </dl>
+                                    <span>일요일은 휴무입니다.</span>
+                                </div>
+                        </div>
+                        <div class="f-btn-wrap">
+                            <div class="btn-counsel">
+                                <i class="fa-solid fa-list-check" style="color: #ffffff;"></i>
+                                <p>상담게시판 바로가기</p>
+                            </div>
+                            <div class="btn-blog">
+                                <i class="fa-brands fa-microblog" style="color: #ffffff;"></i>
+                                <p>블로그 바로가기</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+        </div>
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="f-wrap">
+                <div class="f-logo-w">
+                    <img src="./images/comm/병원 로고(청록).png" alt="저스트원동물병원">
+                </div>
+                <div class="f-inner">
+                    <div class="strong-wrap">
+                    <strong>개인정보취급방침</strong>
+                    <strong>이용약관</strong>
+                    </div>
+                    <p class="f-hospital f-h-m">
+                        오산저스트벳동물병원
+                        <br>
+                        대표이사: 배재한
+                        <span class="line"></span>
+                        전화 031. 378. 1514
+                        <br>
+                        이메일:  justvetah@naver.com
+                        <br>
+                        주소: 경기도 오산시 원동로 6 105
+                        <br>
+                        사업자등록번호: 135-31-70446
+                    </p>
+                    <p class="f-hospital f-h-w">
+                        오산저스트벳동물병원
+                        <span class="line"></span>
+                        대표이사: 배재한
+                        <span class="line"></span>
+                        전화 031. 378. 1514
+                        <span class="line"></span>
+                        이메일:  justvetah@naver.com
+                        <br>
+                        주소: 경기도 오산시 원동로 6 105
+                        <span class="line"></span>
+                        사업자등록번호: 135-31-70446
+                    </p>
+                    <p class="copyright">COPYRIGHTⓒ 저스트벳동물병원 ALL RIGHT RESERVED.</p>
             </div>
-            <address class="f-bottom">
-                <p class="hospital">오산저스트벳동물병원
-                    <br>
-                    대표이사: 배재한 전화 031. 378. 1514
-                    <br>
-                    이메일:  justvetah@naver.com
-                    <br>
-                    주소: 경기도 오산시 원동로 6 105
-                    <br>
-                    사업자등록번호: 135-31-70446
-                </p>
-                <p class="copyright">COPYRIGHTⓒ 저스트벳동물병원 ALL RIGHT RESERVED.</p>
-            </address>
         </footer>
+    </div>
+</div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

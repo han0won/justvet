@@ -584,11 +584,9 @@ body {
 
 .counsel {
   color: #fff;
-  background-color: #79C3B8;
 }
 .counsel .counsel-box1 {
   padding: 80px 25px;
-  background-color: #79C3B8;
 }
 .counsel .counsel-box1 p {
   padding: 20px 0;
@@ -598,7 +596,6 @@ body {
 }
 .counsel .counsel-box2 {
   padding: 40px 25px;
-  background-color: #383838;
 }
 .counsel .counsel-box2 .phone-txt,
 .counsel .counsel-box2 .hours-txt {
@@ -1433,6 +1430,9 @@ body {
   }
 }
 
+.counsel {
+  background-color: #79C3B8;
+}
 .counsel .counsel-typo {
   margin-bottom: 36px;
 }
@@ -1825,6 +1825,10 @@ body {
 
 .hospital-value {
   background-color: #f0f3f5;
+  max-width: none;
+}
+.hospital-value .value-w {
+  display: none;
 }
 .hospital-value ul {
   position: relative;
@@ -1856,6 +1860,9 @@ body {
   font-size: 14px;
   color: #8d8d8d;
 }
+.hospital-value .v3-w {
+  display: none;
+}
 .hospital-value .value-img1,
 .hospital-value .value-img2,
 .hospital-value .value-img3 {
@@ -1876,6 +1883,12 @@ body {
   background-size: cover;
 }
 @media screen and (min-width: 1024px) {
+  .hospital-value .value-m {
+    display: none;
+  }
+  .hospital-value .value-w {
+    display: block;
+  }
   .hospital-value ul {
     flex-direction: row;
     justify-content: center;
@@ -1888,9 +1901,17 @@ body {
     margin: 70px 0 40px;
     font-size: 20px;
   }
-  .hospital-value .v3 {
+  .hospital-value .v3-m {
+    display: none;
+  }
+  .hospital-value .v3-w {
+    display: block;
     font-size: 28px;
   }
+}
+
+.counsel {
+  background-color: #383838;
 }
 
 :root {
