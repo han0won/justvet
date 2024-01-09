@@ -58,7 +58,7 @@ body {
         height: 20px;
         position: relative;
         z-index: 1100;
-        background-image: url(../../images/comm/병원\ 로고\(청록\).png);
+        background-image: url(../../images/comm/logo.png);
         background-size: 128px 20px;
     }
     .h-inner {
@@ -327,19 +327,18 @@ body {
     }
 }
 
-.counsel {
-    color: $white;
-
-    .counsel-box1 {
-        padding: 80px 25px;
-        p {
-            padding: 20px 0;
-            font-size: 18px;
-            text-align: center;
-            color: $white;
-        }
+.guide {
+    .guide-box1-m {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $secondary;
+        height: 60px;
     }
-    .counsel-box2 {
+    .guide-box1 {
+        display: none;
+    }
+    .guide-box2 {
         padding: 40px 25px;
 
         .phone-txt,
@@ -352,7 +351,7 @@ body {
             align-items: center;
             gap: 58px;
         }
-        .f-btn-wrap {
+        .g-btn-wrap {
             display: none;
         }  
         p {
@@ -391,6 +390,13 @@ body {
             color: $white;
         }
     }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
     @media screen and (max-width:370px) {
         dt,
         dd,
@@ -409,17 +415,50 @@ body {
         }
     }
     @media screen and (min-width:1024px) {
-        .counsel-inner{
+        .guide-inner{
             display: flex;
             max-width: 1440px;
             margin: 0 auto;
         }
-
-        .counsel-box1 {
+        .guide-box1-m {
+            display: none;
+        }
+        .guide-box1 {
+            display: block;
             width: 50%;
             padding: 80px 40px 80px 80px;
+
+            .map-wrap-sub {
+                height: 216px;
+            }
+            .guide-txt {
+                display: flex;
+                justify-content: space-between;
+                margin: 30px 0;
+            }
+            strong {
+                font-size: 28px;
+            }
+            p {
+                font-size: 28px;
+                color: $gray-200;
+            }
+            .guide-map-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 60px;
+                border-radius: 5px;
+                background-color: $secondary;
+
+                p {
+                    font-size: 20px;
+                    color: $white;
+                }
+            }
         }
-        .counsel-box2 {
+        .guide-box2 {
             width: 50%;
             padding: 80px 80px 80px 40px;
             border-left: 1px solid $gray-200;
@@ -438,6 +477,9 @@ body {
                 font-size: 50px;
                 line-height: 0;
             }
+            dt {
+                text-align: left;
+            }
             dl {
                 font-size: 28px;
             }
@@ -445,18 +487,16 @@ body {
                 font-size: 16px;
                 margin-bottom: 56px;
             }
-            .f-btn-wrap {
+            .g-btn-wrap {
                 display: flex;
                 justify-content: space-between;
             }
-            .btn-counsel,
-            .btn-blog {
+            .guide-btn {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 49%;
                 height: 60px;
-                background-color: $txtDefult;
                 border-radius: 5px;
 
                 p {
@@ -466,6 +506,15 @@ body {
                 }
             }
         }
+    }
+}
+
+.guide-sub {
+    color: $white;
+    background-color: $txtDefult;
+
+    .guide-btn {
+        background-color: $gray-300;
     }
 }
 

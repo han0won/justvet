@@ -32,6 +32,7 @@
         height: 172px;
         margin-bottom: 24px;
         background-image: url(../../images/sub/1-상단배너.png);
+        background-position: center;
         background-size : cover;
     }
     span {
@@ -355,6 +356,3 @@
     }
 }
 
-.counsel {
-    background-color: $txtDefult;
-}

@@ -326,7 +326,7 @@ body {
   height: 20px;
   position: relative;
   z-index: 1100;
-  background-image: url(../../images/comm/병원\ 로고\(청록\).png);
+  background-image: url(../../images/comm/logo.png);
   background-size: 128px 20px;
 }
 #header .h-inner {
@@ -582,141 +582,186 @@ body {
   }
 }
 
-.counsel {
-  color: #fff;
+.guide .guide-box1-m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #79C3B8;
+  height: 60px;
 }
-.counsel .counsel-box1 {
-  padding: 80px 25px;
+.guide .guide-box1 {
+  display: none;
 }
-.counsel .counsel-box1 p {
-  padding: 20px 0;
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
-}
-.counsel .counsel-box2 {
+.guide .guide-box2 {
   padding: 40px 25px;
 }
-.counsel .counsel-box2 .phone-txt,
-.counsel .counsel-box2 .hours-txt {
+.guide .guide-box2 .phone-txt,
+.guide .guide-box2 .hours-txt {
   display: flex;
   align-items: center;
 }
-.counsel .counsel-box2 .phone-counsel {
+.guide .guide-box2 .phone-counsel {
   display: flex;
   align-items: center;
   gap: 58px;
 }
-.counsel .counsel-box2 .f-btn-wrap {
+.guide .guide-box2 .g-btn-wrap {
   display: none;
 }
-.counsel .counsel-box2 p {
+.guide .guide-box2 p {
   font-size: 28px;
   color: #79C3B8;
 }
-.counsel .counsel-box2 .clinic-hours {
+.guide .guide-box2 .clinic-hours {
   display: flex;
   align-items: flex-start;
   gap: 58px;
   margin-top: 20px;
 }
-.counsel .counsel-box2 .txt {
+.guide .guide-box2 .txt {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.counsel .counsel-box2 .txt span {
+.guide .guide-box2 .txt span {
   margin-top: 10px;
   font-size: 12px;
   color: #fff;
 }
-.counsel .counsel-box2 dl {
+.guide .guide-box2 dl {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: auto 1fr;
   row-gap: 5px;
 }
-.counsel .counsel-box2 dd {
+.guide .guide-box2 dd {
   padding-left: 40px;
 }
-.counsel .counsel-box2 i {
+.guide .guide-box2 i {
   padding-right: 10px;
   color: #fff;
 }
+.guide a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 370px) {
-  .counsel dt,
-  .counsel dd,
-  .counsel span {
+  .guide dt,
+  .guide dd,
+  .guide span {
     font-size: 12px;
   }
-  .counsel .phone-counsel,
-  .counsel .clinic-hours {
+  .guide .phone-counsel,
+  .guide .clinic-hours {
     gap: 25px;
   }
-  .counsel i {
+  .guide i {
     padding-right: 5px;
   }
-  .counsel dd {
+  .guide dd {
     padding-left: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .counsel .counsel-inner {
+  .guide .guide-inner {
     display: flex;
     max-width: 1440px;
     margin: 0 auto;
   }
-  .counsel .counsel-box1 {
+  .guide .guide-box1-m {
+    display: none;
+  }
+  .guide .guide-box1 {
+    display: block;
     width: 50%;
     padding: 80px 40px 80px 80px;
   }
-  .counsel .counsel-box2 {
+  .guide .guide-box1 .map-wrap-sub {
+    height: 216px;
+  }
+  .guide .guide-box1 .guide-txt {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+  .guide .guide-box1 strong {
+    font-size: 28px;
+  }
+  .guide .guide-box1 p {
+    font-size: 28px;
+    color: #8d8d8d;
+  }
+  .guide .guide-box1 .guide-map-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #79C3B8;
+  }
+  .guide .guide-box1 .guide-map-btn p {
+    font-size: 20px;
+    color: #fff;
+  }
+  .guide .guide-box2 {
     width: 50%;
     padding: 80px 80px 80px 40px;
     border-left: 1px solid #8d8d8d;
   }
-  .counsel .counsel-box2 .phone-counsel,
-  .counsel .counsel-box2 .clinic-hours {
+  .guide .guide-box2 .phone-counsel,
+  .guide .guide-box2 .clinic-hours {
     justify-content: space-between;
   }
-  .counsel .counsel-box2 .clinic-hours {
+  .guide .guide-box2 .clinic-hours {
     margin-top: 50px;
   }
-  .counsel .counsel-box2 span {
+  .guide .guide-box2 span {
     font-size: 28px;
   }
-  .counsel .counsel-box2 p {
+  .guide .guide-box2 p {
     font-size: 50px;
     line-height: 0;
   }
-  .counsel .counsel-box2 dl {
+  .guide .guide-box2 dt {
+    text-align: left;
+  }
+  .guide .guide-box2 dl {
     font-size: 28px;
   }
-  .counsel .counsel-box2 .txt > span {
+  .guide .guide-box2 .txt > span {
     font-size: 16px;
     margin-bottom: 56px;
   }
-  .counsel .counsel-box2 .f-btn-wrap {
+  .guide .guide-box2 .g-btn-wrap {
     display: flex;
     justify-content: space-between;
   }
-  .counsel .counsel-box2 .btn-counsel,
-  .counsel .counsel-box2 .btn-blog {
+  .guide .guide-box2 .guide-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 49%;
     height: 60px;
-    background-color: #383838;
     border-radius: 5px;
   }
-  .counsel .counsel-box2 .btn-counsel p,
-  .counsel .counsel-box2 .btn-blog p {
+  .guide .guide-box2 .guide-btn p {
     font-size: 16px;
     color: #fff;
     text-align: center;
   }
+}
+
+.guide-sub {
+  color: #fff;
+  background-color: #383838;
+}
+.guide-sub .guide-btn {
+  background-color: #676767;
 }
 
 #footer {
@@ -1430,34 +1475,37 @@ body {
   }
 }
 
-.counsel {
+.guide-main {
+  background-color: #79C3B8;
+  color: #fff;
+}
+.guide-main .counsel-box {
+  padding: 80px 25px;
   background-color: #79C3B8;
 }
-.counsel .counsel-typo {
+.guide-main .counsel-box p {
+  padding: 20px 0;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.guide-main .counsel-typo {
   margin-bottom: 36px;
 }
-.counsel h3 {
+.guide-main h3 {
   font-family: SOYOMapleBoldTTF;
   font-size: 20px;
   color: #fff;
 }
-.counsel .privacy {
+.guide-main .privacy {
   display: flex;
   align-items: center;
 }
-.counsel i {
+.guide-main i {
   color: #fff;
   padding-right: 5px;
 }
-@media screen and (min-width: 1024px) {
-  .counsel .counsel-box2 {
-    background-color: #79C3B8;
-  }
-  .counsel .counsel-box2 p {
-    color: #fff;
-  }
-}
-.counsel form label {
+.guide-main form label {
   position: absolute;
   width: 0;
   height: 0;
@@ -1465,24 +1513,24 @@ body {
   line-height: 0;
   visibility: hidden;
 }
-.counsel form input[type=text] {
+.guide-main form input[type=text] {
   border-radius: 5px;
   height: 47px;
 }
-.counsel form input::-moz-placeholder {
+.guide-main form input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-.counsel form input::placeholder {
+.guide-main form input::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-.counsel form textarea::-moz-placeholder {
+.guide-main form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-.counsel form textarea::placeholder {
+.guide-main form textarea::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-.counsel form input,
-.counsel form textarea {
+.guide-main form input,
+.guide-main form textarea {
   width: 100%;
   padding: 0 24px;
   margin-top: 10px;
@@ -1491,18 +1539,18 @@ body {
   border-radius: 5px;
   font-family: "SUITE-Regular";
 }
-.counsel form textarea {
+.guide-main form textarea {
   height: 150px;
   padding-top: 15px;
 }
-.counsel form .privacy {
+.guide-main form .privacy {
   margin: 12px 0 40px;
 }
-.counsel form span {
+.guide-main form span {
   color: #fff;
   font-size: 14px;
 }
-.counsel form .counsel-btn {
+.guide-main form .counsel-btn {
   width: 100%;
   height: 47px;
   background-color: #383838;
@@ -1510,49 +1558,65 @@ body {
   border: 0;
   color: #fff;
 }
-
-@media screen and (max-width: 370px) {
-  .main-cont h2 {
-    font-size: 24px;
-  }
+.guide-main .gb-main {
+  background-color: #383838;
 }
 @media screen and (min-width: 1024px) {
-  .counsel .counsel-typo {
+  .guide-main .counsel-box {
+    width: 50%;
+    padding: 80px 40px 80px 80px;
+  }
+  .guide-main .counsel-typo {
     margin-bottom: 60px;
   }
-  .counsel h3 {
+  .guide-main h3 {
     font-size: 36px;
   }
-  .counsel form {
+  .guide-main form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .counsel form .form-wrap {
+  .guide-main form .form-wrap {
     width: 50%;
     padding-right: 36px;
   }
-  .counsel form label {
+  .guide-main form label {
     position: static;
     visibility: visible;
     font-size: 16px;
     color: #fff;
   }
-  .counsel form #name {
+  .guide-main form #name {
     margin-bottom: 22px;
   }
-  .counsel form .txtarea-box {
+  .guide-main form .txtarea-box {
     width: 50%;
     padding-bottom: 20px;
   }
-  .counsel form .privacy {
+  .guide-main form .privacy {
     align-items: flex-start;
     margin: 0;
   }
-  .counsel form .counsel-btn {
+  .guide-main form .counsel-btn {
     width: 50%;
     height: 60px;
     margin: 0;
+  }
+  .guide-main .gb-main {
+    background-color: #79C3B8;
+  }
+  .guide-main .gb-main p {
+    color: #fff;
+  }
+  .guide-main .guide-btn {
+    background-color: #383838;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .main-cont h2 {
+    font-size: 24px;
   }
 }
 .gnb-sub .hospital {
@@ -1589,6 +1653,7 @@ body {
   height: 172px;
   margin-bottom: 24px;
   background-image: url(../../images/sub/1-상단배너.png);
+  background-position: center;
   background-size: cover;
 }
 .hospital-intro span {
@@ -1908,10 +1973,6 @@ body {
     display: block;
     font-size: 28px;
   }
-}
-
-.counsel {
-  background-color: #383838;
 }
 
 :root {

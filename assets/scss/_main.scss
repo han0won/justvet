@@ -629,9 +629,21 @@
 
 
 
-.counsel {
+.guide-main {
     background-color: $secondary;
+    color: $white;
 
+    .counsel-box {
+        padding: 80px 25px;;
+        background-color: $secondary;
+        
+        p {
+            padding: 20px 0;
+            font-size: 18px;
+            text-align: center;
+            color: $white;
+        }
+    }
     .counsel-typo {
             margin-bottom: 36px;
         }
@@ -649,13 +661,7 @@
             padding-right: 5px;
         }
         @media screen and (min-width:1024px) {
-            .counsel-box2 {
-                background-color: $secondary;
 
-                p {
-                    color: $white;
-                }
-            }
     }
     form { 
         label {
@@ -706,15 +712,14 @@
         color: $white;
         }
     }
-}
-
-@media screen and (max-width:370px) {  
-    .main-cont h2 {
-        font-size: 24px;
-    } 
-}
-@media screen and (min-width:1024px) {
-    .counsel {
+    .gb-main {
+        background-color: $txtDefult;
+    }
+    @media screen and (min-width:1024px) {
+        .counsel-box {
+            width: 50%;
+            padding: 80px 40px 80px 80px;
+        }
         .counsel-typo {
             margin-bottom: 60px;
         }
@@ -725,7 +730,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-
+    
             .form-wrap {
                 width: 50%;
                 padding-right: 36px;
@@ -753,7 +758,25 @@
                 margin: 0;
             }
         }
-    }
+        .gb-main {
+            background-color: $secondary;
+    
+            p {
+                color: $white;
+            }
+        }
+        .guide-btn {
+            background-color: $txtDefult;
+        }
+    }    
 }
+
+
+@media screen and (max-width:370px) {  
+    .main-cont h2 {
+        font-size: 24px;
+    } 
+}
+
 
 
