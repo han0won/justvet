@@ -508,6 +508,12 @@ body {
     text-align: center;
     font-size: 14px;
   }
+  #header #gnb .depth1 li:hover .depth2 {
+    opacity: 1;
+    visibility: 1;
+    max-height: 300px;
+    padding: 20px 0;
+  }
 }
 
 .sub-banner {
@@ -719,7 +725,6 @@ body {
   .guide .guide-box2 {
     width: 50%;
     padding: 80px 80px 80px 40px;
-    border-left: 1px solid #8d8d8d;
   }
   .guide .guide-box2 .phone-counsel,
   .guide .guide-box2 .clinic-hours {
@@ -764,6 +769,11 @@ body {
   }
 }
 
+.gb-main {
+  background-color: #383838;
+  border-left: 1px solid #8d8d8d;
+}
+
 .guide-sub {
   color: #fff;
   background-color: #383838;
@@ -771,10 +781,12 @@ body {
 .guide-sub .guide-btn {
   background-color: #676767;
 }
+.guide-sub .gb-sub {
+  border-left: 1px solid #676767;
+}
 
 #footer {
   background-color: #383838;
-  border-top: 1px solid #676767;
 }
 #footer .f-wrap {
   padding: 40px 25px;
@@ -1565,9 +1577,6 @@ body {
   border-radius: 5px;
   border: 0;
   color: #fff;
-}
-.guide-main .gb-main {
-  background-color: #383838;
 }
 @media screen and (min-width: 1024px) {
   .guide-main .counsel-box {
