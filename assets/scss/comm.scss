@@ -338,6 +338,15 @@ body {
     .guide-box1 {
         display: none;
     }
+    .guide-map-btn {
+        width: 100%;
+        height: 100%;
+
+        p{
+            color: $white;
+            font-size: 18px;
+        }
+    }
     .guide-box2 {
         padding: 40px 25px;
 

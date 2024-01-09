@@ -18,9 +18,13 @@ h2 {
     padding-top: 22px;
     text-align: left;
 
+    .sub-intro-w {
+        display: none;
+    }
     .int-image {
         height: 150px;
         background-image: url(../../images/sub/2-banner.png);
+        background-position: center;
         background-size : cover;
     }
     .int-typo {
@@ -42,14 +46,42 @@ h2 {
             font-size: 12px;
         }
     }
+    @media screen and (min-width: 1024px) {
+        padding-top: 0;
+
+        .int-image {
+            height: 400px;
+        }
+        .int-typo {
+            padding: 0;
+        }
+        .sub-intro-m {
+            display: none;
+        }        
+        .sub-intro-w {
+            display: block;
+        }
+        h2 {
+            margin-top: 70px;
+        }
+        .dig-tit {
+            margin-top: 40px;
+            font-size: 20px;
+        }
+    }
 }
 
 .digestive-symptom {
     background-color: $gray-100;
 
+    .symptom-w {
+        display: none;
+    }
     p {
         padding-top: 16px;
         padding-bottom: 22px;
+        font-size: 14px;
+        color: $gray-300;
     }
     ul {
         display: flex;
@@ -74,14 +106,55 @@ h2 {
         }
         p {
             padding: 14px 0;
+            color: $txtDefult;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .symptom-m {
+            display: none;
+        }
+        .symptom-w {
+            display: block;
+            font-size: 20px;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+        p {
+            padding: 0;
+        }
+        ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 70px;
+            gap: 50px;
+        }
+        li {
+            width: 300px;
+            height: 65px;
+            margin: 0;
+
+            p {
+                font-size: 20px;
+            }
         }
     }
 }
 
 .digestive-checkup {
+    .check-up-w {
+        display: none;
+    }
     p {
         padding-top: 16px;
         padding-bottom: 36px;
+        font-size: 14px;
         color: $gray-300;
     }
     ul {
@@ -135,11 +208,50 @@ h2 {
         font-size: 20px;
         font-weight: bold;
     }
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .check-up-m {
+            display: none;
+        }
+        .check-up-w {
+            display: block;
+
+            p {
+                padding: 15px 0 70px;
+                font-size: 20px;
+            }
+        }
+        ul {
+            width: 80%;
+            row-gap: 5px;
+        }
+        li {
+            width: 33%;
+            height: 330px;
+            margin: 0;
+
+            .number {
+                width: 35px;
+                height: 35px;
+                padding-top: 5px;
+                font-size: 20px;
+            }
+            .name {
+                font-size: 32px;
+            }
+        }
+    }
 }
 
 .digestive-food {
     background-color: $gray-100;
 
+    .food-w {
+        display: none;
+    }
     h2 {
         text-align: center;
         margin-bottom: 40px;
@@ -202,5 +314,30 @@ h2 {
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
         top: auto;
         bottom: 0;
+    }
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 70px;
+        }
+        .food-m {
+            display: none;
+        }      
+        .food-w {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+            gap: 30px;
+        }  
+        .food-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $white;
+        }
     }
 }

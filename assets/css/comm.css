@@ -592,6 +592,14 @@ body {
 .guide .guide-box1 {
   display: none;
 }
+.guide .guide-map-btn {
+  width: 100%;
+  height: 100%;
+}
+.guide .guide-map-btn p {
+  color: #fff;
+  font-size: 18px;
+}
 .guide .guide-box2 {
   padding: 40px 25px;
 }
@@ -1688,6 +1696,9 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
+  .hospital-intro {
+    padding-top: 0;
+  }
   .hospital-intro .intro-image {
     height: 470px;
     margin-bottom: 100px;
@@ -1992,9 +2003,13 @@ h2 {
   padding-top: 22px;
   text-align: left;
 }
+.digestive-intro .sub-intro-w {
+  display: none;
+}
 .digestive-intro .int-image {
   height: 150px;
   background-image: url(../../images/sub/2-banner.png);
+  background-position: center;
   background-size: cover;
 }
 .digestive-intro .int-typo {
@@ -2016,13 +2031,42 @@ h2 {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .digestive-intro {
+    padding-top: 0;
+  }
+  .digestive-intro .int-image {
+    height: 400px;
+  }
+  .digestive-intro .int-typo {
+    padding: 0;
+  }
+  .digestive-intro .sub-intro-m {
+    display: none;
+  }
+  .digestive-intro .sub-intro-w {
+    display: block;
+  }
+  .digestive-intro h2 {
+    margin-top: 70px;
+  }
+  .digestive-intro .dig-tit {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
 
 .digestive-symptom {
   background-color: #f0f3f5;
 }
+.digestive-symptom .symptom-w {
+  display: none;
+}
 .digestive-symptom p {
   padding-top: 16px;
   padding-bottom: 22px;
+  font-size: 14px;
+  color: #676767;
 }
 .digestive-symptom ul {
   display: flex;
@@ -2047,11 +2091,52 @@ h2 {
 }
 .digestive-symptom li p {
   padding: 14px 0;
+  color: #383838;
+}
+@media screen and (min-width: 1024px) {
+  .digestive-symptom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .digestive-symptom .symptom-m {
+    display: none;
+  }
+  .digestive-symptom .symptom-w {
+    display: block;
+    font-size: 20px;
+  }
+  .digestive-symptom h2 {
+    margin-bottom: 15px;
+  }
+  .digestive-symptom p {
+    padding: 0;
+  }
+  .digestive-symptom ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 70px;
+    gap: 50px;
+  }
+  .digestive-symptom li {
+    width: 300px;
+    height: 65px;
+    margin: 0;
+  }
+  .digestive-symptom li p {
+    font-size: 20px;
+  }
 }
 
+.digestive-checkup .check-up-w {
+  display: none;
+}
 .digestive-checkup p {
   padding-top: 16px;
   padding-bottom: 36px;
+  font-size: 14px;
   color: #676767;
 }
 .digestive-checkup ul {
@@ -2105,9 +2190,47 @@ h2 {
   font-size: 20px;
   font-weight: bold;
 }
+@media screen and (min-width: 1024px) {
+  .digestive-checkup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .digestive-checkup .check-up-m {
+    display: none;
+  }
+  .digestive-checkup .check-up-w {
+    display: block;
+  }
+  .digestive-checkup .check-up-w p {
+    padding: 15px 0 70px;
+    font-size: 20px;
+  }
+  .digestive-checkup ul {
+    width: 80%;
+    row-gap: 5px;
+  }
+  .digestive-checkup li {
+    width: 33%;
+    height: 330px;
+    margin: 0;
+  }
+  .digestive-checkup li .number {
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  .digestive-checkup li .name {
+    font-size: 32px;
+  }
+}
 
 .digestive-food {
   background-color: #f0f3f5;
+}
+.digestive-food .food-w {
+  display: none;
 }
 .digestive-food h2 {
   text-align: center;
@@ -2172,4 +2295,30 @@ h2 {
 .digestive-food .swiper-horizontal > .swiper-pagination-bullets, .digestive-food .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: auto;
   bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .digestive-food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .digestive-food h2 {
+    margin-bottom: 70px;
+  }
+  .digestive-food .food-m {
+    display: none;
+  }
+  .digestive-food .food-w {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 30px;
+  }
+  .digestive-food .food-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+  }
 }/*# sourceMappingURL=comm.css.map */
