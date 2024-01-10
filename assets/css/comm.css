@@ -2054,9 +2054,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 140px 80px;
-  max-width: 1440px;
   margin: 0 auto;
+  padding: 80px 0;
 }
 .digestive-symptom .symptom-w {
   display: none;
@@ -2097,6 +2096,10 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .digestive-symptom .symptom-wrap {
+    padding: 140px 80px;
+    max-width: 1440px;
   }
   .digestive-symptom .symptom-m {
     display: none;
@@ -2227,7 +2230,7 @@ h2 {
 }
 
 .digestive-food {
-  padding: 140px 80px;
+  padding: 80px 25px;
   background-color: #f0f3f5;
 }
 .digestive-food .food-w {
@@ -2300,9 +2303,7 @@ h2 {
 }
 @media screen and (min-width: 1024px) {
   .digestive-food {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 140px 80px;
   }
   .digestive-food h2 {
     font-size: 50px;
@@ -2312,16 +2313,6 @@ h2 {
     display: none;
   }
   .digestive-food .food-w {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
-    gap: 30px;
-  }
-  .digestive-food .food-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fff;
+    display: block;
   }
 }/*# sourceMappingURL=comm.css.map */

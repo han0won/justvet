@@ -242,9 +242,9 @@
                         반려동물에게 먹이면 안 되는 음식들
                     </h2>
                 </div>
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper slide-sub2">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-aos="fade-down" data-aos-duration="2000">
                         <div class="food-image onion"></div>
                         <span>양파</span>
                         <div class="food-txt">
@@ -255,7 +255,7 @@
                                 심할 경우 사망할 위험이 있습니다.</p>
                         </div>
                       </div>
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="100">
                         <div class="food-image grape"></div>
                         <span>포도</span>
                         <div class="food-txt">
@@ -266,7 +266,7 @@
                                 급성신부전을 유발할 수 있습니다.</p>
                         </div>
                       </div>
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
                         <div class="food-image milk"></div>
                         <span>우유</span>
                         <div class="food-txt">
@@ -277,7 +277,7 @@
                                 설사나 알레르기 위험이 있습니다.</p>
                         </div>
                       </div>
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
                         <div class="food-image coffee"></div>
                         <span>커피</span>
                         <div class="food-txt">
@@ -288,7 +288,7 @@
                             </p>
                         </div>
                       </div>
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
                         <div class="food-image nut"></div>
                         <span>견과류</span>
                         <div class="food-txt">
@@ -299,7 +299,7 @@
                                 있습니다.</p>
                         </div>
                       </div>
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
                         <div class="food-image dried"></div>
                         <span>건어물</span>
                         <hr />
@@ -318,83 +318,19 @@
                 <script>
                     var swiper = new Swiper(".mySwiper", {
                     slidesPerView: "auto",
-                    // centeredSlides: true,
+                    centeredSlides: true,
                     spaceBetween: 30,
                     pagination: {
                         el: ".swiper-pagination",
                         clickable: true,
                     },
+                    breakpoints: {
+                                        1024: {
+                                            centeredSlides: false,
+                                        },
+                                    },
                     });
                 </script>
-                <!-- <div class="food-w">
-                    <div class="food-wrap" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <div class="food-image onion"></div>
-                        <span>양파</span>
-                        <div class="food-txt">
-                            <p>독성 성분이 산소 운반을 방해하고
-                                <br>
-                                혈구를 파괴하여 빈혈이 일어나고
-                                <br>
-                                심할 경우 사망할 위험이 있습니다.</p>
-                        </div>
-                    </div>
-                    <div class="food-wrap" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <div class="food-image grape"></div>
-                        <span>포도</span>
-                        <div class="food-txt">
-                            <p>개가 먹으면 안 되는 대표적인
-                                <br>
-                                과일입니다. 포도, 건포도 섭취 시 
-                                <br>
-                                급성신부전을 유발할 수 있습니다.</p>
-                        </div>
-                    </div>
-                    <div class="food-wrap" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <div class="food-image milk"></div>
-                        <span>우유</span>
-                        <div class="food-txt">
-                            <p>대부분의 고양이는 우유의 젖당을
-                                <br>
-                                분해할 수 없기 때문에 우유 섭취는
-                                <br>
-                                설사나 알레르기 위험이 있습니다.</p>
-                        </div>
-                    </div>
-                    <div class="food-wrap" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <div class="food-image coffee"></div>
-                        <span>커피</span>
-                        <div class="food-txt">
-                            <p>
-                                커피에는 카페인이 포함되어 있는데 
-                                <br>카페인은 개의 건강을 해칠 수 있고
-                                <br>생명에 지장을 줄 수도 있습니다. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="food-wrap" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <div class="food-image nut"></div>
-                        <span>견과류</span>
-                        <div class="food-txt">
-                            <p>견과류는 지방 함량이 높아 섭취 시
-                                <br>
-                                소화기계 문제가 발생할 가능성이
-                                <br>
-                                있습니다.</p>
-                        </div>
-                    </div>
-                    <div class="food-wrap" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <div class="food-image dried"></div>
-                        <span>건어물</span>
-                        <hr />
-                        <div class="food-txt">
-                            <p>
-                                건어물에는 각종 조미료가 첨가되고
-                                <br>염분 또한 높은 편이기 때문에
-                                <br>급여에 주의할 필요가 있습니다.
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             <section class="guide guide-sub">
                 <div class="guide-inner">
