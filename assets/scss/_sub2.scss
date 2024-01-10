@@ -74,6 +74,14 @@ h2 {
 .digestive-symptom {
     background-color: $gray-100;
 
+    .symptom-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 140px 80px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
     .symptom-w {
         display: none;
     }
@@ -122,6 +130,7 @@ h2 {
             font-size: 20px;
         }
         h2 {
+            font-size: 50px;
             margin-bottom: 15px;
         }
         p {
@@ -247,6 +256,7 @@ h2 {
 }
 
 .digestive-food {
+    padding: 140px 80px;
     background-color: $gray-100;
 
     .food-w {
@@ -258,6 +268,7 @@ h2 {
     }
     .swiper {
         width: 100%;
+        max-width: 1280px;
         height: 100%;
         padding: 0 0 60px;
     }
@@ -290,7 +301,7 @@ h2 {
         text-align: left;
     }
     .food-image {
-        width: 249px;
+        width: 100%;
         height: 183px;
     }
     .onion {
@@ -321,6 +332,7 @@ h2 {
         align-items: center;
 
         h2 {
+            font-size: 50px;
             margin-bottom: 70px;
         }
         .food-m {

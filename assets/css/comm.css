@@ -588,6 +588,22 @@ body {
   }
 }
 
+.cont-inner {
+  padding: 80px 0;
+}
+@media screen and (min-width: 768px) {
+  .cont-inner {
+    padding: 140px 80px 140px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-inner h2 {
+    font-size: 50px;
+  }
+}
+
 .guide .guide-box1-m {
   display: flex;
   justify-content: center;
@@ -787,6 +803,7 @@ body {
 
 #footer {
   background-color: #383838;
+  border-top: 1px solid #676767;
 }
 #footer .f-wrap {
   padding: 40px 25px;
@@ -1026,12 +1043,11 @@ body {
   padding-bottom: 0;
   overflow: hidden;
 }
-.intro .swiper-slide {
-  width: 310px !important;
-  margin-right: 25px;
+.intro .int-typo-w {
+  display: none;
 }
-.intro .int-slide-wrap {
-  width: 100%;
+.intro .swiper-slide {
+  margin-right: 25px;
 }
 .intro .int-image {
   margin-top: 36px;
@@ -1050,32 +1066,15 @@ body {
 }
 .intro p {
   margin-top: 12px;
-  padding-bottom: 80px;
+  padding-bottom: 48px;
   font-size: 14px;
   color: #fff;
 }
-.intro .inner-w,
-.intro .int-typo-w {
-  display: none;
-}
-.intro .inner-w-1,
-.intro .inner-w-2 {
-  width: calc(100% - 45px);
-}
 @media screen and (min-width: 654px) {
-  .intro .inner-m {
-    display: none;
-  }
-  .intro .inner-w {
-    display: flex;
-  }
   .intro img {
     width: 100%;
     -o-object-fit: fill;
        object-fit: fill;
-  }
-  .intro .inner-w-1 {
-    margin-right: 46px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1677,8 +1676,7 @@ body {
   font-size: 16px;
   color: #79C3B8;
 }
-.hospital-intro .sub-intro-m,
-.hospital-intro .sub-intro-w {
+.hospital-intro .sub-intro-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2068,6 +2066,14 @@ h2 {
 .digestive-symptom {
   background-color: #f0f3f5;
 }
+.digestive-symptom .symptom-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 140px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .digestive-symptom .symptom-w {
   display: none;
 }
@@ -2116,6 +2122,7 @@ h2 {
     font-size: 20px;
   }
   .digestive-symptom h2 {
+    font-size: 50px;
     margin-bottom: 15px;
   }
   .digestive-symptom p {
@@ -2236,6 +2243,7 @@ h2 {
 }
 
 .digestive-food {
+  padding: 140px 80px;
   background-color: #f0f3f5;
 }
 .digestive-food .food-w {
@@ -2247,6 +2255,7 @@ h2 {
 }
 .digestive-food .swiper {
   width: 100%;
+  max-width: 1280px;
   height: 100%;
   padding: 0 0 60px;
 }
@@ -2280,7 +2289,7 @@ h2 {
   text-align: left;
 }
 .digestive-food .food-image {
-  width: 249px;
+  width: 100%;
   height: 183px;
 }
 .digestive-food .onion {
@@ -2312,6 +2321,7 @@ h2 {
     align-items: center;
   }
   .digestive-food h2 {
+    font-size: 50px;
     margin-bottom: 70px;
   }
   .digestive-food .food-m {

@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/comm.css">
     <script src="https://kit.fontawesome.com/af95449672.js" crossorigin="anonymous"></script>
-
+    <script src="path/to/swiper.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script defer src="./assets/js/comm.js"></script>
 </head>
 
 <body>
@@ -104,14 +106,14 @@
                 <div class="int-image" data-aos="fade-down" data-aos-duration="2000"></div>
                 <div class="int-typo">
                     <div class="sub-intro-m">
-                        <h2>
+                        <h2 data-aos="fade-down" data-aos-duration="2000">
                             일시적인 증상부터
                             <br>
                             만성질환 환자까지
                             <br>
                             폭 넓은 케어를 진행합니다
                         </h2>
-                        <p class="dig-tit">
+                        <p class="dig-tit" data-aos="fade-down" data-aos-duration="2000">
                             소화기에 발생하는 질환은 다양합니다.
                             <br>
                             급성 만성 염증성 질환과 이물, 중첩 등 기계적 폐색성 질환,
@@ -135,51 +137,53 @@
                     </div>
                 </div>
             </div>
-            <div class="cont-inner digestive-symptom">
-                <h2 data-aos="fade-down" data-aos-duration="2000">소화기질환 증상</h2>
-                <p class="symptom-m">
-                    반려동물이 아래와 같은 증상을 보인다면
-                    <br>
-                    소화기에 문제가 있을 가능성이 높습니다.
-                </p>
-                <p class="symptom-w" data-aos="fade-down" data-aos-duration="2000">
-                    반려동물이 아래와 같은 증상을 보인다면 소화기에 문제가 있을 가능성이 높습니다.
-                </p>
-                <ul>
-                    <li data-aos="fade-right">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <p>식욕부진</p>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="100">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <p>설사</p>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="200">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <p>구토</p>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="300">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <p>복부통증</p>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="400">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <p>연하곤란</p>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="500">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <p>배변곤란</p>
-                    </li>
-                </ul>
+            <div class="digestive-symptom">
+                <div class="symptom-wrap">
+                    <h2 data-aos="fade-down" data-aos-duration="2000">소화기질환 증상</h2>
+                    <p class="symptom-m" data-aos="fade-down" data-aos-duration="2000">
+                        반려동물이 아래와 같은 증상을 보인다면
+                        <br>
+                        소화기에 문제가 있을 가능성이 높습니다.
+                    </p>
+                    <p class="symptom-w" data-aos="fade-down" data-aos-duration="2000">
+                        반려동물이 아래와 같은 증상을 보인다면 소화기에 문제가 있을 가능성이 높습니다.
+                    </p>
+                    <ul>
+                        <li data-aos="fade-right" data-aos-duration="2000">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>식욕부진</p>
+                        </li>
+                        <li data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>설사</p>
+                        </li>
+                        <li data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>구토</p>
+                        </li>
+                        <li data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>복부통증</p>
+                        </li>
+                        <li data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>연하곤란</p>
+                        </li>
+                        <li data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>배변곤란</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="cont-inner digestive-checkup">
                 <div class="check-up-m">
-                    <h2>
+                    <h2 data-aos="fade-down" data-aos-duration="2000">
                         증상과 정도에 따라
                         <br>
                         다양한 검사가 진행됩니다
                     </h2>
-                    <p>
+                    <p data-aos="fade-down" data-aos-duration="2000">
                         초진 후 검사결과에 따라
                         <br>
                         반려동물에게 적합한 검사를 실시합니다.
@@ -194,7 +198,7 @@
                     </p>
                 </div>
                 <ul>
-                    <li data-aos="zoom-in" data-aos-duration="2000">
+                    <li data-aos="zoom-in" data-aos-duration="1000">
                         <div class="number">01</div>
                         <div class="name">혈액검사</div>
                         <div class="checkup-img blood-img"></div>
@@ -225,9 +229,9 @@
                         <div class="checkup-img kit-img"></div>
                 </ul>
             </div>
-            <div class="cont-inner digestive-food">
+            <div class="digestive-food">
                 <div class="food-m">
-                    <h2>
+                    <h2 data-aos="fade-down" data-aos-duration="1000">
                         반려동물에게 먹이면
                         <br>
                         안 되는 음식들
@@ -238,7 +242,7 @@
                         반려동물에게 먹이면 안 되는 음식들
                     </h2>
                 </div>
-                <div class="swiper mySwiper food-m">
+                <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="food-image onion"></div>
@@ -314,7 +318,7 @@
                 <script>
                     var swiper = new Swiper(".mySwiper", {
                     slidesPerView: "auto",
-                    centeredSlides: true,
+                    // centeredSlides: true,
                     spaceBetween: 30,
                     pagination: {
                         el: ".swiper-pagination",
@@ -322,7 +326,7 @@
                     },
                     });
                 </script>
-                <div class="food-w">
+                <!-- <div class="food-w">
                     <div class="food-wrap" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                         <div class="food-image onion"></div>
                         <span>양파</span>
@@ -390,7 +394,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <section class="guide guide-sub">
                 <div class="guide-inner">
@@ -512,7 +516,5 @@
     <script>
     AOS.init();
     </script>
-    </body>
-
-
-    </html>
+</body>
+</html>

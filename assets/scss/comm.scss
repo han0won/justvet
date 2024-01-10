@@ -333,6 +333,21 @@ body {
     }
 }
 
+.cont-inner {
+    padding: 80px 0;
+
+    @media screen and (min-width: 768px) {
+    padding: 140px 80px 140px;
+    max-width: 1440px;
+    margin: 0 auto;
+    }
+    @media screen and (min-width: 1024px) {
+        h2 {
+            font-size: 50px;
+        }
+    }
+}
+
 .guide {
     .guide-box1-m {
         display: flex;
@@ -540,6 +555,7 @@ body {
 
 #footer {
     background-color: $txtDefult;
+    border-top: 1px solid $gray-300;
 
     .f-wrap {
         padding: 40px 25px;

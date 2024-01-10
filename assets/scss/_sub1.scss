@@ -10,21 +10,6 @@
     font-size: 32px;
 }
 
-.cont-inner {
-    padding: 80px 0;
-
-    @media screen and (min-width: 768px) {
-    padding: 140px 80px 140px;
-    max-width: 1440px;
-    margin: 0 auto;
-    }
-    @media screen and (min-width: 1024px) {
-        h2 {
-            font-size: 50px;
-        }
-    }
-}
-
 .hospital-intro {
     padding-top: 22px;
     .intro-image {
@@ -39,8 +24,7 @@
         font-size: 16px;
         color: $secondary;
     }
-    .sub-intro-m,
-    .sub-intro-w {
+    .sub-intro-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
