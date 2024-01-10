@@ -118,7 +118,9 @@
     em {
       font-size: 15px;
       font-style: normal;
-      color: $secondary;
+      background: linear-gradient(to right,  #79C3B8 0%, #00AEAA 100%);
+      color: transparent;
+      -webkit-background-clip: text;
     }
     h2 {
       margin-top: 12px;
@@ -164,6 +166,9 @@
     .swiper-slide {
         margin-right: 25px;
     }
+    .swiper-scrollbar-drag {
+        background: rgba(0, 174, 170, 0.5);
+    }
     .int-image {
         margin-top: 36px;
         margin-bottom: 24px;
@@ -180,7 +185,7 @@
     }
     p {
         margin-top: 12px;
-        padding-bottom: 48px;
+        padding-bottom: 68px;
         font-size: 14px;
         color: $white;
     }   
@@ -242,7 +247,7 @@
     width: 100%;
     top: 422px;
     height: 250px;
-    background-color: $primary;
+    background: linear-gradient(to bottom, $white 0%, $secondary 51%, $primary 100%);
 
     @media screen and (min-width: 768px) {
         top: 487px;
@@ -332,7 +337,7 @@
         height: 25px;
         border-radius: 100px;
         color: $white;
-        background-color: $primary;
+        background: linear-gradient(to right bottom, $secondary 0%, $primary 100%);
     }
     .trt-internal,
     .trt-surgery {
@@ -407,6 +412,7 @@
 
 .care-box-wrap {
     position: relative;
+    background: linear-gradient(180deg, #fff, $gray-100 50%);
 
         .care-service {
             .care-image {
@@ -420,10 +426,12 @@
             strong {
                 font-size: 20px;
                 color: $secondary;
+                font-weight: normal;
             }
             p {
                 margin-top: 15px;
                 font-size: 14px;
+                color: $gray-300;
             }
             @media screen and (max-width:370px) {
                 strong {
@@ -461,15 +469,6 @@
                     font-size: 20px;
                 }
             }
-        }
-        .care-box {
-            position: absolute;
-            z-index: -1000;
-            width: 100%;
-            top: 0;
-            left: 0;
-            height: 604px;
-            background-color: $gray-100;
         }
 }
 

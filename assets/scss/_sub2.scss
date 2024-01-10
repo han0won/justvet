@@ -213,7 +213,7 @@ h2 {
         line-height: 25px;
         color: $white;
         border-radius: 25px;
-        background-color: $primary;
+        background: linear-gradient(to right bottom, $secondary 0%, $primary 100%);
     }
     .name {
         margin: 10px 0 12px;
@@ -260,7 +260,7 @@ h2 {
 
 .digestive-food {
     padding: 80px 25px;
-    background-color: $gray-100;
+    background: linear-gradient(180deg, #fff, #f0f3f5 100%);
 
     .food-w {
         display: none;
