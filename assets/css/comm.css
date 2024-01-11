@@ -971,6 +971,16 @@ body {
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.web-main-box li:hover {
+  background-color: #00AEAA;
+}
+.web-main-box li:hover strong,
+.web-main-box li:hover p {
+  color: #fff;
+}
+.web-main-box li:hover .icon-box {
+  background-color: #fff;
+}
 .web-main-box .icon-box {
   width: 90px;
   height: 90px;
@@ -1050,13 +1060,14 @@ body {
   }
 }
 
-.int-box-wrap {
-  position: relative;
-}
-
 .intro {
-  padding-bottom: 0;
+  position: relative;
+  padding: 80px 0 0;
   overflow: hidden;
+}
+.intro .int-typo,
+.intro .int-inner {
+  padding: 0 25px;
 }
 .intro .int-typo-w {
   display: none;
@@ -1077,6 +1088,11 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.intro img:hover {
+  transform: scale(1.3);
 }
 .intro strong {
   font-size: 20px;
@@ -1084,20 +1100,14 @@ body {
 }
 .intro p {
   margin-top: 12px;
-  padding-bottom: 68px;
+  padding-bottom: 40px;
   font-size: 14px;
   color: #fff;
 }
-@media screen and (min-width: 654px) {
-  .intro img {
-    width: 100%;
-    -o-object-fit: fill;
-       object-fit: fill;
-  }
-}
 @media screen and (min-width: 768px) {
-  .intro p {
-    padding-bottom: 40px;
+  .intro .int-typo,
+  .intro .int-inner {
+    padding: 0 80px;
   }
   .intro .int-typo-m {
     display: none;
@@ -1127,7 +1137,14 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: none;
     padding-top: 24px;
+  }
+  .intro .int-inner {
+    max-width: 100%;
   }
   .intro strong {
     font-size: 32px;
@@ -1137,36 +1154,32 @@ body {
     padding-bottom: 80px;
   }
 }
-
-.mySwiper {
-  overflow: visible;
+@media screen and (min-width: 1280px) {
+  .intro .int-inner {
+    max-width: 1440px;
+  }
 }
-
-.int-box {
+.intro .int-box {
   position: absolute;
   z-index: -1000;
   width: 100%;
-  top: 422px;
   height: 250px;
+  bottom: 0;
   background: linear-gradient(to bottom, #fff 0%, #79C3B8 51%, #00AEAA 100%);
 }
 @media screen and (min-width: 768px) {
-  .int-box {
-    top: 487px;
+  .intro .int-box {
     height: 280px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .int-box {
-    top: 717px;
-    height: 300px;
+  .intro .int-box {
+    height: 400px;
   }
 }
-@media screen and (min-width: 1210px) {
-  .int-box {
-    top: 812px;
-    height: 365px;
-  }
+
+.mySwiper {
+  overflow: visible;
 }
 
 .treat ul {
@@ -2073,7 +2086,7 @@ h2 {
     z-index: -100;
     background: linear-gradient(to right, #79C3B8 0%, #00AEAA 100%);
   }
-  .digestive-intro .sub-intro-w h2:hover span::after {
+  .digestive-intro .sub-intro-w span::after {
     width: 100%;
     transition: width 0.3s;
   }

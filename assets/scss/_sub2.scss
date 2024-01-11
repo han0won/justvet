@@ -69,16 +69,16 @@ h2 {
               }
             span::after {
             content: '';
-            display: block;
-            width: 0;
-            height: 10px;
-            position: absolute;
-            left: 0;
-            bottom: 5px;
-            z-index: -100;
-            background: linear-gradient(to right, $secondary 0%, $primary 100%);
+                display: block;
+                width: 0;
+                height: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 5px;
+                z-index: -100;
+                background: linear-gradient(to right, $secondary 0%, $primary 100%);
             }
-            h2:hover span::after {
+            span::after {
                 width: 100%;
                 transition: width .3s;
             }
