@@ -610,9 +610,6 @@
 
 
 .guide-main {
-    background-color: $secondary;
-    color: $white;
-
     .counsel-box {
         padding: 80px 25px;;
         background-color: $secondary;
@@ -640,9 +637,6 @@
             color: $white;
             padding-right: 5px;
         }
-        @media screen and (min-width:1024px) {
-
-    }
     form { 
         label {
             position: absolute;
@@ -680,7 +674,7 @@
             margin: 12px 0 40px;
         }
         span {
-            color: $white;
+            color: $gray-100;
             font-size: 14px;
         }
         .counsel-btn {
@@ -695,7 +689,8 @@
     @media screen and (min-width:1024px) {
         .counsel-box {
             width: 50%;
-            padding: 80px 40px 80px 80px;
+            padding: 80px;
+            background-color: $txtDefult;
         }
         .counsel-typo {
             margin-bottom: 60px;
@@ -721,6 +716,10 @@
             #name {
                 margin-bottom: 22px;
             }
+            input,
+            textarea{
+                background-color: $gray-300;
+            }
             .txtarea-box {
                 width: 50%;
                 padding-bottom: 20px;
@@ -733,17 +732,15 @@
                 width: 50%;
                 height: 60px;
                 margin: 0;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;
+                background-image: linear-gradient(to right, #00AEAA 0%, #79C3B8 51%, #00AEAA 100%);
             }
-        }
-        .gb-main {
-            background-color: $secondary;
-    
-            p {
-                color: $white;
+            .counsel-btn:hover {
+                background-position: right center;
             }
-        }
-        .guide-btn {
-            background-color: $txtDefult;
         }
     }    
 }
