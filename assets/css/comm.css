@@ -320,10 +320,6 @@ body {
   width: 100%;
   z-index: 1000;
   padding: 0 25px;
-  -webkit-transition-duration: 0.4s;
-  -webkit-transition-timing-function: ease;
-  transition-duration: 0.4s;
-  transition-timing-function: ease;
 }
 #header .logo {
   width: 128px;
@@ -517,6 +513,7 @@ body {
     max-height: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border: 1px solid #f0f3f5;
   }
   #header #gnb .depth2 a {
     text-align: center;
@@ -527,10 +524,10 @@ body {
 
 .down {
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transition-duration: 0.4s;
-  -webkit-transition-timing-function: ease;
   transition-duration: 0.4s;
   transition-timing-function: ease;
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+          backdrop-filter: saturate(180%) blur(8px);
 }
 
 .sub-banner {
@@ -1303,6 +1300,9 @@ body {
     height: 40px;
     font-size: 36px;
   }
+  .treat button:hover {
+    scale: 1.2;
+  }
 }
 @media screen and (min-width: 1024px) {
   .treat li {
@@ -2056,10 +2056,28 @@ h2 {
   .digestive-intro .sub-intro-w {
     display: block;
   }
-  .digestive-intro h2 {
+  .digestive-intro .sub-intro-w h2 {
     margin-top: 70px;
   }
-  .digestive-intro .dig-tit {
+  .digestive-intro .sub-intro-w span {
+    position: relative;
+  }
+  .digestive-intro .sub-intro-w span::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: -100;
+    background: linear-gradient(to right, #79C3B8 0%, #00AEAA 100%);
+  }
+  .digestive-intro .sub-intro-w h2:hover span::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+  .digestive-intro .sub-intro-w .dig-tit {
     margin-top: 40px;
     font-size: 20px;
   }

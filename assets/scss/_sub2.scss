@@ -60,13 +60,32 @@ h2 {
         }        
         .sub-intro-w {
             display: block;
-        }
-        h2 {
-            margin-top: 70px;
-        }
-        .dig-tit {
-            margin-top: 40px;
-            font-size: 20px;
+            
+            h2 {
+                margin-top: 70px;
+            }
+            span {
+                position: relative;
+              }
+            span::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            z-index: -100;
+            background: linear-gradient(to right, $secondary 0%, $primary 100%);
+            }
+            h2:hover span::after {
+                width: 100%;
+                transition: width .3s;
+            }
+            .dig-tit {
+                margin-top: 40px;
+                font-size: 20px;
+            }
         }
     }
 }

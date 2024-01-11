@@ -52,10 +52,6 @@ body {
     width: 100%;
     z-index: 1000;
     padding: 0 25px;
-    -webkit-transition-duration:0.4s;
-    -webkit-transition-timing-function:ease;
-    transition-duration:0.4s;
-    transition-timing-function:ease;
     
     .logo {
         width: 128px;
@@ -264,6 +260,7 @@ body {
                 max-height: none;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
+                border: 1px solid $gray-100;
 
                 a {
                     text-align: center;
@@ -276,10 +273,9 @@ body {
 }
 .down {
     background-color:rgba(0,0,0,.8);
-    -webkit-transition-duration:0.4s;
-    -webkit-transition-timing-function:ease;
     transition-duration:0.4s;
     transition-timing-function:ease;
+    backdrop-filter: saturate(180%) blur(8px);
   }
 
 .sub-banner {

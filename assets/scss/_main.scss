@@ -396,6 +396,9 @@
             height: 40px;
             font-size: 36px;
         }
+        button:hover {
+            scale: 1.2;
+        }
     }
     @media screen and (min-width: 1024px) {
         li {
