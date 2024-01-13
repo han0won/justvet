@@ -607,8 +607,8 @@ body {
     @media screen and (min-width:1024px) {
         .f-wrap {
             display: flex;
-            padding: 60px 80px;
-            max-width: 1440px;
+            padding: 60px 0px;
+            max-width: 1280px;
             margin: 0 auto;
         }
         .f-inner {
