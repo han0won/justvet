@@ -185,18 +185,11 @@
         margin-bottom: 24px;
         line-height: 0;
         background-size : cover;
+        overflow: hidden;
     }
     img {
         width: 100%;
         object-fit: cover;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-    }
-    img:hover {
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
     }
     strong {
         font-size: 20px;
@@ -239,7 +232,17 @@
         .int-image {
             margin-top: 0;
         }
-    }
+        img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        }
+        }
+        img:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
     @media screen and (min-width: 1024px) {
         display: flex;
         flex-direction: column;
@@ -300,13 +303,10 @@
         overflow: hidden;
         transition: all 0.2s linear;
     }
-    li:hover {
-        transform: scale(1.1);
-    }
     .trt-btn-wrap {
         display: none;
     }
-    .trt-img {
+    .trt-icon {
         width: 42px;
         height: 42px;
         background-size : contain;
@@ -381,7 +381,7 @@
             flex-wrap: wrap;
             padding: 0 20px;
         }
-        .trt-img {
+        .trt-icon {
             width: 100%;
             height: 100px;
             margin-bottom: 10px;
@@ -410,6 +410,7 @@
             height: 557px;
             margin-bottom: 0;
             padding-top: 200px;
+            overflow: hidden;
         }
         button {
             width: 40px;
@@ -418,6 +419,15 @@
         }
         button:hover {
             scale: 1.2;
+        }
+        .trt-icon {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        .trt-wrap:hover .trt-icon {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transform-origin: 0 50%;
         }
     }
     @media screen and (min-width: 1024px) {

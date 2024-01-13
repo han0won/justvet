@@ -1083,16 +1083,12 @@ body {
   margin-bottom: 24px;
   line-height: 0;
   background-size: cover;
+  overflow: hidden;
 }
 .intro img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transform: scale(1);
-  transition: 0.3s ease-in-out;
-}
-.intro img:hover {
-  transform: scale(1.3);
 }
 .intro strong {
   font-size: 20px;
@@ -1134,6 +1130,13 @@ body {
   .intro .int-image {
     margin-top: 0;
   }
+  .intro img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+  }
+}
+.intro img:hover {
+  transform: scale(1.1);
 }
 @media screen and (min-width: 1024px) {
   .intro {
@@ -1198,13 +1201,10 @@ body {
   overflow: hidden;
   transition: all 0.2s linear;
 }
-.treat li:hover {
-  transform: scale(1.1);
-}
 .treat .trt-btn-wrap {
   display: none;
 }
-.treat .trt-img {
+.treat .trt-icon {
   width: 42px;
   height: 42px;
   background-size: contain;
@@ -1279,7 +1279,7 @@ body {
     flex-wrap: wrap;
     padding: 0 20px;
   }
-  .treat .trt-img {
+  .treat .trt-icon {
     width: 100%;
     height: 100px;
     margin-bottom: 10px;
@@ -1307,6 +1307,7 @@ body {
     height: 557px;
     margin-bottom: 0;
     padding-top: 200px;
+    overflow: hidden;
   }
   .treat button {
     width: 40px;
@@ -1315,6 +1316,13 @@ body {
   }
   .treat button:hover {
     scale: 1.2;
+  }
+  .treat .trt-icon {
+    transform: scale(1);
+  }
+  .treat .trt-wrap:hover .trt-icon {
+    transform: scale(1.1);
+    transform-origin: 0 50%;
   }
 }
 @media screen and (min-width: 1024px) {
