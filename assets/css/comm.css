@@ -465,17 +465,14 @@ body {
     height: 30px;
     background-size: contain;
   }
-  #header .col-right {
+  #header .gnb-wrap {
     position: relative;
     width: auto;
     height: 100%;
     max-width: 1440px;
   }
-  #header .col-right .gnb-wrap {
-    height: 100%;
-  }
-  #header .col-right .gnb-wrap .inp-burgur,
-  #header .col-right .gnb-wrap label {
+  #header .gnb-wrap .inp-burger,
+  #header .gnb-wrap .label-burger {
     display: none;
   }
   #header #gnb {

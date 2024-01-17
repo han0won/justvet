@@ -209,19 +209,15 @@ body {
             height: 30px;
             background-size: contain;
         }
-        .col-right {
+        .gnb-wrap {
             position: relative;
             width: auto;
             height: 100%;
             max-width: 1440px;
-            
-            .gnb-wrap {
-                height: 100%;
 
-                .inp-burgur,
-                label {
-                    display: none;
-                }
+            .inp-burger,
+            .label-burger {
+                display: none;
             }
         }
         #gnb {
