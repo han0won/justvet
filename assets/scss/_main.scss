@@ -659,8 +659,11 @@
         100% {
             transform: translate(-100%)
         }      
-             
-
+    }
+    @media screen and (max-width: 425px) {
+        p {
+            font-size: 80px;
+        }        
     }
 }
 

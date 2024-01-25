@@ -1549,6 +1549,11 @@ body {
     transform: translate(-100%);
   }
 }
+@media screen and (max-width: 425px) {
+  .text-move p {
+    font-size: 80px;
+  }
+}
 
 .guide-main .counsel-box {
   padding: 80px 25px;
