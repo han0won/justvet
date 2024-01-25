@@ -640,7 +640,29 @@
     }
 }
 
+.text-move {
+    display: flex;
+    column-gap: 30px;
+    overflow: hidden;
+    p {
+        color: rgba(121, 195, 184, 0.5); 
+        font-size: 150px;
+        font-weight: bold;
+        line-height: 1.25;
+        white-space: nowrap;
+        animation: textmove 20s linear infinite;
+    }
+    @keyframes textmove {
+        0% {
+            transform: translate(0);
+        }  
+        100% {
+            transform: translate(-100%)
+        }      
+             
 
+    }
+}
 
 .guide-main {
     .counsel-box {

@@ -1527,6 +1527,29 @@ body {
   }
 }
 
+.text-move {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  overflow: hidden;
+}
+.text-move p {
+  color: rgba(121, 195, 184, 0.5);
+  font-size: 150px;
+  font-weight: bold;
+  line-height: 1.25;
+  white-space: nowrap;
+  animation: textmove 20s linear infinite;
+}
+@keyframes textmove {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
 .guide-main .counsel-box {
   padding: 80px 25px;
   background-color: #79C3B8;
