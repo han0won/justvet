@@ -12,5 +12,18 @@ $(document).ready(function() {
       var scrolled = $window.scrollTop() >= pageOffsetTop;
       $header.toggleClass('down', scrolled);
     });
-  });
+});
   
+var swiper = new Swiper(".int-Swiper", {
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    // hide: true,
+  },
+                                  
+  breakpoints: {
+    654: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+    },
+  },
+});
