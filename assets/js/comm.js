@@ -13,6 +13,12 @@ $(document).ready(function() {
       $header.toggleClass('down', scrolled);
     });
 });
+
+var swiper = new Swiper(".vis-Swiper", {
+    autoplay : true, 
+    loop:true,
+    delay: 2000
+});
   
 var swiper = new Swiper(".int-Swiper", {
   scrollbar: {
