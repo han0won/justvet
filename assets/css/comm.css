@@ -1555,7 +1555,7 @@ body {
 }
 .text-move p {
   color: rgba(121, 195, 184, 0.5);
-  font-size: 150px;
+  font-size: 100px;
   font-weight: bold;
   line-height: 1.25;
   white-space: nowrap;
