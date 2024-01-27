@@ -79,6 +79,11 @@ textarea {
   font-size: 100%;
   vertical-align: middle;
 }
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
 
 button {
   font-size: 100%;
