@@ -75,35 +75,6 @@ body {
         visibility: hidden;
     }
     .gnb-wrap {
-        .inp-burger {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 0;
-            border: none;
-            opacity: 0;
-            visibility: hidden;
-            background: red;
-            &:checked {
-                & + .label-burger {
-                    .bar {
-                        &:nth-child(1) {
-                            transform: translateY(3px) rotate(45deg);
-                        }
-                        &:nth-child(2) {
-                            display: none;
-                        }
-                        &:nth-child(3) {
-                            transform: translateY(-3px) rotate(-45deg);
-                        }
-                    }
-                }
-                & ~ #gnb {
-                    left: 0;                    
-                }
-            }
-        }
         .label-burger {
             display: flex;
             flex-direction: column;
@@ -194,8 +165,6 @@ body {
         }
     }
     @media screen and (min-width:768px) {
-        // height: 100px;
-
         .h-inner {
             max-width: 1440px;
             height: 100%;
@@ -215,7 +184,6 @@ body {
             height: 100%;
             max-width: 1440px;
 
-            .inp-burger,
             .label-burger {
                 display: none;
             }
