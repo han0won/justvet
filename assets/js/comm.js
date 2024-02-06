@@ -12,6 +12,16 @@ $(document).ready(function() {
       var scrolled = $window.scrollTop() >= pageOffsetTop;
       $header.toggleClass('down', scrolled);
     });
+
+    $(".gnb-menu").click(function(){
+      $(".gnb-menu").toggleClass("gnb-open");
+      $(".gnb-menu > i").toggleClass("fa-xmark");
+      if($(".gnb-menu").hasClass("gnb-open")) {
+        $("#gnb").animate({left: '0'}, 300);
+      } else {
+        $("#gnb").animate({left: '-100%'}, 300);
+      }
+    });
 });
 
 var swiper = new Swiper(".vis-Swiper", {
@@ -31,5 +41,20 @@ var swiper = new Swiper(".int-Swiper", {
         slidesPerView: 2,
         spaceBetween: 50,
     },
+  },
+});
+
+var swiper = new Swiper(".food-swiper", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 30,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+  breakpoints: {
+      1024: {
+          centeredSlides: false,
+      },
   },
 });

@@ -347,14 +347,14 @@ body {
   opacity: 0;
   visibility: hidden;
 }
-#header .gnb-wrap .label-burger {
+#header .gnb-wrap .gnb-menu {
   display: flex;
   flex-direction: column;
   gap: 5px;
   position: relative;
   z-index: 1100;
 }
-#header .gnb-wrap .label-burger .bar {
+#header .gnb-wrap .gnb-menu .bar {
   display: block;
   width: 30px;
   height: 5px;
