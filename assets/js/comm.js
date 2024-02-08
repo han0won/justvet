@@ -17,9 +17,9 @@ $(document).ready(function() {
       $(".gnb-menu").toggleClass("gnb-open");
       $(".gnb-menu > i").toggleClass("fa-xmark");
       if($(".gnb-menu").hasClass("gnb-open")) {
-        $("#gnb").animate({left: '0'}, 300);
+        $("#gnb").animate({right: 0}, 300);
       } else {
-        $("#gnb").animate({left: '-100%'}, 300);
+        $("#gnb").animate({right: '-100%'}, 300);
       }
     });
 });

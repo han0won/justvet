@@ -80,7 +80,7 @@
         top: -78px;
         left: 0;
     }
-    li {
+    li > a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -91,7 +91,7 @@
         background-color: $white;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
-    li:hover {
+    li > a:hover {
         background-color: $primary;
         strong,
         p {

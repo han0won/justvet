@@ -367,7 +367,7 @@ body {
   justify-content: center;
   position: fixed;
   top: 0;
-  left: 100%;
+  right: -100%;
   width: 100%;
   bottom: 0;
   z-index: 1000;
@@ -408,9 +408,6 @@ body {
   white-space: nowrap;
   font-size: 16px;
   color: #fff;
-}
-#header #gnb li:last-child a {
-  padding-right: 0;
 }
 #header #gnb .depth1 > li:hover > a {
   color: #79C3B8;
@@ -964,7 +961,7 @@ body {
   top: -78px;
   left: 0;
 }
-.web-main-box li {
+.web-main-box li > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -975,14 +972,14 @@ body {
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.web-main-box li:hover {
+.web-main-box li > a:hover {
   background-color: #00AEAA;
 }
-.web-main-box li:hover strong,
-.web-main-box li:hover p {
+.web-main-box li > a:hover strong,
+.web-main-box li > a:hover p {
   color: #fff;
 }
-.web-main-box li:hover .icon-box {
+.web-main-box li > a:hover .icon-box {
   background-color: #fff;
 }
 .web-main-box .icon-box {

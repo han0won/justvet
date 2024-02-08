@@ -96,7 +96,7 @@ body {
         justify-content: center;
         position: fixed;
         top: 0;
-        left: 100%;
+        right: -100%;
         width: 100%;
         bottom: 0;
         z-index: 1000;
@@ -138,9 +138,6 @@ body {
             white-space: nowrap;
             font-size: 16px;
             color: $white;
-        }
-        li:last-child a {
-            padding-right: 0;
         }
         .depth1 > li:hover > a{
             color: $secondary;
