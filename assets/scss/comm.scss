@@ -75,7 +75,6 @@ body {
         visibility: hidden;
     }
     .gnb-wrap {
-
         .gnb-menu {
             display: flex;
             flex-direction: column;
@@ -140,6 +139,9 @@ body {
             font-size: 16px;
             color: $white;
         }
+        li:last-child a {
+            padding-right: 0;
+        }
         .depth1 > li:hover > a{
             color: $secondary;
         }
@@ -166,6 +168,7 @@ body {
         }
     }
     @media screen and (min-width:768px) {
+        padding: 0;
         .h-inner {
             max-width: 1440px;
             height: 100%;
@@ -185,7 +188,7 @@ body {
             height: 100%;
             max-width: 1440px;
 
-            .label-burger {
+            .gnb-menu {
                 display: none;
             }
         }

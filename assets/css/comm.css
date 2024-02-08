@@ -409,6 +409,9 @@ body {
   font-size: 16px;
   color: #fff;
 }
+#header #gnb li:last-child a {
+  padding-right: 0;
+}
 #header #gnb .depth1 > li:hover > a {
   color: #79C3B8;
 }
@@ -434,6 +437,9 @@ body {
   padding: 10px 25px;
 }
 @media screen and (min-width: 768px) {
+  #header {
+    padding: 0;
+  }
   #header .h-inner {
     max-width: 1440px;
     height: 100%;
@@ -453,7 +459,7 @@ body {
     height: 100%;
     max-width: 1440px;
   }
-  #header .gnb-wrap .label-burger {
+  #header .gnb-wrap .gnb-menu {
     display: none;
   }
   #header #gnb {
