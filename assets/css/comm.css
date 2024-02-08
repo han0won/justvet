@@ -622,6 +622,9 @@ body {
   font-size: 18px;
 }
 .guide .guide-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 40px 25px;
 }
 .guide .guide-box2 .phone-txt,
@@ -669,6 +672,11 @@ body {
 .guide .guide-box2 dd {
   padding-left: 40px;
 }
+.guide .guide-box2 dt,
+.guide .guide-box2 dd {
+  text-align: left;
+  color: #f0f3f5;
+}
 .guide .guide-box2 i {
   padding-right: 10px;
   color: #fff;
@@ -680,15 +688,19 @@ body {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 400px) {
   .guide dt,
   .guide dd,
   .guide span {
     font-size: 12px;
   }
-  .guide .phone-counsel,
-  .guide .clinic-hours {
-    gap: 25px;
+  .guide .guide-box2 .phone-counsel,
+  .guide .guide-box2 .clinic-hours {
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .guide .guide-box2 p {
+    font-size: 24px;
   }
   .guide i {
     padding-right: 5px;
@@ -718,12 +730,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
-  }
-  .guide .guide-box1 strong {
-    font-size: 28px;
-  }
-  .guide .guide-box1 p {
-    font-size: 28px;
+    font-size: 20px;
   }
   .guide .guide-box1 .guide-map-btn {
     display: flex;
@@ -757,19 +764,14 @@ body {
     margin-top: 50px;
   }
   .guide .guide-box2 span {
-    font-size: 28px;
+    font-size: 20px;
   }
   .guide .guide-box2 p {
-    font-size: 50px;
+    font-size: 36px;
     line-height: 1;
   }
   .guide .guide-box2 dl {
-    font-size: 28px;
-  }
-  .guide .guide-box2 dt,
-  .guide .guide-box2 dd {
-    text-align: left;
-    color: #f0f3f5;
+    font-size: 20px;
   }
   .guide .guide-box2 .txt > span {
     font-size: 16px;
@@ -792,6 +794,25 @@ body {
     font-size: 16px;
     color: #fff;
     text-align: center;
+  }
+}
+@media screen and (min-width: 1370px) {
+  .guide .guide-box1 .guide-txt {
+    font-size: 30px;
+  }
+  .guide .guide-box2 .phone-counsel {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+  }
+  .guide .guide-box2 span {
+    font-size: 28px;
+  }
+  .guide .guide-box2 p {
+    font-size: 50px;
+  }
+  .guide .guide-box2 dl {
+    font-size: 28px;
   }
 }
 
@@ -834,8 +855,8 @@ body {
 @media screen and (min-width: 1024px) {
   #footer .f-wrap {
     display: flex;
-    padding: 60px 0px;
-    max-width: 1280px;
+    padding: 60px 80px;
+    max-width: 1440px;
     margin: 0 auto;
   }
   #footer .f-inner {
@@ -1693,9 +1714,14 @@ body {
     font-size: 24px;
   }
 }
-.gnb-sub .hospital {
+.gnb-sub .gnb-box:hover a {
   color: #00AEAA;
+}
+.gnb-sub .hospital {
   border-color: #8d8d8d;
+}
+.gnb-sub .hospital > a {
+  color: #00AEAA;
 }
 
 .sub-intro {
@@ -2041,9 +2067,14 @@ body {
   --swiper-theme-color: #79C3B8 !important;
 }
 
-.gnb-sub .digestive {
+.gnb-sub .gnb-box:hover a {
   color: #00AEAA;
+}
+.gnb-sub .digestive {
   border-color: #8d8d8d;
+}
+.gnb-sub .digestive > a {
+  color: #00AEAA;
 }
 
 h2 {

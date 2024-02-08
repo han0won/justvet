@@ -1,7 +1,12 @@
 .gnb-sub {
-    .hospital {
+    .gnb-box:hover a {
         color: $primary;
+    }
+    .hospital {
         border-color: $gray-200;
+    }
+    .hospital > a {
+        color: $primary;
     }
 }
 

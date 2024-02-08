@@ -4,9 +4,14 @@
 
 
 .gnb-sub {
-    .digestive {
+    .gnb-box:hover a {
         color: $primary;
+    }
+    .digestive {
         border-color: $gray-200;
+    }
+    .digestive > a {
+        color: $primary;
     }
 }
 
