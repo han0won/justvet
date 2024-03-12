@@ -33,6 +33,17 @@ button,
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $gray-100;
+}
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+}
+
+
 fieldset,
 img {
   border: 0 none;

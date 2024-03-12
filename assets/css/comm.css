@@ -45,6 +45,18 @@ button,
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f3f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #79C3B8;
+}
+
 fieldset,
 img {
   border: 0 none;
@@ -1538,7 +1550,7 @@ body {
     margin-top: 50px;
   }
   .map .map-wrap p {
-    font-size: 28px;
+    font-size: 24px;
   }
   .map .map-wrap dl {
     font-size: 17px;
