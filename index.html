@@ -28,7 +28,6 @@
                     <div class="gnb-wrap">
                         <button class="gnb-menu">
                             <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                            <div class="blind">전체 메뉴 보기</div>
                         </button>
                         <nav id="gnb">
                             <ul class="depth1">
@@ -234,8 +233,9 @@
                                         <a href="#" class="trt-wrap">
                                             <div class="trt-icon internal"></div>
                                             <p>내과</p>
-                                            <button>
-                                                <i class="fa-solid fa-plus fa-2xs" style="color: #ffffff;"></i>                                            </button>
+                                            <div class="circle-btn">
+                                                <i class="fa-solid fa-plus fa-2xs" style="color: #ffffff;"></i>                                            
+                                            </div>
                                             <div class="trt-btn-wrap">
                                                 <p>#심장병</p>
                                                 <p>#내분비</p>
@@ -247,9 +247,9 @@
                                         <a href="#" class="trt-wrap">
                                             <div class="trt-icon surgery"></div>
                                             <p>외과</p>
-                                            <button>
-                                                <i class="fa-solid fa-plus fa-2xs" style="color: #ffffff;"></i>                                            </button>
-                                            </button>
+                                            <div class="circle-btn">
+                                                <i class="fa-solid fa-plus fa-2xs" style="color: #ffffff;"></i>
+                                            </div>
                                             <div class="trt-btn-wrap">
                                                 <p>#중성화</p>
                                                 <p>#골절</p>
@@ -261,9 +261,9 @@
                                         <a href="#" class="trt-wrap">
                                             <div class="trt-icon dental"></div>
                                             <p>치과</p>
-                                            <button>
-                                                <i class="fa-solid fa-plus fa-2xs" style="color: #ffffff;"></i>                                            </button>
-                                            </button>
+                                            <div class="circle-btn">
+                                                <i class="fa-solid fa-plus fa-2xs" style="color: #ffffff;"></i>
+                                            </div>
                                             <div class="trt-btn-wrap">
                                                 <p>#스케일링</p>
                                                 <p>#발치</p>
@@ -274,9 +274,9 @@
                                         <a href="#" class="trt-wrap">
                                             <div class="trt-icon picture"></div>
                                             <p>영상</p>
-                                            <button>
-                                                <i class="fa-solid fa-plus fa-2xs" style="color: #ffffff;"></i>                                            </button>
-                                            </button>
+                                            <div class="circle-btn">
+                                                <i class="fa-solid fa-plus fa-2xs" style="color: #ffffff;"></i>
+                                            </div>
                                             <div class="trt-btn-wrap">
                                                 <p>#방사선</p>
                                                 <p>#초음파</p>
@@ -321,8 +321,8 @@
                     <div class="map-wrap" data-aos="fade-down" data-aos-duration="2000">
                         <div class="map-wrapper">
                             <div id="daumRoughmapContainer1702972745283" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%; height: 100%;"></div>
-                            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-                            <script charset="UTF-8">
+                            <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                            <script>
                                 new daum.roughmap.Lander({
                                     "timestamp" : "1702972745283",
                                     "key" : "2h9u8",
@@ -385,16 +385,18 @@
                                 </div>
                                 <div class="inp-box">
                                     <label for="number">연락처</label>
-                                    <input type="text" placeholder="연락처를 입력해주세요" required>
+                                    <input id="number" type="text" placeholder="연락처를 입력해주세요" required>
                                 </div>
                             </div>
                             <div class="inp-box txtarea-box">
-                                <label for="text">상담내용</label>
+                                <label for="question">상담내용</label>
                                 <textarea name="question" id="question" placeholder="상담내용을 입력해주세요."></textarea>
                             </div>
                             <div class="privacy">
-                                <i class="fa-regular fa-circle-check"></i>
-                                <span>개인정보수집 및 이용 동의</span>
+                                <a href="#">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <span>개인정보수집 및 이용 동의</span>
+                                </a>
                             </div>
                             <input type="submit" class="counsel-btn" value="신청하기">
                         </form>

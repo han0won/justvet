@@ -6,6 +6,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "SOYOMapleBoldTTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
   font-family: "SUITE-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -372,7 +378,7 @@ body {
   height: 5px;
   background-color: #fff;
   border-radius: 30px;
-  transition: all 0.3;
+  transition: all 0.3s;
 }
 #header #gnb {
   display: flex;
@@ -477,7 +483,6 @@ body {
     align-items: center;
     height: 100%;
     left: 0;
-    bottom: none;
     width: auto;
     padding-top: 0;
     transition: 0;
@@ -1285,7 +1290,10 @@ body {
 .treat p {
   margin: 12px 0;
 }
-.treat button {
+.treat .circle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25px;
   height: 25px;
   border-radius: 100px;
@@ -1344,12 +1352,12 @@ body {
     padding-top: 200px;
     overflow: hidden;
   }
-  .treat button {
+  .treat .circle-btn {
     width: 40px;
     height: 40px;
     font-size: 36px;
   }
-  .treat button:hover {
+  .treat .circle-btn:hover {
     scale: 1.2;
   }
 }

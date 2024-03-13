@@ -370,7 +370,10 @@
     p {
         margin: 12px 0;
     }
-    button {
+    .circle-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 25px;
         height: 25px;
         border-radius: 100px;
@@ -430,12 +433,12 @@
             padding-top: 200px;
             overflow: hidden;
         }
-        button {
+        .circle-btn {
             width: 40px;
             height: 40px;
             font-size: 36px;
         }
-        button:hover {
+        .circle-btn:hover {
             scale: 1.2;
         }
     }

@@ -87,7 +87,7 @@ body {
                 height: 5px;
                 background-color: $white;
                 border-radius: 30px;
-                transition: all 0.3;
+                transition: all 0.3s;
             }
         }
     }    
@@ -195,7 +195,6 @@ body {
             align-items: center;
             height: 100%;
             left: 0;
-            bottom: none;
             width: auto;
             padding-top: 0;
             transition: 0;
