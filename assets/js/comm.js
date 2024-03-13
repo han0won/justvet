@@ -1,28 +1,30 @@
-$(document).ready(function() {
-    var $header = $('header'); 
-    var $page = $('.page-start'); // 색상이 변할 부분
-    var $window = $(window);
-    var pageOffsetTop = $page.offset().top; // 색상 변할 부분의 top값
+document.addEventListener('DOMContentLoaded', function() {
+  // 스크롤 다운할때 헤더 색상 변경
+  const Header = document.querySelector('#header');
+  const page = document.querySelector('.page-start');
   
-    $window.resize(function() {
-      pageOffsetTop = $page.offset().top;
-    });
-  
-    $window.on('scroll', function() {
-      var scrolled = $window.scrollTop() >= pageOffsetTop;
-      $header.toggleClass('down', scrolled);
-    });
+  window.addEventListener('scroll', function() {
+    const pageOffsetTop = page.offsetTop
+    const scrolled = window.scrollY >= pageOffsetTop;
 
-    $(".gnb-menu").click(function(){
-      $(".gnb-menu").toggleClass("gnb-open");
-      $(".gnb-menu > i").toggleClass("fa-xmark");
-      if($(".gnb-menu").hasClass("gnb-open")) {
-        $("#gnb").animate({right: 0}, 300);
-      } else {
-        $("#gnb").animate({right: '-100%'}, 300);
-      }
-    });
-});
+    Header.classList.toggle('down', scrolled);
+  })
+
+  // gnb 아이콘 클릭시 카테고리 펼쳐짐
+  const gnbMenu = document.querySelector('.gnb-menu')
+  const gnbMenuIcon = document.querySelector('.gnb-menu > i')
+  
+  gnbMenu.addEventListener('click', function() {
+    gnbMenu.classList.toggle('gnb-open');
+    gnbMenuIcon.classList.toggle('fa-xmark');
+
+    if (gnbMenu.classList.contains('gnb-open')) {
+      document.getElementById('gnb').style.right = '0';
+    } else {
+      document.getElementById('gnb').style.right = '-100%';
+    }
+  })
+})
 
 var swiper = new Swiper(".vis-Swiper", {
     autoplay : true, 
